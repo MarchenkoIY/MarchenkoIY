@@ -1,0 +1,21 @@
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 40pt;
+    color: blue;
+   }
+
+
+img {
+      margin:0px auto 0px auto; 
+      display:block;
+     }
+
+p {
+   text-align:center;
+  }
+
+body {
+        background-image: url("newspaper.jpg");
+        background-position: center;
+       }
