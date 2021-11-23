@@ -1,0 +1,16 @@
+h2 {
+    font: 24pt 'Pacifico', cursive;
+    }
+
+p {
+  font: 18pt 'Caveat', cursive;
+  }
+
+h2, p {
+        text-align: center;
+        }
+
+body {
+        background: url(papper.jpg); 
+        background-size: 100%;
+        }
