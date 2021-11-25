@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <link rel="stylesheet" href="style.css" />
+    <title>"Безопасные цвета"</title>
+  </head>
+  <body>
+      <h2 align="center">Что такое "безопасная палитра"?</h2>
+      <p><strong>"Безопасной палитрой"</strong> называют набор из 216 цветов, которые будут одинаково отображаться во всех браузерах и на всех платформах.</p>
+      <p>Необходимость выведения такого списка появилась из-за того, что браузер, когда не может отобразить выбранный цвет, самостоятельно определяет ближайший или смешивает 2 соседних цвета. Таким образом, может получиться совсем не тот цвет, который был выбран, что нарушит дизайнерское решение или вовсе сделает страницу нечитабельной для пользователя.</p>
+      <p>Данный набор цветов был выбран не случайно, а выведен математически: десятичными значениями для RGB могут быть только <strong>0, 51, 102, 153, 204, 255</strong>, а для шестнадцатиричной формы каждая из трех пар значений не должна отличаться от <strong>00, 33, 66, 99, CC, FF</strong>.</p>
+       <p>Существует мнение, что на сегодняшний день строгое следование данной палитре уже не актуально, однако я бы не стал сильно от нее отступать, чтобы страница отображалась в корректных цветах в 100% случаев.</p>
+       <p>Таким образом, при верстке необходимо считаться со списком "безопасных" цветов, чтобыу всех страничка выглядела одинаково. Но если есть уверенность, что пользователь в 100% случаев использует современное оборудование и ПО, то можно пренебречь этим правилом.</p>
+       <p>Ниже приведена таблица этих цветов.</p>
+       <table>
+            <tr>
+               <td style="background: #FFFFCC;">RGB: 255 255 204 <br />HEX: #FFFFCC</td>
+               <td style="background: #FFFF99;">RGB: 255 255 153 <br />HEX: #FFFF99</td>
+               <td style="background:#FFFF66;">RGB: 255 255 102 <br />HEX: #FFFF66</td>
+               <td style="background: #FFFF33;">RGB: 255 255 51 <br />HEX: ##FFFF33</td>
+               <td style="background: #FFFF00;">RGB: 255 255 0 <br />HEX: #FFFF00</td>
+               <td style="background: #CCCC00;">RGB: 204 204 0 <br />HEX: #CCCC00</td>
+            </tr>
+            <tr>
+               <td style="background: #FFCC66;">RGB: 255 204 102 <br />HEX: #FFCC66</td>
+               <td style="background: #FFCC00;">RGB: 255 204 0 <br />HEX: #FFCC00</td>
+               <td style="background: #FFCC33;">RGB: 255 204 51 <br />HEX: #FFCC33</td>
+               <td style="background:#CC9900;">RGB: 204 153 0 <br />HEX: #CC9900</td>
+               <td style="background: #CC9933;">RGB: 204 153 51 <br />HEX: #CC9933</td>
+               <td style="background: #996600;">RGB: 153 102 0 <br />HEX: #996600</td>
+            </tr>
+            <tr>
+               <td style="background: #FF9900;">RGB: 255 153 0 <br />HEX: #FF9900</td>
+               <td style="background: #FF9933;">RGB: 255 153 51 <br />HEX: #FF9933</td>
+               <td style="background: #CC9966;">RGB: 204 153 102 <br />HEX: #CC9966</td>
+               <td style="background: #CC6600;">RGB: 204 102 0 <br />HEX: #CC6600</td>
+               <td style="background: #996633;">RGB: 153 102 51 <br />HEX: #996633</td>
+               <td class="white" style="background: #663300;">RGB: 102 51 0 <br />HEX: #663300</td>
+             </tr>
+            <tr>
+               <td style="background: #FFCC99;">RGB: 255 204 153 <br />HEX: #FFCC99</td>
+               <td style="background: #FF9966;">RGB: 255 153 102 <br />HEX: #FF9966</td>
+               <td style="background: #FF6600;">RGB: 255 102 0 <br />HEX: #FF6600</td>
+               <td style="background: #CC6633;">RGB: 204 102 51 <br />HEX: #CC6633</td>
+               <td class="white" style="background: #993300;">RGB: 153 51 0 <br />HEX: #993300</td>
+               <td class="white" style="background: #660000;">RGB: 102 0 0 <br />HEX: #660000</td>
+            </tr>
+            <tr>
+               <td style="background: #FF6633;">RGB: 255 102 51 <br />HEX: #FF6633</td>
+               <td style="background: #CC3300;">RGB: 204 51 0 <br />HEX: #CC3300</td>
+               <td style="background: #FF3300;">RGB: 255 51 0 <br />HEX: #FF3300</td>
+               <td style="background: #FF0000;">RGB: 255 0 0 <br />HEX: #FF0000</td>
+               <td style="background: #CC0000;">RGB: 204 0 0 <br />HEX: #CC0000</td>
+               <td class="white" style="background: #990000;">RGB: 153 0 0 <br />HEX: #990000</td>
+             </tr>
+             <tr>
+               <td style="background: #FFCCCC;">RGB: 255 204 204 <br />HEX: #FFCCCC</td>
+               <td style="background: #FF9999;">RGB: 255 153 153 <br />HEX:#FF9999</td>
+               <td style="background: #FF6666;">RGB: 255 102 102 <br />HEX: #FF6666</td>
+               <td class="white" style="background: #FF3333;">RGB: 255 51 51 <br />HEX: #FF3333</td>
+               <td style="background: #FF0033;">RGB: 255 0 51 <br />HEX: #FF0033</td>
+               <td class="white" style="background: #CC0033;">RGB: 204 0 51 <br />HEX: #CC0033</td>
+             </tr>
+             <tr>
+               <td style="background: #CC9999;">RGB: 204 153 153 <br />HEX: #CC9999</td>
+               <td style="background: #CC6666;">RGB: 204 102 102 <br />HEX: #CC6666</td>
+               <td style="background: #CC3333;">RGB: 204 51 51 <br />HEX: #CC3333</td>
+               <td class="white" style="background: #993333;">RGB: 153 51 51<br /> HEX: #993333</td>
+               <td class="white"  style="background: #990033;">RGB: 153 0 51 <br />HEX: #990033</td>
+               <td class="white" style="background:#330000;">RGB: 51 0 0 <br />HEX: #330000</td>
+             </tr>
+             <tr>
+               <td style="background:#FF6699;">RGB: 255 102 153 <br />HEX: #FF6699</td>
+               <td style="background: #FF3366;">RGB: 255 51 102 <br />HEX: #FF3366</td>
+               <td style="background: #FF0066;">RGB: 255 0 102 <br />HEX: #FF0066</td>
+               <td style="background: #CC3366;">RGB: 204 51 102 <br />HEX: #CC3366</td>
+               <td style="background: #996666;">RGB: 153 102 102 <br />HEX: #996666</td>
+               <td class="white" style="background: #663333;">RGB: 102 51 51 <br />HEX: #663333</td>
+            </tr>
+            <tr>
+               <td style="background:#FF99CC;">RGB: 255 153 204 <br />HEX: #FF99CC</td>
+               <td style="background: #FF3399;">RGB: 255 51 153 <br />HEX: #FF3399</td>
+               <td style="background: #FF0099;">RGB: 255 0 153 <br />HEX: #FF0099</td>
+               <td style="background: #CC0066;">RGB: 204 0 102 <br />HEX: #CC0066</td>
+               <td style="background: #993366;">RGB:153 51 102 <br />HEX: #993366</td>
+               <td class="white" style="background: #660033;">RGB: 102 0 51 <br />HEX: #660033</td>
+             </tr>
+             <tr>
+               <td style="background: #FF66CC;">RGB:255 102 204 <br />HEX: #FF66CC</td>
+               <td style="background: #FF00CC;">RGB: 255 0 204 <br />HEX: #FF00CC</td>
+               <td style="background: #FF33CC;">RGB: 255 51 204 <br />HEX: #FF33CC</td>
+               <td style="background:#CC6699;">RGB: 204 102 153 <br />HEX: #CC6699</td>
+               <td style="background: #CC0099;">RGB: 204 0 153 <br />HEX: #CC0099</td>
+               <td class="white" style="background: #990066;">RGB: 153 0 102 <br />HEX: #990066</td>
+             </tr>
+             <tr>
+               <td style="background: #FFCCFF;">RGB: 255 204 255 <br />HEX: #FFCCFF</td>
+               <td style="background: #FF99FF;">RGB: 255 153 255 <br />HEX: #FF99FF</td>
+               <td style="background: #FF66FF;">RGB: 255 102 255 <br />HEX: #FF66FF</td>
+               <td style="background: #FF33FF;">RGB: 255 51 255 <br />HEX: #FF33FF</td>
+               <td style="background: #FF00FF;">RGB: 255 0 255 <br />HEX: #FF00FF</td>
+               <td style="background: #CC3399;">RGB: 204 51 153 <br />HEX: #CC3399</td>
+             </tr>
+             <tr>
+               <td style="background:#CC99CC;">RGB: 204 153 204 <br />HEX: #CC99CC</td>
+               <td style="background: #CC66CC;">RGB: 204 102 204 <br />HEX: #CC66CC</td>
+               <td style="background: #CC00CC;">RGB:204 0 204 <br />HEX: #CC00CC</td>
+               <td style="background: #CC33CC;">RGB: 204 51 204 <br />HEX: #CC33CC</td>
+               <td style="background: #990099;">RGB: 153 0 153 <br />HEX: #990099</td>
+               <td style="background: #993399;">RGB: 153 51 153 <br />HEX: #993399</td>
+             </tr>
+             <tr>
+               <td style="background: #CC66FF;">RGB: 204 102 255 <br />HEX: #CC66FF</td>
+               <td style="background: #CC33FF;">RGB: 204 51 255 <br />HEX: #CC33FF</td>
+               <td style="background: #CC00FF;">RGB: 204 0 255 <br />HEX: #CC00FF</td>
+               <td style="background: #9900CC;">RGB: 153 0 204 <br />HEX: #9900CC</td>
+               <td style="background: #996699;">RGB: 153 102 153 <br />HEX: #996699</td>
+               <td class="white" style="background: #660066;">RGB: 102 0 102 <br />HEX: #660066</td>
+             </tr>
+             <tr>
+               <td style="background: #CC99FF;">RGB: 204 153 255 <br />HEX: #CC99FF</td>
+               <td style="background: #9933CC;">RGB: 153 51 204 <br />HEX: #9933CC</td>
+               <td style="background: #9933FF;">RGB: 153 51 255 <br />HEX: #9933FF</td>
+               <td style="background: #9900FF;">RGB: 153 0 255 <br />HEX: #9900FF</td>
+               <td class="white" style="background: #660099;">RGB: 102 0 153 <br />HEX: #660099</td>
+               <td class="white" style="background: #663366;">RGB: 102 51 102 <br />HEX: #663366</td>
+             </tr>
+             <tr>
+               <td style="background: #9966CC;">RGB: 153 102 204 <br />HEX: #9966CC</td>
+               <td style="background: #9966FF;">RGB: 153 102 255 <br />HEX: #9966FF</td>
+               <td class="white" style="background: #6600CC;">RGB: 102 0 204 <br />HEX: #6600CC</td>
+               <td class="white" style="background: #6633CC;">RGB: 102 51 204 <br />HEX: #6633CC</td>
+               <td class="white" style="background: #663399;">RGB: 102 51 153 <br />HEX: #663399</td>
+               <td class="white" style="background: #330033;">RGB: 51 0 51 <br />HEX: #330033</td>
+             </tr>
+             <tr>
+               <td style="background: #CCCCFF;">RGB: 204 204 255 <br />HEX: #CCCCFF</td>
+               <td style="background: #9999FF;">RGB: 153 153 255 <br />HEX: #9999FF</td>
+               <td class="white"style="background: #6633FF;">RGB: 102 51 255 <br />HEX: #6633FF</td>
+               <td class="white" style="background: #6600FF;">RGB: 102 0 255 <br />HEX: #6600FF</td>
+               <td class="white" style="background: #330099;">RGB: 51 0 153 <br />HEX: #330099</td>
+               <td class="white" style="background: #330066;">RGB: 51 0 102 <br />HEX: #330066</td>
+             </tr>
+             <tr>
+               <td style="background: #9999CC;">RGB: 153 153 204 <br />HEX: #9999CC</td>
+               <td style="background: #6666FF;">RGB: 102 102 255 <br />HEX: #6666FF</td>
+               <td style="background: #6666CC;">RGB: 102 102 204 <br />HEX: #6666CC</td>
+               <td style="background: #666699;">RGB: 102 102 153 <br />HEX: #666699</td>
+               <td class="white" style="background: #333399;">RGB: 51 51 153 <br />HEX: #333399</td>
+               <td class="white" style="background: #333366;">RGB: 51 51 102 <br />HEX: #333366</td>
+             </tr>
+             <tr>
+               <td class="white" style="background: #3333FF;">RGB: 51 51 255 <br />HEX: #3333FF</td>
+               <td class="white" style="background: #3300FF;">RGB: 51 0 255 <br />HEX: #3300FF</td>
+               <td class="white" style="background: #3300CC;">RGB: 51 0 204 <br />HEX: #3300CC</td>
+               <td class="white" style="background: #3333CC;">RGB: 51 51 204 <br />HEX: #3333CC</td>
+               <td class="white" style="background: #000099;">RGB: 0 0 153 <br />HEX: #000099</td>
+               <td class="white" style="background: #000066;">RGB: 0 0 102 <br />HEX: #000066</td>
+             </tr>
+             <tr>
+               <td style="background: #6699FF;">RGB: 102 153 255 <br />HEX: #6699FF</td>
+               <td style="background: #3366FF;">RGB: 51 102 255 <br />HEX: #3366FF</td>
+               <td class="white" style="background: #0000FF;">RGB: 0 0 255 <br />HEX: #0000FF</td>
+               <td class="white" style="background: #0000CC;">RGB: 0 0 204 <br />HEX: #0000CC</td>
+               <td class="white" style="background: #0033CC;">RGB: 0 51 204 <br />HEX: #0033CC</td>
+               <td class="white" style="background: #000033;">RGB: 0 0 51 <br />HEX: #000033</td>
+             </tr>
+             <tr>
+               <td style="background: #0066FF;">RGB: 0 102 255 <br />HEX: #0066FF</td>
+               <td class="white"style="background: #0066CC;">RGB: 0 102 204 <br />HEX: #0066CC</td>
+               <td class="white"style="background: #3366CC;">RGB: 51 102 204 <br />HEX: #3366CC</td>
+               <td class="white" style="background: #0033FF;">RGB: 0 51 255 <br />HEX: #0033FF</td>
+               <td class="white" style="background: #003399;">RGB: 0 51 153 <br />HEX: #003399</td>
+               <td class="white" style="background: #003366;">RGB: 0 51 102<br />HEX: #003366</td>
+             </tr>
+             <tr>
+               <td style="background: #99CCFF;">RGB: 153 204 255 <br />HEX: #99CCFF</td>
+               <td style="background: #3399FF;">RGB: 51 153 255 <br />HEX: #3399FF</td>
+               <td style="background: #0099FF;">RGB: 0 153 255 <br />HEX: #0099FF</td>
+               <td style="background: #6699CC;">RGB: 102 153 204 <br />HEX: #6699CC</td>
+               <td class="white" style="background: #336699;">RGB: 51 102 153 <br />HEX: #336699</td>
+               <td class="white" style="background: #006699;">RGB: 0 102 153 <br />HEX: #006699</td>
+             </tr>
+             <tr>
+               <td style="background: #66CCFF;">RGB: 102 204 255 <br />HEX: #66CCFF</td>
+               <td style="background: #33CCFF;">RGB: 51 204 255 <br />HEX: #33CCFF</td>
+               <td style="background: #00CCFF;">RGB: 0 204 255 <br />HEX: #00CCFF</td>
+               <td style="background: #3399CC;">RGB: 51 153 204 <br />HEX: #3399CC</td>
+               <td style="background: #0099CC;">RGB: 0 153 204 <br />HEX: #0099CC</td>
+               <td class="white" style="background: #003333;">RGB: 0 51 51 <br />HEX: #003333</td>
+             </tr>
+             <tr>
+               <td style="background: #99CCCC;">RGB: 153 204 204 <br />HEX: #99CCCC</td>
+               <td style="background: #66CCCC;">RGB: 102 204 204 <br />HEX: #66CCCC</td>
+               <td style="background: #339999;">RGB: 51 153 153 <br />HEX: #339999</td>
+               <td style="background: #669999;">RGB: 102 153 153 <br />HEX: #669999</td>
+               <td class="white" style="background: #006666;">RGB: 0 102 102 <br />HEX: #006666</td>
+               <td class="white" style="background: #336666;">RGB: 51 102 102 <br />HEX: #336666</td>
+             </tr>
+             <tr>
+               <td style="background: #CCFFFF;">RGB: 204 255 255 <br />HEX: #CCFFFF</td>
+               <td style="background: #99FFFF;">RGB: 153 255 255 <br />HEX: #99FFFF</td>
+               <td style="background: #66FFFF;">RGB: 102 255 255 <br />HEX: #66FFFF</td>
+               <td style="background: #33FFFF;">RGB: 51 255 255 <br />HEX: #33FFFF</td>
+               <td style="background: #00FFFF;">RGB: 0 255 255 <br />HEX: #00FFFF</td>
+               <td style="background: #00CCCC;">RGB: 0 204 204 <br />HEX: #00CCCC</td>
+             </tr>
+             <tr>
+               <td style="background: #99FFCC;">RGB: 153 255 204 <br />HEX: #99FFCC</td>
+               <td style="background: #66FFCC;">RGB: 102 255 204 <br />HEX: #66FFCC</td>
+               <td style="background: #33FFCC;">RGB: 51 255 204 <br />HEX: #33FFCC</td>
+               <td style="background: #00FFCC;">RGB: 0 255 204 <br />HEX: #00FFCC</td>
+               <td style="background: #33CCCC;">RGB: 51 204 204 <br />HEX: #33CCCC</td>
+               <td style="background: #009999;">RGB: 0 153 153 <br />HEX: #009999</td>
+             </tr>
+             <tr>
+               <td style="background: #66CC99;">RGB: 102 204 153 <br />HEX: #66CC99</td>
+               <td style="background: #33CC99;">RGB: 51 204 153 <br />HEX: #33CC99</td>
+               <td style="background: #00CC99;">RGB: 0 204 153 <br />HEX: #00CC99</td>
+               <td style="background: #339966;">RGB: 51 153 102 <br />HEX: #339966</td>
+               <td style="background: #009966;">RGB: 0 153 102 <br />HEX: #009966</td>
+               <td class="white" style="background: #006633;">RGB: 0 102 51 <br />HEX: #006633</td>
+             </tr>
+             <tr>
+               <td style="background: #66FF99;">RGB: 102 255 153 <br />HEX: #66FF99</td>
+               <td style="background: #33FF99;">RGB: 51 255 153 <br />HEX: #33FF99</td>
+               <td style="background: #00FF99;">RGB: 0 255 153 <br />HEX: #00FF99</td>
+               <td style="background: #33CC66;">RGB: 51 204 102 <br />HEX: #33CC66</td>
+               <td style="background: #00CC66;">RGB: 0 204 102 <br />HEX: #00CC66</td>
+               <td style="background: #009933;">RGB: 0 153 51 <br />HEX: #009933</td>
+             </tr>
+             <tr>
+               <td style="background: #99FF99;">RGB: 153 255 153 <br />HEX: #99FF99</td>
+               <td style="background: #66FF66;">RGB: 102 255 102 <br />HEX: #66FF66</td>
+               <td style="background: #33FF66;">RGB: 51 255 102 <br />HEX: #33FF66</td>
+               <td style="background: #00FF66;">RGB: 0 255 102 <br />HEX: #00FF66</td>
+               <td style="background: #339933;">RGB: 51 153 51 <br />HEX: #339933</td>
+               <td class="white" style="background: #006600;">RGB: 0 102 0 <br />HEX: #006600</td>
+             </tr>
+             <tr>
+               <td style="background: #CCFFCC;">RGB: 204 255 204 <br />HEX: #CCFFCC</td>
+               <td style="background: #99CC99;">RGB: 153 204 153 <br />HEX: #99CC99</td>
+               <td style="background: #66CC66;">RGB: 102 204 102 <br />HEX: #66CC66</td>
+               <td style="background: #669966;">RGB: 102 153 102 <br />HEX: #669966</td>
+               <td class="white" style="background: #336633;">RGB: 51 102 51 <br />HEX: #336633</td>
+               <td class="white" style="background: #003300;">RGB: 0 51 0 <br />HEX: #003300</td>
+             </tr>
+             <tr>
+               <td style="background: #33FF33;">RGB: 51 255 51 <br />HEX: #33FF33</td>
+               <td style="background: #00FF33;">RGB: 0 255 51 <br />HEX: #00FF33</td>
+               <td style="background: #00FF00;">RGB: 0 255 0 <br />HEX: #00FF00</td>
+               <td style="background: #00CC00;">RGB: 0 204 0 <br />HEX: #00CC00</td>
+               <td style="background: #33CC33;">RGB: 51 204 51<br /> HEX: #33CC33</td>
+               <td style="background: #00CC33;">RGB: 0 204 51 <br />HEX: #00CC33</td>
+             </tr>
+             <tr>
+               <td style="background: #66FF00;">RGB: 102 255 0 <br />HEX: #66FF00</td>
+               <td style="background: #66FF33;">RGB: 102 255 51 <br />HEX: #66FF33</td>
+               <td style="background: #33FF00;">RGB: 51 255 0 <br />HEX: #33FF00</td>
+               <td style="background: #33CC00;">RGB: 51 204 0 <br />HEX: #33CC00</td>
+               <td style="background: #339900;">RGB: 51 153 0 <br />HEX: #339900</td>
+               <td style="background: #009900;">RGB: 0 153 0 <br />HEX: #009900</td>
+             </tr>
+             <tr>
+               <td style="background: #CCFF99;">RGB: 204 255 153 <br />HEX: #CCFF99</td>
+               <td style="background: #99FF66;">RGB: 153 255 102 <br />HEX: #99FF66</td>
+               <td style="background: #66CC00;">RGB: 102 204 0<br />HEX: #66CC00</td>
+               <td style="background: #66CC33;">RGB: 102 204 51 <br />HEX: #66CC33</td>
+               <td style="background: #669933;">RGB: 102 153 51 <br />HEX: #669933</td>
+               <td class="white" style="background: #336600;">RGB: 51 102 0 <br />HEX: #336600</td>
+             </tr>
+             <tr>
+               <td style="background: #99FF00;">RGB: 153 255 0 <br />HEX: #99FF00</td>
+               <td style="background: #99FF33;">RGB: 153 255 51 <br />HEX: #99FF33</td>
+               <td style="background: #99CC66;">RGB: 153 204 102 <br />HEX: #99CC66</td>
+               <td style="background:#99CC00;">RGB: 153 204 0 <br />HEX: #99CC00</td>
+               <td style="background: #99CC33;">RGB: 153 204 51 <br />HEX: #99CC33</td>
+               <td class="white" style="background: #669900;">RGB: 102 153 0 <br />HEX: #669900</td>
+             </tr>
+             <tr>
+               <td style="background: #CCFF66;">RGB: 204 255 102 <br />HEX: #CCFF66</td>
+               <td style="background:#CCFF00;">RGB: 204 255 0 <br />HEX: #CCFF00</td>
+               <td style="background: #CCFF33;">RGB: 204 255 51 <br />HEX: #CCFF33</td>
+               <td style="background: #CCCC99;">RGB: 204 204 153 <br />HEX: #CCCC99</td>
+               <td class="white" style="background: #666633;">RGB: 102 102 51 <br />HEX: #666633</td>
+               <td class="white" style="background: #333300;">RGB: 51 51 0 <br />HEX: #333300</td>
+             </tr>
+             <tr>
+               <td style="background: #CCCC66;">RGB: 204 204 102 <br />HEX: #CCCC66</td>
+               <td style="background: #CCCC33;">RGB: 204 204 51 <br />HEX: #CCCC33</td>
+               <td style="background: #999966;">RGB: 153 153 102<br /> HEX: #999966</td>
+               <td style="background: #999933;">RGB: 153 153 51 <br />HEX: #999933</td>
+               <td style="background: #999900;">RGB: 153 153 0 <br />HEX: #999900</td>
+               <td class="white" style="background: #666600;">RGB: 102 102 0 <br />HEX: #666600</td>
+             </tr>
+             <tr>
+               <td style="background: #FFFFFF;">RGB: 255 255 255 <br />HEX: #FFFFFF</td>
+               <td style="background: #CCCCCC;">RGB: 204 204 204 <br />HEX: #CCCCCC</td>
+               <td style="background: #999999;">RGB: 153 153 153 <br />HEX: #999999</td>
+               <td class="white" style="background: #666666;">RGB: 102 102 102 <br />HEX: #666666</td>
+               <td class="white" style="background: #333333;">RGB: 51 51 51 <br />HEX: #333333</td>
+               <td class="white" style="background: #000000;">RGB: 0 0 0 <br />HEX: #000000</td>
+             </tr>
+       </table>
+  </body>
+</html>
