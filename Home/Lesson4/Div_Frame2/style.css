@@ -1,0 +1,10 @@
+body {
+    background-image: url('RB.gif'), url('RT.gif'), url('LB.gif'), url('LT.gif'), url('Side.gif'), url('Side.gif'), url('TB.gif'), url('TB.gif');
+    background-position: right bottom, right top, left bottom, left top, left center, right center, center bottom, center top;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+}
+
+div {
+    margin: 40px;
+    text-align: justify;
+}

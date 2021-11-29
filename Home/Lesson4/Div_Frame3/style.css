@@ -1,0 +1,9 @@
+html {
+    border-image: url('ramka.png') 100 / 90px round;
+    margin: 0;
+}
+
+div {
+    margin: 40px;
+    text-align: justify;
+}
