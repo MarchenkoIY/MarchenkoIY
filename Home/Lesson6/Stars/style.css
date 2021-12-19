@@ -1,0 +1,10 @@
+.full {
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    overflow: hidden;
+    width: 0px;
+    }
+    .full:hover {
+    width: 100px;
+    }
