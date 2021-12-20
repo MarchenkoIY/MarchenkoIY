@@ -1,10 +1,14 @@
-.full {
-    position: absolute;
-    top: 8px;
-    left: 3px;
-    overflow: hidden;
-    width: 0px;
+.main {
+    width: 375px;
+    hight: 78px;
     }
-    .full:hover {
-    width: 100px;
+    .star {
+    background-image: url('stars-1.png');
+    float: right;
+    height: 78px;
+    width:75px;
     }
+    .star:hover, .star:hover ~ .star {
+    background-position-y: bottom;
+    }
+    
