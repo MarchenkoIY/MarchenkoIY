@@ -1,17 +1,16 @@
-tr:first-child td, tr:last-child td {
-    background: yellowgreen  !important;
-    height: 25px  !important;
-    opacity: 0.5;
-    }
-    .CHESS td:first-of-type, .CHESS td:last-of-type {
-    background: yellowgreen !important;
-    width: 25px;
-    opacity: 0.5;
-    }
-    tr:nth-of-type(odd) td:nth-of-type(even) {
-                  background: black;
-             }
-    tr:nth-of-type(even) td:nth-of-type(odd) {
-                  background: black;
-             }
-    
+tr:nth-of-type(odd) td:nth-of-type(even) {
+     background: black;
+}
+tr:nth-of-type(even) td:nth-of-type(odd) {
+     background: black;
+}
+table.CHESS td:first-of-type, table.CHESS td:last-of-type {
+background: yellowgreen;
+width: 25px;
+opacity: 0.5;
+}
+.CHESS tr:first-child td, .CHESS tr:last-child td {
+background: yellowgreen  ;
+height: 25px ;
+opacity: 0.5;
+}

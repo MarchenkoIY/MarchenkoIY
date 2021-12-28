@@ -1,0 +1,11 @@
+a[href^="https://"]:before {
+    content: url('../../Lesson6/Chess_v2/extref.png');
+}
+@media print {
+a[href^="https://"]:before {
+content: "Ссылка ";
+}
+a[href^="https://"]:after{
+content: " на "attr(href)"";
+}
+}

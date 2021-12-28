@@ -7,6 +7,10 @@
     text-align: center;
     color: blue;
     }
+    .main {
+    background: url(bg.png) repeat-y, url(ball2.png) repeat-y right top;
+    overflow: hidden;
+    }
     h2 {
     padding: 21px;
     }
@@ -34,6 +38,26 @@
     text-aligh: justify;
     margin-left: 5px;
     }
+    @media (max-width: 580px) {
+    header, footer {
+    font-size: 10px;
+    }
+    .menu {
+    float: none;
+    width: 100%;
+    background: url('bg1.png');
+    }
+    li {
+    display: inline;
+    }
+    .menu a {
+    padding: 10px;
+    }
+    .content {
+    margin-left: 15px;
+    }
     .main {
-    background: url('bg.png') left top repeat-y, url('boll2.png') right top repeat-y;
+    background: none;
+    background: url(ball2.png) repeat-y right top;
+    }
     }

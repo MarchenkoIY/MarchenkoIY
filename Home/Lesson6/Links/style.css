@@ -1,41 +1,66 @@
 a:hover {
-    color: red;
-  }
-  a {
-    color: green;
-  }
-  .first a {
-    border-right: 3px solid red;
-    padding: 10px;
-  }
-  .first {
-    overflow: hidden;
-    width: 605px;
-  }
-  .second table {
-    width: 613px;
-  }
-  .second a {
-    padding: 5px;
-  }
-  .second td {
-      border-right: 3px solid red;
-  }
-  .second {
-    overflow: hidden;
-    width: 605px;
-  }
-  .third div {
-    float: left;
-    border-right: 3px solid red;
-  }
-  .third {
-    width: 610px;
-    margin-bottom: 30px;
-  }
-  .third a {
-    padding: 10px;
-  }
-  .third div:last-child {
-    border: none;
-  }
+  color: red;
+}
+a {
+  color: green;
+}
+.first a {
+  border-right: 3px solid red;
+  padding: 10px;
+}
+.first {
+  overflow: hidden;
+  width: 605px;
+}
+.second table {
+  width: 613px;
+}
+.second a {
+  padding: 5px;
+}
+.second td {
+  border-right: 3px solid red;
+}
+.second {
+  overflow: hidden;
+  width: 605px;
+}
+.third div {
+  float: left;
+  border-right: 3px solid red;
+}
+.third {
+  width: 610px;
+  margin-bottom: 30px;
+}
+.third a {
+  padding: 10px;
+}
+.third div:last-child {
+  border: none;
+}
+.fourth div {
+  float: left;
+  margin-bottom: 10px;
+}
+.fourth a {
+  padding: 10px;
+}
+.fourth div:not(:last-child):after {
+  content: "|";
+  color: red;
+  font-weight: bold;
+}
+.fifth div {
+  float: left;
+}
+.fifth a {
+  padding: 10px;
+}
+.fifth div:not(:last-child):after {
+  content: url("line1.png");
+}
+.clearfix {
+  content: "";
+  clear: both;
+}
