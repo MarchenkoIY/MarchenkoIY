@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+    color: black;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*header*/
+.header-top ul.header-top-menu {
+    padding-top: 26px;
+    float: left;
+    margin-right: 76px;
+}
+.header-top ul.header-top-menu li {
+    float: left;
+    margin-right: 26px;
+}
+.header-top ul.header-top-menu li a {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/*header-top-icons*/
+.header-top-icons {
+    float: right;
+    padding-top: 24px;
+}
+.header-top-icons li {
+    float: left;
+    margin-right: 24px;
+}
+.header-top-icons li:nth-child(3) {
+    margin-right: 45px;
+}
+.header-top-icons li:last-child img {
+    margin-right: 8px;
+}
+.header-top-icons li:last-child span {
+    vertical-align: 7px;
+}
+
+
+/*phone*/
+.header-top .phone {
+    padding-top: 24px;
+}
+.header-top .phone span {
+    vertical-align: 7px;
+}
+
+
+/*header-search*/
+.header-search img[alt="menu"] {
+    float: left;
+    margin-top: 65px;
+    margin-right: 45px;
+}
+.header-search img[alt="logo"] {
+    float: left;
+    margin-top: 36px;
+    margin-right: 45px;
+}
+.header-search .search {
+    float: left;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    width: 702px;
+    height: 52px;
+    margin-top: 51px;
+    padding-left: 24px;
+    padding-top: 14px;
+}
+.header-search .search span {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    vertical-align: 6px;
+    margin-left: 16px;
+}
+.header-search button {
+    float: right;
+    width: 156px;
+    height: 52px;
+    border: none;
+    background: #81B43F;
+    border-radius: 8px;
+    margin-top: 52px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.header-search button span:first-child {
+    display: inline-block;
+    height: 28px;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 14px;
+    vertical-align: sub;
+}
+.header-search button span:last-child {
+    vertical-align: sub;
+    margin-left: 14px;
+}
+
+
+/*header-bottom-menu*/
+.header-bottom-menu {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-left: 205px;
+    margin-top: 24px;
+}
+.header-bottom-menu li {
+    float: left;
+    margin-left: 29px;
+}
+.header-bottom-menu li.active {
+    color: #FF715B;
+}
+
+
+/*sale*/
+.sale {
+    height: 381px;
+    background: url('../img/background.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 7px;
+    padding-top: 80px;
+}
+.sale-red-block {
+    width: 511px;
+    height: 226px;
+    background: #FF715B;
+    float: right;
+    padding-top: 41px;
+}
+.sale-red-block h1 {
+    text-align: center;
+}
+.sale-red-block h1 span:first-child {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: block;
+}
+.sale-red-block h1 span:nth-child(2) {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+    display: block;
+}
+.sale-red-block h1 span:last-child {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: block;
+}
+
+/*filters*/
+.filter {
+    width: 272px;
+    height: 96px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 30px;
+}
+.filter span {
+    vertical-align: 7px;
+}
+.filter img {
+    margin-left: 83px;
+    margin-right: 8px;
+}
+.filters-wrap ul {
+    float: right;
+    margin-top: 32px;
+}
+.filters-wrap ul li {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    float: left;
+    margin-right: 64px;
+}
+.filters-wrap ul li:last-child {
+    margin-right: 0;
+}
+.filters-wrap ul li a:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #FF715B;
+}
+
+/*catalog*/
+.catalog {
+    background: #F9F9F9;
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+.catalog .catalog-breadcrumbs {
+    float: left;
+    width: 620px;
+}
+.catalog-breadcrumbs ul li {
+ float: left;
+}
+.catalog-breadcrumbs ul li a {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.catalog-breadcrumbs ul li a.active {
+    color: black;
+}
+.catalog-breadcrumbs ul li img {
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: -3px;
+}
+.catalog-breadcrumbs h2 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 36px;
+    line-height: 49px;
+}
+.catalog-breadcrumbs h2 span {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 19px;
+}
+
+/*catalog-sort*/
+.catalog .catalog-sort {
+    float: right;
+}
+.catalog .catalog-sort ul {
+    margin-bottom: 19px;
+}
+.catalog .catalog-sort ul li {
+    float: left;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.catalog .catalog-sort ul li:first-child {
+    color: black;
+}
+.catalog-sort img {
+    float: right;
+    margin-left: 16px;
+}
+
+/*catalog-item*/
+.catalog-item {
+    width: 272px;
+    height: 387px;
+    border-radius: 8px;
+    background: url(../img/heart1.svg) right 10px top 10px no-repeat #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 16px;
+    float: left;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.catalog-item-img {
+    text-align: center;
+}
+.catalog-item-img img {
+    width: 100%;
+    margin-top: 16px;
+}
+.stars span:not(.text) {
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+}
+.stars span:not(.empty):not(.text) {
+    background: url(../img/star.svg) no-repeat;
+}
+.stars span.empty {
+    opacity: 0.3;
+    background: url(../img/star1.svg) no-repeat;
+}
+.stars span.text {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 10px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 7px;
+}
+.catalog-item h5 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    }
+.catalog-item p {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 12px;
+    line-height: 160%;    
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2px;
+}
+.catalog-item h4 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+.catalog-item .basket {
+    height: 36px;
+    width: 36px;
+    border-radius: 8px;
+    background: url(../img/basket.svg) center no-repeat #81B43F;
+    background-size: 23px;
+    float: right;
+    margin-top: -24px;
+}
+.catalog-items {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 28px;
+}
+.xmas-toys {
+    height: 209px;
+    background: url(../img/xmas-toy.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 51px;
+    padding-left: 136px;
+}
+.xmas-toys h2 {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 12px;
+}
+.btn {
+    width: 191px;
+    height: 47px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.catalog .container .btn:not(.xmas-toys > .btn) {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catalog .container p {
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*footer*/
+.footer {
+    padding-top: 56px;
+    padding-bottom: 28px;
+    background: rgba(218, 218, 218, 0.3);
+}
+.footer ul {
+    float: left;
+}
+.footer ul:first-child {
+    margin-right: 126px;
+}
+.footer ul:nth-child(2) {
+    margin-right: 110px;
+}
+.footer ul:nth-child(3) {
+    margin-right: 91px;
+}
+.footer ul li:first-child {
+    margin-bottom: 12px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+.footer ul li {
+    margin-bottom: 8px;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.footer ul li img {
+    height: 41px;
+    width: 122px;
+}
+.footer .social {
+    text-align: center;
+    margin-top: 77px;
+}
+.footer .social img {
+    margin-right: 9px;
+    margin-left: 9px;
+}
+.footer > p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 10px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.5);
+}
