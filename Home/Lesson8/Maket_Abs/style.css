@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    height: 410px;
+    width: 420px;
+    margin: 10px auto;
+}
+.first {
+    background: url(biohazard.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.second {
+    background: url(Man-and-woman.png);
+    height: 223px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+}
+.third {
+    background: url(Yin_and_Yang.png);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: auto;
+    left: auto;
+    left: 100px;
+    top: 213px;
+}
+.forth {
+    background: url(No_smoking.png);
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 81px;
+    right: 79px;
+}
+.first:hover, .second:hover, .third:hover {
+    z-index: 1;
+}
