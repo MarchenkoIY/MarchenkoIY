@@ -1,15 +1,49 @@
-* {
-    font-size: 15px;
-}
-label {
-    display:block;
-}
-textarea {
+.clearfix:after {
+    content: '';
     display: block;
+    clear: both;
 }
-p {
-    margin-bottom: 22px;
-}
-label + input[type="radio"] {
-    display: inline;
-}
+label:not(.radio) {
+    width: 175px;
+    float: left;
+    }
+input, select {
+    margin-left: 10px;
+    margin-top: 3px;
+    }
+.container {
+    display: inline-block;
+    }
+    .text {
+        margin-left: 175px;
+        margin-right: 42px;
+    }
+    .textarea {
+        margin-right: 30px;
+    }
+    input[type="text"], textarea {
+width: 100%;
+    }
+@media (max-width: 570px) {
+    input:not(input[type='checkbox']), select, .container {
+        display: block;
+        margin-left: 0px;
+    }
+    input[type='checkbox'] {
+        margin-left: 0px;
+    }
+    label:not(label[for="can"]) {
+        float: none;
+        width: 100%;
+    }
+    .radio, input[type="radio"] {
+        float: left;
+    }
+    input[type="text"], select {
+         margin-bottom: -10px;
+         margin-left: 0;
+    }
+    .text {
+        margin-left: 0;
+    }
+    }

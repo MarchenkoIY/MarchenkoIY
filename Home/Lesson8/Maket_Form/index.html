@@ -8,36 +8,24 @@
     <title>Форма</title>
 </head>
 <body>
-    <form action="http://fe.it-academy.by/TestForm.php">
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
         <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
-        <label>
-            Название статьи: 
-            <input type="text" name="name">
-        </label>
-        <label>
-            Рубрика: 
-            <select name="">
+        <label for="name">Название статьи:</label><div class="text"><input type="text" name="name" id="name"></div><br>
+        <label for="rubric">Рубрика:</label>
+        <select name="rubric" id="rubric">
                 <option value="programming">Программирование</option>
                 <option value="science">Наука</option>
                 <option value="news">Новости</option>
                 <option value="social">Общество</option>
-                <option value="joke">Юмор</option>
-            </select>
-        </label>
-        <label>
-            Публикация: 
-            <label><input type="radio" name="where"> на сайте</label>
-            <label><input type="radio" name="where"> в журнале</label>
-            <label><input type="radio" name="where"> на сайте и в журнале</label>
-        </label>
-        <label>
-            Разрешить комментарии:	
-            <input type="checkbox" name="can">
-        </label>
-        <label>
-            Текст статьи: 
-            <textarea name="article"></textarea>
-        </label>
+                <option value="jokes">Юмор</option>
+         </select><br>
+         <label>Публикация:</label>
+         <div class="container"><label class="radio"><input type="radio" name="where" value="site"> на сайте</label></div>
+         <div class="container"><label class="radio"><input type="radio" name="where" value="magazine"> в журнале</label></div>
+         <div class="container"><label class="radio"><input type="radio" name="where" value="both"> на сайте и в журнале</label></div>
+         <div class="clearfix"><label  for="can">Разрешить комментарии:</label><input type="checkbox" name="can" id="can"></div>
+        <label for="article">Текст статьи:</label><br>
+        <div class="textarea"><textarea name="article" id="article"></textarea></div>
         <input type="submit" value="Опубликовать">
     </form>
 </body>
