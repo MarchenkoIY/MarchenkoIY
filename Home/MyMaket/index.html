@@ -11,9 +11,8 @@
     <title>Jewerly</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container"></div>
-        <div class="header-top">
+    <div class="header container clearfix">
+        <div class="header-top clearfix">
             <ul>
                 <li>
                     <a href="">Магазины</a>
@@ -22,6 +21,457 @@
                     <a href="">Оплата и доставка</a>
                 </li>
             </ul>
+                    <span>Регистрация/Вход</span>
+                    <img src="img/log.svg" alt="login">
+                    <span>+375(29)729-03-91</span>
+                    <img src="img/phone.svg" alt="phone">
+        </div>
+        <div class="header-logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="header-menu clearfix">
+            <ul>
+                <li>
+                    <a href="">КОЛЬЦА</a>
+                </li>
+                <li>
+                    <a href="">СЕРЬГИ</a>
+                </li>
+                <li>
+                    <a href="">ЦЕПИ</a>
+                </li>
+                <li>
+                    <a href="">БРАСЛЕТЫ</a>
+                </li>
+                <li>
+                    <a href="">ПОДВЕСКИ</a>
+                </li>
+                <li>
+                    <a href="">КОЛЬЕ</a>
+                </li>
+                <li>
+                    <a href="">ДРУГОЕ</a>
+                </li>
+            </ul>
+            <a><div class="header-menu-basket">
+            </div></a>
+            <a><div class="header-menu-search">
+            </div></a>
+        </div>
+    </div>
+    <div class="content container clearfix">
+        <div class="way clearfix">
+            <ul>
+                <li>
+                    <a>Главная страница</a>
+                </li>
+                <li>
+                    <a>Кольца</a>
+                </li>
+                <li>
+                    <a>Акции</a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <p>модели из новых коллекций и настоящие хиты</p>
+            <p>кольца для особых случаев</p>
+            <p>инкрустация камнями и жемчугом</p>
+        </div>
+        <div class="filters clearfix">
+            <div class="title-filter">
+                <p>ФИЛЬТР</p>
+            </div>
+            <form action="http://fe.it-academy.by/TestForm.php" method="get">
+            <div class="size">
+                <label class="name" for="size">РАЗМЕР</label>
+                <label><input type="checkbox" name="size[]" id="size" value="13">13</label><br>
+                <label><input type="checkbox" name="size[]" id="size" value="13.5">13.5</label><br>
+                <label><input type="checkbox" name="size[]" id="size" value="14">14</label><br>
+                <label><input type="checkbox" name="size[]" id="size" value="14.5">14.5</label><br>
+                <label><input type="checkbox" name="size[]" id="size" value="15">15</label>
+            </div>
+            <div class="price">
+                <label class="name" for="price">ЦЕНА</label>
+                <label for="minprice">От <input type="number" name="minprice" min="0" id="minprice"></label>
+                <label for="maxprice">До <input type="number" name="maxprice" min="1" id="maxprice"></label>
+            </div>
+            <div class="type">
+                <label class="name" for="type">ВИД УКРАШЕНИЯ</label>
+                <label><input type="checkbox" name="type[]" id="type" value="model">Кольцо модельное</label><br>
+                <label><input type="checkbox" name="type[]" id="type" value="wedding">Кольцо обручальное</label><br>
+                <label><input type="checkbox" name="type[]" id="type" value="engagement">Кольцо помолвочное</label>
+            </div>
+            <div class="sex">
+                <label class="name" for="sex">ДЛЯ КОГО</label>
+                <label><input type="checkbox" name="sex[]" id="sex" value="male">Для мужчин</label><br>
+                <label><input type="checkbox" name="sex[]" id="sex" value="female">Для женщин</label><br>
+                <label><input type="checkbox" name="sex[]" id="sex" value="unisex">Унисекс</label>
+            </div>
+            <div class="construction">
+                <label class="name" for="sex">КОНСТРУКЦИЯ</label>
+                <label><input type="checkbox" name="construction[]" id="construction" value="model">Кольцо модельное</label><br>
+                <label><input type="checkbox" name="construction[]" id="construction" value="soliter">Кольцо солитер</label><br>
+                <label><input type="checkbox" name="construction[]" id="construction" value="komby">Кольцо комбинированное</label><br>
+                <label><input type="checkbox" name="construction[]" id="construction" value="obod">Кольцо ободок</label>
+            </div>
+            <div class="insert">
+                <label class="name" for="insert">ВИД ВСТАВКИ</label>
+                <label><input type="checkbox" name="insert[]" id="insert" value="without">Без вставки</label><br>
+                <label><input type="checkbox" name="insert[]" id="insert" value="diamond">Бриллиант</label><br>
+                <label><input type="checkbox" name="insert[]" id="insert" value="fianite">Фианит</label><br>
+                <label><input type="checkbox" name="insert[]" id="insert" value="sapfire">Сапфир</label>
+            </div>
+            <div class="metall">
+                <label class="name" for="metall">ВИД МЕТАЛЛА</label>
+                <label><input type="checkbox" name="metall[]" id="metall" value="komby_gold">Комбинированное золото</label><br>
+                <label><input type="checkbox" name="metall[]" id="metall" value="white_gold">Белое золото</label><br>
+                <label><input type="checkbox" name="metall[]" id="metall" value="gold">Золото</label><br>
+                <label><input type="checkbox" name="metall[]" id="metall" value="silver">Серебро</label>
+            </div>
+            <div class="standart">
+                <label class="name" for="standart">ДЛЯ КОГО</label>
+                <label><input type="checkbox" name="standart[]" id="standart" value="585">585</label><br>
+                <label><input type="checkbox" name="standart[]" id="standart" value="375">375</label><br>
+                <label><input type="checkbox" name="standart[]" id="standart" value="925">925</label><br>
+                <label><input type="checkbox" name="standart[]" id="standart" value="750">750</label>
+            </div>
+            <div class="buttons">
+                <button type="submit">ПОКАЗАТЬ</button>
+                <button type="reset">СБРОСИТЬ</button>
+            </div>
+            </form>
+        </div>
+        <div class="products clearfix">
+            <div class="products-top">
+                <ul>
+                    <li>
+                        Сортировка:
+                    </li>
+                    <li>
+                    <span>Цена</span>
+                    </li>
+                    <li>
+                    <span>Популярность</span>
+                    </li>
+                    <li>
+                    <span>Название</span>
+                    </li>
+                </ul>
+                <img src="img/list.jpg" alt="list">
+                <img src="img/bread-crumps.jpg" alt="bread-crumps">
+            </div>
+            <div class="product-list clearfix">
+            <div class="product">
+                <img src="img/ring1.png" alt="ring 104006">
+                <p>Кольцо обручальное из<br>розового золота 104006</p>
+                <span>349.20 руб.</span><span>360.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring2.png" alt="ring 103004">
+                <p>Кольцо обручальное из<br>розового золота 103004</p>
+                <span>254.41 руб.</span><span>253.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring3.png" alt="ring 103004-9K">
+                <p>Кольцо обручальное из<br>розового золота 103004-9K</p>
+                <span>155.20 руб.</span><span>160.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring4.png" alt="ring 0104006">
+                <p>Кольцо обручальное из<br>серебра 0104006</p>
+                <span>38.80 руб.</span><span>40.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring5.png" alt="ring 105008">
+                <p>Кольцо обручальное из<br>розового золота 105008</p>
+                <span>448.14 руб.</span><span>462.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring6.png" alt="ring 01-0023">
+                <p>Кольцо из серебра <br>с Аметистом 01-0023</p>
+                <span>53.00 руб.</span><span>55.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring7.png" alt="ring 210658">
+                <p>Кольцо из розового золота<br>с Фианитом 210658</p>
+                <span>257.00 руб.</span><span>265.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring8.png" alt="ring 0210175">
+                <p>Кольцо из серебра <br>с Фианитом 0210175</p>
+                <span>63.05 руб.</span><span>65.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring9.png" alt="ring 210708">
+                <p>Кольцо из розового золота<br>с Фианитом 210708</p>
+                <span>368.60 руб.</span><span>380.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring10.png" alt="ring 145007">
+                <p>Кольцо обручальное из<br>розового золота 145007</p>
+                <span>750.00 руб.</span><span>800.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring11.png" alt="ring 210654">
+                <p>Кольцо из розового золота<br>с Фианитом 210654</p>
+                <span>290.00 руб.</span><span>305.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring12.png" alt="ring 210709">
+                <p>Кольцо из розового золота<br>с Фианитом 210709</p>
+                <span>260.00 руб.</span><span>270.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring13.png" alt="ring 210569">
+                <p>Кольцо из розового золота<br>с Фианитом 210569</p>
+                <span>155.00 руб.</span><span>160.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring14.png" alt="ring 210619">
+                <p>Кольцо из розового золота<br>с Фианитом 210619</p>
+                <span>460.00 руб.</span><span>480.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="img/ring15.png" alt="ring 210614">
+                <p>Кольцо из розового золота<br>с Фианитом 210614</p>
+                <span>251.00 руб.</span><span>370.00 руб.</span>
+                <div class="open clearfix">
+                    <button>В КОРЗИНУ</button><br>
+                    <img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star"><img src="img/star.svg" alt="star">
+                    <span>Отзывы: 10</span>
+                    <p>Размер:</p>
+                    <ul>
+                        <li>13</li>
+                        <li>13,5</li>
+                        <li>14</li>
+                        <li>14,5</li>
+                        <li>15</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sites clearfix">
+        <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+        </ul>
+    </div>
+        </div>
+        <div class="footer clearfix">
+            <div class="footer-menu clearfix">
+                <ul>
+                    <li><a href="">КЛИЕНТАМ</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                    <li><a href="">Часто задаваемые вопросы</a></li>
+                    <li><a href="">Гарантии</a></li>
+                    <li><a href="">Для оптовых клиентов</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">ПОМОЩЬ</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Способ оплаты</a></li>
+                    <li><a href="">Возврат</a></li>
+                    <li><a href="">Связаться с нами</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">О JEWERLY</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Магазины</a></li>
+                    <li><a href="">Политика лояльности</a></li>
+                </ul>
+                <span>+375(29)729-03-91</span><br>
+                <span>jewerly@gmail.com</span><br>
+                <img class="social" src="img/inst.svg" alt="inst"><img class="social" src="img/vk.svg" alt="vk"><img class="social" src="img/fb.svg" alt="fb"><br>
+                <img class="app" src="img/gp.png" alt="GooglePlay"><img class="app" src="img/as.png" alt="AppStore">
+            </div>
+            <p>&copy; 2020 “jewerly.by” все права защищены.</p>
         </div>
     </div>
 </body>
