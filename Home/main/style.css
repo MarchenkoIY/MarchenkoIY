@@ -1,0 +1,51 @@
+h2, h3 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.main .checked {
+    background: rgba(0, 184, 0, 0.7);
+    box-shadow: 3px -3px rgb(11, 92, 15);
+}
+ul.main > li.checked {
+    display: none;
+}  
+input:checked ~ ul.main > li.checked {
+    display: list-item;
+}  
+.main > li {
+    border-radius: 12px;
+    background: rgba(255, 255, 0, 0.5);
+    width: 150px;
+    list-style-type: none;
+    box-shadow: 3px -3px rgb(139, 139, 21);
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.list {
+    display: none;
+}
+.list li {
+    width: 300px;
+    height: 35px;
+    background: rgba(255, 255, 0, 0.5);
+    border-radius: 12px;
+    list-style-type: none;
+    box-shadow: 3px -3px rgb(139, 139, 21);
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.checked::after {
+    content: " - проверено";
+}
+.main > li:hover + .list, .list:hover {
+    display: block;
+}
+.main > li:hover, .list > ul > li:hover {
+    box-shadow: -3px 3px rgb(139, 139, 21) inset;
+}
+.main .checked:hover {
+    box-shadow: -3px 3px rgb(11, 92, 15) inset;
+}
