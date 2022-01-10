@@ -6,10 +6,10 @@ h2, h3 {
     background: rgba(0, 184, 0, 0.7);
     box-shadow: 3px -3px rgb(11, 92, 15);
 }
-ul.main > li.checked {
+.checked {
     display: none;
 }  
-input:checked ~ ul.main > li.checked {
+input:checked ~ .main .checked {
     display: list-item;
 }  
 .main > li {
