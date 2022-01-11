@@ -1,10 +1,42 @@
+body {
+    background-color: #2D1A13;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ul {
+    padding-left: 0;
+}
+.header {
+    position: relative;
+    height: 150px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tourch:nth-of-type(1) {
+    position: absolute;
+    right: 110px;
+    top: -90px;
+}
+.tourch:nth-of-type(2) {
+    position: absolute;
+    left: 95px;
+    top: -90px;
+}
 h2, h3 {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    color: #9CFFFE;
+}
+h2 {
+    margin-top: 50px;
 }
 .main .checked {
-    background: rgba(0, 184, 0, 0.7);
-    box-shadow: 3px -3px rgb(11, 92, 15);
+    background: #22d3ee;
+    box-shadow: 3px -3px #074852;
 }
 .checked {
     display: none;
@@ -16,45 +48,58 @@ input {
     display: none;
 }
 input:checked + label {
-    box-shadow: -3px 3px 3px rgb(11, 92, 15) inset;
+    box-shadow: -3px 3px 3px #074852 inset;
     padding-top: 8px;
     padding-left: 7px;
 }
 label {
+    text-align: center;
     display: block;
+    cursor: pointer;
     width: 200px;
-    height: 30px;
     border-radius: 10px;
-    background: rgba(0, 184, 0, 0.7);
-    box-shadow: 3px -3px rgb(11, 92, 15);
-    padding-top: 5px;
-    padding-left: 10px;
-    font-size: 20px;
-}
-.main > li {
-    border-radius: 12px;
-    background: rgba(255, 255, 0, 0.5);
-    width: 150px;
-    list-style-type: none;
-    box-shadow: 3px -3px rgb(139, 139, 21);
-    padding-left: 40px;
+    background: #22d3ee;
+    box-shadow: 3px -3px #074852;
     padding-top: 10px;
     font-size: 30px;
     padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: Light 7s linear 2s infinite;
+}
+.main > li {
+    text-align: center;
+    border-radius: 12px;
+    background: #22d3ee;
+    box-shadow: 3px -3px #074852;
+    width: 200px;
+    list-style-type: none;
+    padding-top: 10px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: 10s;
+    animation: Light 11s steps(256) infinite;
 }
 .list {
     display: none;
 }
 .list li {
     width: 300px;
-    height: 35px;
-    background: rgba(255, 255, 0, 0.5);
+    background: #22d3ee;
+    box-shadow: 3px -3px #074852;
     border-radius: 12px;
     list-style-type: none;
-    box-shadow: 3px -3px rgb(139, 139, 21);
-    padding-left: 15px;
+    text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    animation-delay: 8s;
+    animation: Light 8s linear 1s infinite;
 }
 .checked::after {
     content: " - проверено";
@@ -63,8 +108,32 @@ label {
     display: block;
 }
 .main > li:hover, .list > ul > li:hover {
-    box-shadow: -3px 3px 3px rgb(139, 139, 21) inset;
+    box-shadow: -3px 3px 3px #074852 inset;
 }
 .main .checked:hover {
-    box-shadow: -3px 3px 3px rgb(11, 92, 15) inset;
+    box-shadow: -3px 3px 3px #074852 inset;
 }
+.tourch {
+    height: 230px;
+   width: 56px;
+   animation: BlueTourch 1s steps(10) infinite;
+   float: left;
+   }
+   @keyframes BlueTourch {
+   from {background: url('tourch.jpg') -17px 0;}
+   to {background: url('tourch.jpg') -550px 0;}
+   }
+   @keyframes Light {
+    from {background: #22d3ee;}
+    1% {background: radial-gradient(circle at left bottom, rgba(255,255,255,1) 5px, #22d3ee 10%);}
+    2% {background: radial-gradient(circle at left 12% bottom 12%, rgba(255,255,255,1) 5px, #22d3ee 15%);}
+    3% {background: radial-gradient(circle at left 25% bottom 25%, rgba(255,255,255,1) 5px, #22d3ee 20%);}
+    4% {background: radial-gradient(circle at left 37% bottom 37%, rgba(255,255,255,1) 5px, #22d3ee 15%);}
+    5% {background: radial-gradient(circle, rgba(255,255,255,1) 5px, #22d3ee 30%);}
+    6% {background: radial-gradient(circle at right 37% top 37%, rgba(255,255,255,1) 5px, #22d3ee 35%);}
+    7% {background: radial-gradient(circle at right 25% top 25%, rgba(255,255,255,1) 5px, #22d3ee 40%);}
+    8% {background: radial-gradient(circle at right 12% top 12%, rgba(255,255,255,1) 5px, #22d3ee 45%);}
+    9% {background: radial-gradient(circle at right top, rgba(255,255,255,1) 5px, #22d3ee 50%);}
+    10% {background: radial-gradient(circle at right top, #22d3ee 0%, #22d3ee 100%);}
+    to {background: radial-gradient(circle at right top, #22d3ee 0%, #22d3ee 100%);}
+   }
