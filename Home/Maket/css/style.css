@@ -90,18 +90,24 @@ body {
     width: 702px;
     height: 52px;
     margin-top: 51px;
-    padding-left: 24px;
-    padding-top: 14px;
+    position: relative;
 }
-.header-search .search span {
+.header-search .search > img {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.header-search .search input {
     font-family: 'Noto Sans Display', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
     color: rgba(0, 0, 0, 0.5);
-    vertical-align: 6px;
-    margin-left: 16px;
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-left: 55px;
+    border: none;
 }
 .header-search button {
     float: right;
@@ -201,8 +207,8 @@ body {
 .filter {
     width: 272px;
     height: 96px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
     float: left;
     font-family: 'Noto Sans Display', sans-serif;
     font-style: normal;

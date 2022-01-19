@@ -1,0 +1,16 @@
+input {
+display:none;
+}
+label {
+color: red;
+display: block;
+padding: 20px 0 20px 80px;
+font-size: 30px;
+background: url('smile.png') left no-repeat;
+background-size: 70px;
+}
+input:checked + label {
+color: green;
+background: url('smile2.png') left no-repeat;
+background-size: 70px;
+}
