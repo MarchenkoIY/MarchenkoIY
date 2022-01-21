@@ -1,0 +1,13 @@
+@import url(variables.scss);
+
+@mixin btn($w) {
+    width: $w;
+    height: 53px;
+    background-color: $green;
+    font-size: $fs18;
+    line-height: 25px;
+    color: $white;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+}
