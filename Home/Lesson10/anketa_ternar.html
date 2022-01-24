@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <title>Script</title>
+  </head>
+  <body>
+<script>
+const lastName = prompt("Введите вашу фамилию: ");
+const firstName = prompt("Введите ваше имя: ");
+const patronymic = prompt("Введите ваше отчество: ");
+let age = Number(prompt("Введите свой возраст: "));
+while (isNaN(age) || age > 100 || age < 10) {
+isNaN(age) || age > 100 || age < 10 ? age = Number(prompt("Данные некорректны. Введите свой возраст: ")) : age;
+}
+let gender = confirm("Ваш пол мужской?");
+gender ? gender = "мужской" : gender = "женский";
+let pensioner;
+(gender == "мужской" && age >= 63 || gender == "женский" && age >= 58) ? pensioner = "пенсионер" : pensioner = "не пенсионер";
+alert("Ваши ФИО: " + lastName + " " + firstName + " " + patronymic + "\n" + "Ваш возраст: " + age + "\n" + "Ваш возраст в днях: " + (age * 365) + "\n" + "Ваш возраст через 5 лет: " + (Number(age) + 5) + "\n" + "Ваш пол: " + gender + "\n" + "Вы " + pensioner);
+</script>
+  </body>
+</html>
