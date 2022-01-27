@@ -398,6 +398,10 @@ a {
   .mySkills img {
     display: none;
   }
+  .aboutMe p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -473,5 +477,9 @@ a {
   }
   .sertificates {
     padding: 20px;
+  }
+  .aboutMe p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
