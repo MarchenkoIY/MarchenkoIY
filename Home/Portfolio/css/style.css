@@ -337,6 +337,8 @@ a {
 @media all and (max-width: 1170px) {
   .container {
     width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .mySkills img {
     height: 355px;
@@ -352,6 +354,8 @@ a {
 @media all and (max-width: 965px) {
   .container {
     width: 750px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .header-middle img {
     height: 174px;
@@ -380,6 +384,8 @@ a {
 @media all and (max-width: 760px) {
   .container {
     width: 570px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .header-top ul {
     display: block;
@@ -397,6 +403,8 @@ a {
 @media all and (max-width: 560px) {
   .container {
     width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .header-middle {
     display: block;
