@@ -349,6 +349,9 @@ a {
   .myWorks {
     grid-template-columns: auto auto auto auto;
   }
+  .header-middle img {
+    margin-right: 140px;
+  }
 }
 
 @media all and (max-width: 965px) {
@@ -356,6 +359,9 @@ a {
     width: 750px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .header-top ul li {
+    font-size: 15px;
   }
   .header-middle img {
     height: 174px;
@@ -379,6 +385,9 @@ a {
   .myWorks {
     grid-template-columns: auto auto auto;
   }
+  .header-text {
+    margin-right: 67px;
+  }
 }
 
 @media all and (max-width: 760px) {
@@ -401,6 +410,9 @@ a {
   .aboutMe p {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .myAchives ul li {
+    width: 100px;
   }
 }
 
@@ -438,6 +450,9 @@ a {
     width: 250px;
     height: 140px;
   }
+  .footer {
+    padding: 10px;
+  }
   .footer form {
     display: block;
     width: auto;
@@ -468,6 +483,7 @@ a {
   .myAchives ul {
     display: block;
     width: 125px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -475,11 +491,24 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .myAchives ul li:before {
+    float: none;
+  }
   .sertificates {
     padding: 20px;
   }
   .aboutMe p {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .header-middle img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-text {
+    margin-right: 0;
+  }
+  .fish h2 {
+    text-align: center;
   }
 }
