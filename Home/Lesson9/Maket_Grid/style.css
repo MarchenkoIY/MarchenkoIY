@@ -3,7 +3,6 @@ margin: 0;
 }
 .container {
 display: grid;
-grid-template-rows: 3;
 grid-template-columns: 200px auto;
 background: url('../../Lesson5/Maket_Table/ball2.png') top right repeat-y;
 }

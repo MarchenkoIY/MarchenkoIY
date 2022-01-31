@@ -4,7 +4,9 @@
           box-sizing: border-box; }
 
 body {
-  font-family: 'Jost', sans-serif; }
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+  height: 10000px; }
 
 a {
   text-decoration: none;
@@ -290,7 +292,8 @@ ul {
       display: block; }
 
 .ourPluses {
-  margin-top: 100px; }
+  margin-top: 100px;
+  text-align: center; }
   .ourPluses h2 {
     font-weight: 600;
     font-size: 35px;
@@ -304,71 +307,85 @@ ul {
     font-size: 20px;
     line-height: 29px;
     color: #282739;
-    text-align: center; }
-  .ourPluses .buttons {
     text-align: center;
-    margin-top: 51px; }
-    .ourPluses .buttons button {
-      height: 53px;
-      width: 175px;
-      border-radius: 5px; }
-      .ourPluses .buttons button:first-child {
-        font-size: 16px;
-        line-height: 23px;
-        text-align: center;
-        color: #6F73EE;
-        margin-right: 20px;
-        border: 1.3px solid #6F73EE;
-        background: transparent; }
-      .ourPluses .buttons button:last-child {
-        font-size: 16px;
-        line-height: 23px;
-        text-align: center;
-        color: #5D6C7B;
-        background: #F4F7FB;
-        border: none; }
+    margin-bottom: 50px; }
+  .ourPluses input {
+    display: none; }
+  .ourPluses input:checked + label {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #6F73EE;
+    border: 1.3px solid #6F73EE;
+    background: transparent; }
+  .ourPluses label {
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #5D6C7B;
+    background: #F4F7FB;
+    border: none;
+    margin-right: 20px; }
+  .ourPluses #service:checked ~ .moreInform > .market {
+    margin-left: -100%; }
   .ourPluses .moreInform {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 30px;
-    margin-top: 58px; }
-    .ourPluses .moreInform div {
-      padding: 71px 21px 26px 20px;
-      border: 1px solid #EAEBED;
-      border-radius: 10px; }
-      .ourPluses .moreInform div h4 {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        color: #282739;
-        margin-bottom: 8px; }
-      .ourPluses .moreInform div p {
-        font-size: 14px;
-        line-height: 18px;
-        color: #282739;
-        text-align: left; }
-      .ourPluses .moreInform div:first-child {
-        background: url(../img/bascket.svg) no-repeat 20px 28px; }
-      .ourPluses .moreInform div:nth-child(2) {
-        background: url(../img/wallet.svg) no-repeat 20px 28px; }
-      .ourPluses .moreInform div:nth-child(3) {
-        background: url(../img/checkStar.svg) no-repeat 20px 28px; }
-      .ourPluses .moreInform div:nth-child(4) {
-        background: url(../img/location.svg) no-repeat 20px 28px; }
-      .ourPluses .moreInform div:nth-child(5) {
-        background: url(../img/bgProcent.svg) no-repeat 20px 28px; }
-        .ourPluses .moreInform div:nth-child(5) p a {
-          font-size: 14px;
-          line-height: 20px;
-          color: #6F73EE; }
-      .ourPluses .moreInform div:last-child {
+    margin-top: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: hidden;
+    text-align: left; }
+    .ourPluses .moreInform .service div:last-child {
+      background: url(../img/drille.png) no-repeat right bottom, #F4F7FB; }
+    .ourPluses .moreInform .market {
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      .ourPluses .moreInform .market div:last-child {
         background: url(../img/bgCatalog.png) no-repeat right bottom, #F4F7FB; }
-        .ourPluses .moreInform div:last-child a {
+    .ourPluses .moreInform .market, .ourPluses .moreInform .service {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 30px; }
+      .ourPluses .moreInform .market div, .ourPluses .moreInform .service div {
+        padding: 71px 21px 26px 20px;
+        border: 1px solid #EAEBED;
+        border-radius: 10px; }
+        .ourPluses .moreInform .market div h4, .ourPluses .moreInform .service div h4 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          color: #282739;
+          margin-bottom: 8px; }
+        .ourPluses .moreInform .market div p, .ourPluses .moreInform .service div p {
+          font-size: 14px;
+          line-height: 18px;
+          color: #282739;
+          text-align: left; }
+        .ourPluses .moreInform .market div:first-child, .ourPluses .moreInform .service div:first-child {
+          background: url(../img/bascket.svg) no-repeat 20px 28px; }
+        .ourPluses .moreInform .market div:nth-child(2), .ourPluses .moreInform .service div:nth-child(2) {
+          background: url(../img/wallet.svg) no-repeat 20px 28px; }
+        .ourPluses .moreInform .market div:nth-child(3), .ourPluses .moreInform .service div:nth-child(3) {
+          background: url(../img/checkStar.svg) no-repeat 20px 28px; }
+        .ourPluses .moreInform .market div:nth-child(4), .ourPluses .moreInform .service div:nth-child(4) {
+          background: url(../img/location.svg) no-repeat 20px 28px; }
+        .ourPluses .moreInform .market div:nth-child(5), .ourPluses .moreInform .service div:nth-child(5) {
+          background: url(../img/bgProcent.svg) no-repeat 20px 28px; }
+          .ourPluses .moreInform .market div:nth-child(5) p a, .ourPluses .moreInform .service div:nth-child(5) p a {
+            font-size: 14px;
+            line-height: 20px;
+            color: #6F73EE; }
+        .ourPluses .moreInform .market div:last-child a, .ourPluses .moreInform .service div:last-child a {
           font-weight: 500;
           font-size: 14px;
           line-height: 20px;
           color: #6F73EE; }
-          .ourPluses .moreInform div:last-child a:after {
+          .ourPluses .moreInform .market div:last-child a:after, .ourPluses .moreInform .service div:last-child a:after {
             content: url(../img/Arrow.svg);
             margin-left: 8px; }
 
@@ -592,6 +609,7 @@ ul {
   .feedback .feedbackItems .feedbackItem {
     border-radius: 10px; }
     .feedback .feedbackItems .feedbackItem > div {
+      display: none;
       padding: 85px 25px 25px 25px;
       background: rgba(0, 0, 0, 0.7); }
       .feedback .feedbackItems .feedbackItem > div img {
@@ -618,8 +636,7 @@ ul {
         font-size: 12px;
         line-height: 17px;
         color: #FFFFFF;
-        opacity: 0.7;
-        display: inline-block;
+        opacity: 0.67;
         margin-left: 14px; }
       .feedback .feedbackItems .feedbackItem > div p:last-child {
         font-size: 14px;
@@ -628,6 +645,9 @@ ul {
         margin-top: 11px; }
     .feedback .feedbackItems .feedbackItem:hover > div, .feedback .feedbackItems .feedbackItem > div:hover {
       display: block; }
+    .feedback .feedbackItems .feedbackItem:hover {
+      -webkit-filter: blur(5px);
+              filter: blur(5px); }
     .feedback .feedbackItems .feedbackItem:first-child {
       background: url(../img/feedback1.jpg) no-repeat center; }
     .feedback .feedbackItems .feedbackItem:nth-child(2) {
@@ -642,5 +662,180 @@ ul {
       background: url(../img/feedback6.jpg) no-repeat center; }
     .feedback .feedbackItems .feedbackItem:last-child {
       background: url(../img/feedback7.jpg) no-repeat center; }
+
+.videoContent {
+  margin-top: 100px; }
+  .videoContent .videoHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 17px; }
+    .videoContent .videoHeader h2 {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 51px;
+      text-transform: uppercase;
+      color: #282739; }
+    .videoContent .videoHeader p {
+      margin-left: auto; }
+      .videoContent .videoHeader p a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #6F73EE; }
+      .videoContent .videoHeader p a:after {
+        content: url(../img/Arrow.svg);
+        margin-left: 8px; }
+  .videoContent p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D6C7B; }
+  .videoContent .iframes {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-left: 86px; }
+    .videoContent .iframes div {
+      width: 350px;
+      background-color: white;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      margin-right: 30px; }
+      .videoContent .iframes div iframe {
+        width: 350px;
+        height: 197px;
+        background: #C4C4C4;
+        border-radius: 10px; }
+      .videoContent .iframes div p {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #282739; }
+    .videoContent .iframes button {
+      height: 68px;
+      width: 68px;
+      background: url(../img/array-right.svg) no-repeat center;
+      background-size: cover;
+      border: none;
+      border-radius: 50%;
+      position: absolute;
+      right: 30px;
+      bottom: calc(50% - 9px); }
+
+.news {
+  margin-top: 150px; }
+  .news h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #282739;
+    margin-bottom: 40px; }
+  .news .newsItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .news .newsItems .newsItem {
+      margin-right: 30px;
+      border-radius: 10px;
+      background: #F4F7FB;
+      padding: 20px 20px 60px 20px;
+      position: relative;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0;
+              flex: 0 0; }
+      .news .newsItems .newsItem img {
+        margin: -20px -20px 20px -20px;
+        border-radius: 10px 10px 0px 0px; }
+      .news .newsItems .newsItem h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #282739;
+        margin-bottom: 11px; }
+      .news .newsItems .newsItem p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #282739; }
+      .news .newsItems .newsItem span {
+        position: absolute;
+        bottom: 26px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #5D6C7B; }
+        .news .newsItems .newsItem span:last-child {
+          right: 20px; }
+        .news .newsItems .newsItem span:last-child:before {
+          content: url(../img/eye.svg);
+          margin-right: 11px;
+          vertical-align: -2px; }
+        .news .newsItems .newsItem span:first-of-type::before {
+          content: url(../img/calender.svg);
+          margin-right: 11px;
+          vertical-align: -3px; }
+    .news .newsItems button {
+      height: 68px;
+      width: 68px;
+      background: url(../img/array-right.svg) no-repeat center;
+      background-size: cover;
+      border: none;
+      border-radius: 50%;
+      position: absolute;
+      right: 30px;
+      bottom: calc(50% - 32px); }
+
+.faq {
+  margin-top: 100px; }
+  .faq h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #282739;
+    margin-bottom: 60px; }
+  .faq .questions {
+    width: 726px;
+    margin-left: auto;
+    margin-right: auto; }
+    .faq .questions .question {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      min-height: 75px;
+      border-bottom: 1px solid #EAEBED; }
+      .faq .questions .question label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #282739; }
+      .faq .questions .question label:after {
+        content: url(../img/cross.svg);
+        margin-left: auto;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+      .faq .questions .question input {
+        display: none; }
+      .faq .questions .question input:checked + label:after {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+      .faq .questions .question .answer {
+        margin-top: 24px; }
 
 /*# sourceMappingURL=style.css.map */
