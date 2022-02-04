@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            height: 10000px;
+            margin: 0;
+        }
+        div {
+            height: 500px;
+            padding-top: 30px;
+        }
+        #one {
+            background: red;
+        }
+        #two {
+            background: yellow;
+        }
+        #three {
+            background: green;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: blue;
+            margin-top: 0;
+            height: 30px;
+        }
+        li {
+            list-style-type: none;
+            border: 2px solid black;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        a {
+            color: white;
+        }
+        #hide-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul id="menu">
+        <li><a href="#one">one</a></li>
+        <li><a href="#two">two</a></li>
+        <li><a href="#three">three</a></li>
+    </ul>
+
+    <div id="one">
+        <div id="hide-button">
+            <span class="open">open</span>
+            <span class="close">close</span>
+        </div>
+    </div>
+    <div id="two">
+
+    </div>
+    <div id="three">
+
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu').on('click', 'a', function(e) {
+                e.preventDefault();
+                var id = $(this).attr('href');
+                var top = $(id).offset().top;
+                $('html, body').animate({scrollTop: top}, 500);
+            })
+        })
+    </script>
+</body>
+</html>

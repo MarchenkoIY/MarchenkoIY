@@ -20,6 +20,7 @@
   <title>Portfolio Marchenko Igor</title>
 </head>
 <body>
+  <div id='button'></div>
   <div class="header">
     <div class="header-top container">
       <img src="assets/Logo.png" alt="Logo">
@@ -129,5 +130,29 @@
         </ul>
     </div>
   </div>
+<script>
+    const topButton = document.getElementById('button');
+      
+    topButton.addEventListener('click', function smoothScroll() {
+        setTimeout(function() {
+          if (window.pageYOffset > 0) {
+            window.scrollBy(0, -100);
+            smoothScroll();
+          }
+        }, 2);
+    })
+      
+  function goToUpButton() {
+    if (window.pageYOffset < 500) {
+      topButton.style.transform = "translateX(-1000%) rotate(0)";
+    } else {
+      topButton.style.transform = "translateX(0) rotate(450deg)";
+      topButton.style.opacity = "1";
+    }
+  }
+      
+  setInterval(goToUpButton, 100);
+      
+</script>
 </body>
 </html>
