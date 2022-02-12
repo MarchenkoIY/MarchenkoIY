@@ -1,0 +1,686 @@
+@import 'infoStyle';
+
+
+.banner {
+    background: url(../img/bgScooter.png) bottom right 32px no-repeat, url(../img/bgScootersShadow.png) bottom right no-repeat, url(../img/bgScooterText.png) bottom right 48px no-repeat, radial-gradient(58.73% 541.94% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%);
+    padding-top: 39px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    .container {
+        position: relative;
+
+        .text-banner {
+
+            span {
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                border: 1px solid #FFFFFF;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            h2 {
+                margin-top: 36px;
+                width: 615px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 29px;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+            }
+
+            button {
+                padding: 15px 25px;
+                border: none;
+                background: #FFFFFF;
+                border-radius: 5px;
+                font-size: 16px;
+                line-height: 23px;
+                color: #6F73EE;
+            }
+        }
+
+        .absoluteDiv {
+            position: absolute;
+            top: 208px;
+            left: 750px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+            padding: 13px 18px;
+            padding-bottom: 7px;
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+
+                &:before {
+                    content: url(../img/light.svg);
+                    margin-right: 10px;
+                    vertical-align: -7px;
+                }
+            }
+
+            span {
+                background: #FFFFFF;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #6F73EE;
+                padding: 5px 10px;
+                position: absolute;
+                right: 18px;
+                bottom: -20px;
+            }
+        }
+    }
+}
+
+.whyAreWe {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+
+        li {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: #282739;
+            margin-right: 78px;
+
+            span {
+                font-size: 16px;
+                line-height: 23px;
+                color: #282739;
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    .yandexFeedback {
+        background: url(../img/YandexGliph.png) top 24px left 28px no-repeat, url(../img/YandexBG.png) top 10px left 10px no-repeat, url(../img/YandexShadow.png) top 10px left no-repeat, #FFFFFF;
+        border: 1px solid rgba(93, 108, 123, 0.1);
+        border-radius: 5px;
+        padding: 14px 27px 5px 84px;
+
+        p {
+            font-size: 12px;
+            line-height: 17px;
+            color: #5D6C7B;
+        }
+
+        & > span {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+            color: #282739;
+
+            &::before {
+                content: url(../img/StarYandex.svg);
+                margin-right: 5px;
+                vertical-align: 2px;
+            }
+        }
+    }
+}
+
+.catalogHeader {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #282739;
+    }
+
+    & > ul {
+        display: flex;
+
+        li {
+            background: #F4F7FB;
+            border-radius: 5px;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #5D6C7B;
+            padding: 15px 20px 10px 20px;
+            margin-left: 10px;
+
+            &:first-of-type {
+                font-size: 12px;
+                line-height: 17px;
+                text-align: center;
+                color: #6F73EE;
+                border: 1.3px solid #6F73EE;
+                border-radius: 5px;
+                background: transparent;
+            }
+        }
+    }
+}
+
+.catalogItems {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin-top: 50px;
+
+    .catalogItem {
+        padding: 20px 24px;
+        position: relative;
+        border: 1.5px solid #EAEBED;
+        border-radius: 12px;
+        background: url(../img/cat1.jpg) no-repeat;
+        background-size: contain;
+
+        .markerHit, .markerNew {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 4px 9px;
+            border-radius: 5px;
+        }
+
+        .markerHit {
+            background-color: #EE685F;
+        }
+
+        .markerNew {
+            background: #75D14A;
+        }
+
+        .compare {
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: url(../img/weidth.svg) center no-repeat, rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            border-radius: 50%;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #282739;
+            margin-bottom: 22px;
+            margin-top: 251px;
+        }
+
+        & > ul {
+            display: flex;
+
+            &:not(&:last-of-type) {
+                font-size: 14px;
+                line-height: 16px;
+                color: #5D6C7B;
+
+                &:first-of-type {
+                    margin-bottom: 18px;
+
+                    li {
+
+                        &:first-of-type {
+                            margin-right: 27px;
+
+                            &:before {
+                                content: url(../img/battary.svg);
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &:last-of-type::before {
+                            content: url(../img/darkLight.svg);
+                            margin-right: 10px;
+                            vertical-align: -4px;
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 28px;
+
+                    li {
+
+                        &:first-of-type {
+                            margin-right: 39px;
+
+                            &:before {
+                                content: url(../img/speed.svg);
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &:last-of-type::before {
+                            content: url(../img/timer.svg);
+                            margin-right: 10px;
+                            vertical-align: -4px;
+                        }
+                    }
+                }
+            }
+
+            &:last-of-type {
+
+                li {
+
+                    &:first-of-type {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 29px;
+                        color: #282739;
+                        margin-right: auto;
+
+                        & > span {
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 17px;
+                            text-decoration: line-through;
+                            color: #5D6C7B;
+                        }
+                    }
+
+                    &:not(&:first-of-type) {
+                        height: 40px;
+                        width: 40px;
+                        border: 1.3px solid #EAEBED;
+                        border-radius: 50%;
+                        margin-left: 10px;
+                        margin-top: 10px;
+                    }
+
+                    &:last-of-type {
+                        background: url(../img/violetHeart.svg) center no-repeat;
+                    }
+
+                    &:nth-of-type(2) {
+                        background: url(../img/fallBascket.svg) center no-repeat;
+                    }
+                }
+            }
+        }
+
+        & > button {
+            width: 100%;
+            margin-top: 16px;
+            padding: 10px;
+            background: #6F73EE;
+            border-radius: 5px;
+            border: none;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.seeMore {
+    display: block;
+    padding: 15px 25px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #6F73EE;
+    border: 1.3px solid #6F73EE;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 110px;
+    background: transparent;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.changeModel {
+    display: flex;
+    justify-content: center;
+
+    & > div {
+        border-radius: 10px;
+        background-size: contain;
+        padding: 32px 242px 32px 40px;
+
+        &:first-of-type {
+            background: url(../img/modelBG.png) center no-repeat;
+            margin-right: 30px;
+        }
+
+        &:last-of-type {
+            background: url(../img/serviceBG.jpg) center no-repeat;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: #282739;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 23px;
+            color: #282739;
+            margin-top: 10px;
+            margin-bottom: 22px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #6F73EE;
+
+            &:after {
+                content: url(../img/Arrow.svg);
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.deliver {
+    margin: 100px 30px;
+    padding: 67px 172px;
+    background: url(../img/droneBG.png) left bottom no-repeat, radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+
+    .deliverText {
+
+        span {
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding: 3px 12px;
+            background: #EE685F;
+            border: 1px solid #EE685F;
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 51px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 27px;
+            margin-bottom: 27px;
+        }
+
+        button {
+            background: #FFFFFF;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            line-height: 23px;
+            color: #282739;
+            padding: 15px 25px;
+        }
+    }
+}
+
+.topCategoriesHeader {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #282739;
+        align-self: center;
+    }
+
+    .personalMeneger {
+        background: #F4F7FB;
+        border-radius: 5px;
+        padding: 16px;
+
+        & > img {
+            float: left;
+            margin: -6px;
+            margin-right: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #282739;
+            margin-left: 70px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #6F73EE;
+        }
+    }
+}
+
+.topCategories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin-top: 68px;
+
+    .category {
+        padding: 176px 15px 10px 15px;
+        border-radius: 10px;
+
+        & > div {
+            padding: 10px 16px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            p:first-child {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+            p:last-child {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+
+        &:nth-child(1) {
+            background: url(../img/vacuumCleanerBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(2) {
+            background: url(../img/bikeBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(3) {
+            background: url(../img/weigthBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(4) {
+            background: url(../img/vacuumCleanerBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(5) {
+            background: url(../img/bikeBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(6) {
+            background: url(../img/weigthBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(7) {
+            background: url(../img/vacuumCleanerBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(8) {
+            background: url(../img/bikeBG.jpg) center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+.oficialDealer {
+    background: #F4F7FB;
+    border-radius: 10px;
+    padding: 29px;
+    display: flex;
+
+    .testDriveButton {
+        background: url(../img/socialMarketing.jpg) center no-repeat;
+        background-size: cover;
+        margin-right: 71px;
+        border-radius: 10px;
+        padding: 406px 33px 20px 340px;
+        margin-left: auto;
+
+        .dscTestDrive {
+            padding-top: 17px;
+            padding-left: 21px;
+            padding-right: 45px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            h5 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+
+            button {
+                background: #6F73EE;
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                border: none;
+                width: calc(100% + 66px);
+                margin-left: -21px;
+                padding: 11px 22px;
+                display: flex;
+                justify-content: space-between;
+
+                &:after {
+                    content: url(../img/ArrowWhite.svg);
+                    margin-left: auto;
+                }
+            }
+        } 
+    }
+
+    .dscOficialDealer {
+        margin-right: auto;
+
+        h2 {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 51px;
+            text-transform: uppercase;
+            color: #282739;
+            margin-top: 29px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 23px;
+            color: #282739;
+        }
+
+        & > div {
+            background: #FFFFFF;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: 29px;
+            padding: 20px 30px 21px 23px;
+
+            h6 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #282739;
+                margin-bottom: 13px;
+            }
+
+            ul {
+                font-size: 14px;
+                line-height: 20px;
+                color: #282739;
+                margin-bottom: 13px;
+
+                li {
+                    background: url(../img/styleList.svg) left top 8px no-repeat;
+                    padding-left: 20px;
+                }
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 17px;
+                color: #6F73EE;
+            }
+        }
+    }
+}
+
+.galleryService {
+    display: block;
+    margin-top: 100px;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}

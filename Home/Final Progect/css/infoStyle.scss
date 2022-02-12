@@ -21,6 +21,21 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
+#button {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: url(../img/array-left.svg) center no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 30px;
+    opacity: 0;
+    left: 30px;
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: 0 0 7px #6F73EE;
+    z-index: 10;
+  }
 
 
 .header {
@@ -144,7 +159,7 @@ ul {
 .header-search {
     display: flex;
 
-    span {
+    & > a {
         font-weight: bold;
         font-size: 30px;
         line-height: 43px;
@@ -160,6 +175,7 @@ ul {
         padding: 8px 18px 9px 0;
         margin-top: 30px;
         margin-left: 35px;
+        position: relative;
 
         span {
             font-weight: 500;
@@ -173,14 +189,104 @@ ul {
                 margin-right: 15px;
             }
         }
+
+        &:hover > .catalogList, & > .catalogList:hover {
+            height: 258px;
+            padding: 10px 55px 10px 10px;
+        }
+
+        & > .catalogList {
+            border-radius: 15px;
+            box-shadow: 0 0 5px black;
+            padding: 0;
+            background: #FFF;
+            overflow: hidden;
+            position: absolute;
+            top: 41px;
+            display: flex;
+            width: 660px;
+            height: 0;
+            transition: 0.3s;
+
+            & > ul {
+                display: block;
+                margin: 0;
+
+                & > li {
+                    margin: 0;
+                }
+            }
+
+            & > ul:first-of-type {
+                background: #F4F7FB;
+                border-radius: 5px;
+                padding: 20px 34px 13px 24px;
+                flex: 0 0 240px;
+                margin-right: 43px;
+
+                & > li {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #282739;
+                    margin-bottom: 15px;
+
+                    & > svg {
+                        fill: #282739;
+                        margin-right: 10px;
+                    }
+
+                    &:hover, &:hover > svg {
+                        color: #6F73EE;
+                        fill: #6F73EE;
+                    }
+
+                    & > a {
+                        vertical-align: 3px;
+                    }
+                }
+            }
+
+            & > ul:nth-of-type(2) {
+                margin-right: 61px;
+                flex: 0 0 97px;
+            }
+
+            & > ul:last-of-type {
+                flex: 0 0 160px;
+            }
+
+            & > ul:nth-of-type(2), & > ul:last-of-type {
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: #282739;
+
+                & > li {
+                    margin-bottom: 10px;
+                    
+                    &:first-of-type {
+                        margin-bottom: 15px;
+                    }
+
+                    & > a {
+                        font-size: 14px;
+                        line-height: 20px;             
+                        color: #5D6C7B;
+                    }
+                }
+            }
+        }
     }
-    ul {
+
+    & > ul {
         display: flex;
         margin-top: 43px;
         padding: 0;
         margin-left: 47px;
 
-        li:last-child::before {
+        & > li:last-child::before {
             content: url(../img/bascket.svg);
             margin-right: 10px;
             vertical-align: -3px;
@@ -435,16 +541,6 @@ ul {
         height: 322px;
         flex: 0 0 452px;
         background: url(../img/certificate.jpg) no-repeat center;
-        padding-top: 140px;
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            height: 42px;
-            display: block;
-        }
     }
 }
 
@@ -1178,7 +1274,7 @@ ul {
             padding-top: 16px;
             border-bottom: 1px solid #EAEBED;
 
-            label {
+            & > label {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 19px;
@@ -1196,29 +1292,40 @@ ul {
                 cursor: pointer;
             }
 
-            input {
+            & > input {
                 display: none;
             }
 
-            input:checked + label:after {
+            & > input:checked + label:after {
                 transform: rotate(45deg);
                 transition: 0.3s;
             }
 
-            input:checked:nth-of-type(1) ~ .answer {
-                height: 80px;
+            &:nth-child(1) {
+
+                & > input:checked ~ .answer {
+                    height: 80px;
+                }
             }
 
-            input:checked:nth-of-type(2) ~ .answer {
-                height: 220px;
+            &:nth-child(2) {
+
+                & > input:checked ~ .answer {
+                    height: 220px;
+                }
+            }
+            &:nth-child(3) {
+
+                & > input:checked ~ .answer {
+                    height: 240px;
+                }
             }
 
-            input:checked:nth-of-type(3) ~ .answer {
-                height: 240px;
-            }
+            &:nth-child(4) {
 
-            input:checked:nth-of-type(4) ~ .answer {
-                height: 120px;
+                & > input:checked ~ .answer {
+                    height: 120px;
+                }
             }
 
             .answer {
