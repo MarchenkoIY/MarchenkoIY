@@ -3863,6 +3863,110 @@ ul {
     padding: 15px 25px;
     border: none;
     margin-top: 33px; }
+  .serviceBanner > .container button + div .bgModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 150; }
+    .serviceBanner > .container button + div .bgModal .modalBlock, .serviceBanner > .container button + div .bgModal .modalBlockService {
+      background: #FFF;
+      border-radius: 10px;
+      position: relative;
+      padding: 40px;
+      text-align: left; }
+      .serviceBanner > .container button + div .bgModal .modalBlock #closeCross, .serviceBanner > .container button + div .bgModal .modalBlockService #closeCross {
+        height: 20px;
+        width: 20px;
+        border: none;
+        background: url(../img/cross.svg) center no-repeat;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer; }
+      .serviceBanner > .container button + div .bgModal .modalBlock h2, .serviceBanner > .container button + div .bgModal .modalBlockService h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #282739;
+        margin-bottom: 10px;
+        margin-top: 0; }
+      .serviceBanner > .container button + div .bgModal .modalBlock h6, .serviceBanner > .container button + div .bgModal .modalBlockService h6 {
+        font-size: 16px;
+        line-height: 20px;
+        color: #282739;
+        margin-bottom: 33px; }
+      .serviceBanner > .container button + div .bgModal .modalBlock p, .serviceBanner > .container button + div .bgModal .modalBlockService p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #282739;
+        margin-bottom: 30px; }
+      .serviceBanner > .container button + div .bgModal .modalBlock span, .serviceBanner > .container button + div .bgModal .modalBlockService span {
+        font-size: 12px;
+        line-height: 17px;
+        color: #5D6C7B; }
+      .serviceBanner > .container button + div .bgModal .modalBlock form, .serviceBanner > .container button + div .bgModal .modalBlockService form {
+        margin-top: 7px; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"], .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"] {
+          display: none; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label, .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label {
+          display: inline-block;
+          width: 78px;
+          height: 53px;
+          border: 1px solid #EAEBED;
+          border-radius: 5px;
+          margin-right: 15px; }
+          .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:first-of-type, .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:first-of-type {
+            background: url(../img/viberBG.svg) center no-repeat; }
+          .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(2), .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(2) {
+            background: url(../img/whatsappBG.svg) center no-repeat; }
+          .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3), .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3) {
+            background: url(../img/telegramBG.svg) center no-repeat;
+            margin-right: 30px; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input[type="checkbox"]:checked:not(input[type="checkbox"]:last-of-type) + label, .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="checkbox"]:checked:not(input[type="checkbox"]:last-of-type) + label {
+          border: 2px solid #6F73EE; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input[type="tel"], .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="tel"] {
+          padding: 15px 52px 15px 25px;
+          border: 1px solid #EAEBED;
+          border-radius: 5px;
+          font-size: 16px;
+          line-height: 23px;
+          letter-spacing: 0.155em;
+          color: #5D6C7B;
+          vertical-align: 22px; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form button, .serviceBanner > .container button + div .bgModal .modalBlockService form button {
+          background: #6F73EE;
+          border-radius: 5px;
+          font-size: 16px;
+          line-height: 23px;
+          padding: 15px 91px;
+          color: #FFFFFF;
+          margin-right: 30px;
+          vertical-align: 10px;
+          cursor: pointer; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input:last-of-type + label, .serviceBanner > .container button + div .bgModal .modalBlockService form input:last-of-type + label {
+          background: url(../img/blueCheckFall.svg) left top no-repeat;
+          padding-left: 28px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 14px;
+          color: #282739;
+          margin-top: 25px; }
+          .serviceBanner > .container button + div .bgModal .modalBlock form input:last-of-type + label a, .serviceBanner > .container button + div .bgModal .modalBlockService form input:last-of-type + label a {
+            color: #6F73EE;
+            position: static; }
+        .serviceBanner > .container button + div .bgModal .modalBlock form input:last-of-type:checked + label, .serviceBanner > .container button + div .bgModal .modalBlockService form input:last-of-type:checked + label {
+          background: url(../img/blueChecked.svg) left top no-repeat; }
+    .serviceBanner > .container button + div .bgModal .modalBlockService {
+      background: url(../img/drilleBG.png) right bottom no-repeat, url(../img/EllipseBlueBG.png) right bottom no-repeat, #FFF;
+      padding-right: 435px; }
 
 .humanResources h2 {
   width: 587px; }

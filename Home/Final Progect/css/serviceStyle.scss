@@ -637,6 +637,10 @@
             border: none;
             margin-top: 33px;
         }
+
+        button + div {
+            @include modal;
+        }
     }
 }
 
