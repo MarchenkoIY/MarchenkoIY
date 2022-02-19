@@ -1,0 +1,330 @@
+@import 'productStyle';
+
+.banner {
+    background: url(../img/droneBG.png) right top -60px no-repeat, linear-gradient(88.23deg, #6F73EE 24.95%, rgba(111, 115, 238, 0) 200%);
+    border-radius: 10px;
+}
+
+.regions {
+    margin-top: 100px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #282739;
+        margin-bottom: 50px;
+    }
+
+    h6 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        color: #282739;
+        margin-bottom: 30px;
+    }
+
+    input {
+        display: none;
+
+        &:checked + label {
+            font-size: 16px;
+            line-height: 23px;
+            color: #6F73EE;
+            border: 1.3px solid #6F73EE;
+            background: transparent;
+        }
+
+        &:nth-of-type(1):checked ~ .terms > div:first-of-type {
+            margin-left: 0;
+        }
+
+        &:nth-of-type(2):checked ~ .terms > div:first-of-type {
+            margin-left: -100%;
+        }
+
+        &:nth-of-type(3):checked ~ .terms > div:first-of-type {
+            margin-left: -200%;
+        }
+
+        &:nth-of-type(4):checked ~ .terms > div:first-of-type {
+            margin-left: -300%;
+        }
+
+        &:nth-of-type(5):checked ~ .terms > div:first-of-type {
+            margin-left: -400%;
+        }
+    }
+
+    label {
+        background: #F4F7FB;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #5D6C7B;
+        padding: 15px 25px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    .terms {
+        margin-top: 50px;
+        display: flex;
+        overflow-x: hidden;
+
+        & > div {
+            flex: 0 0 100%;
+            padding: 20px;
+            transition: 0.3s;
+
+            ul:first-of-type {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 40px;
+                border-bottom: 1px solid rgba(93, 108, 123, 0.2);
+
+                li {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #282739;
+
+                    & > p {
+                        border: none;
+                        padding: 0;
+                    }
+
+
+                    & > span {
+                        font-size: 16px;
+                        line-height: 23px;
+                        color: #282739;
+                        display: inline-block;
+                        margin-top: 38px;
+
+                        & > a {
+                            color: #6F73EE;
+                        }
+
+                        &:nth-of-type(2) {
+                            background: #F3A712;
+                            border-radius: 5px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 17px;
+                            color: #FFFFFF;
+                            margin-left: 15px;
+                            padding: 3px 7px;
+
+                            &::before {
+                                content: url(../img/fire.svg);
+                                margin-right: 5px;
+                                vertical-align: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 23px;
+                color: #282739;
+
+                a {
+                    color: #6F73EE;
+                }
+
+                &:first-of-type {
+                    margin-top: 39px;
+                    margin-bottom: 10px;
+                }
+
+                &:nth-of-type(2) {
+                    padding-bottom: 38px;
+                    border-bottom: 1px solid rgba(93, 108, 123, 0.2);
+                }
+            }
+
+            h5 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                color: #282739;
+                margin-top: 33px;
+                margin-bottom: 33px;
+            }
+
+            ul:nth-of-type(2) {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(93, 108, 123, 0.2);
+                margin-top: 36px;
+
+                & > li {
+
+                    & > p {
+                        border: none;
+                        margin: 0;
+
+                        &:first-of-type {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    & > a {
+                        color: #6F73EE;
+                    }
+                }
+            }
+
+            ul:last-of-type {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+
+                li {
+
+                    &:not(:nth-of-type(2)) > p {
+                        margin-top: 85px;
+                    }
+
+                    & > ul {
+                        margin-bottom: 44px;
+                        margin-top: 10px;
+                        border: none;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.orders {
+    background: radial-gradient(64.2% 266.22% at 23.3% 72.57%, #FF9F73 0%, #DC7749 100%);
+    border-radius: 10px;
+    margin: 100px 30px;
+
+    .testOrders{
+        background: url(../img/phoneBG.png) right bottom -80px no-repeat;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-size: contain;
+
+        h2 {
+            margin-bottom: 27px;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 51px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        & > ul {
+
+            &:first-of-type{
+                li {
+                    padding-left: 30px;
+                    background: url(../img/CheckCircleWhite.svg) left no-repeat;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                }
+            }
+
+            &:last-of-type {
+                display: flex;
+                margin-top: 34px;
+
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.yourQuestions {
+    padding-top: 68px;
+
+    .innerQuestions {
+        background: #F4F7FB;
+        border-radius: 10px;
+        padding-top: 77px;
+        padding-bottom: 77px;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 20%;
+        }
+
+        & > .container {
+
+            h2 {
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 51px;
+                text-transform: uppercase;
+                color: #282739;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 23px;
+                color: #282739;
+                margin-top: 13px;
+                margin-bottom: 28px;
+            }
+
+            form {
+
+                input[type="tel"] {
+                    border: 1px solid #EAEBED;
+                    border-radius: 5px;
+                    padding: 15px 52px 15px 25px;
+                    margin-right: 20px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0.155em;
+                    color: #5D6C7B;
+                }
+
+                button {
+                    background: #6F73EE;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    padding: 15px 25px;
+                    border: none;
+                    margin-bottom: 20px;
+                }
+
+                input[type='checkbox'] {
+                    display: none;
+                }
+
+                input[type='checkbox']:checked + label {
+                    background: url(../img/checked.svg) left top no-repeat;
+                }
+
+                label {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #282739;
+                    padding-left: 28px;
+                    background: url(../img/check.svg) top left no-repeat;
+
+                    a {
+                        color: #6F73EE;
+                    }
+                }
+            }
+        }
+    }
+}

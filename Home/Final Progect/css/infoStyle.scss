@@ -1,3 +1,149 @@
+@mixin modal {
+    .bgModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 150;
+    
+        .modalBlock, .modalBlockService {
+            background: #FFF;
+            border-radius: 10px;
+            position: relative;
+            padding: 40px;
+            text-align: left;
+    
+            #closeCross {
+                height: 20px;
+                width: 20px;
+                border: none;
+                background: url(../img/cross.svg) center no-repeat;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+            }
+    
+            h2 {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 36px;
+                text-transform: uppercase;
+                color: #282739;
+                margin-bottom: 10px;
+                margin-top: 0;
+            }
+
+            h6 {
+                font-size: 16px;
+                line-height: 20px;
+                color: #282739;
+                margin-bottom: 33px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                color: #282739;
+                margin-bottom: 30px;
+            }
+    
+            span {
+                font-size: 12px;
+                line-height: 17px;
+                color: #5D6C7B;
+            }
+
+            form {
+                margin-top: 7px;
+
+                input[type="checkbox"] {
+                    display: none;
+                }
+
+                input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label {
+                    display: inline-block;
+                    width: 78px;
+                    height: 53px;
+                    border: 1px solid #EAEBED;
+                    border-radius: 5px;
+                    margin-right: 15px;
+
+                    &:first-of-type {
+                        background: url(../img/viberBG.svg) center no-repeat;
+                    }
+
+                    &:nth-of-type(2) {
+                        background: url(../img/whatsappBG.svg) center no-repeat;
+                    }
+
+                    &:nth-of-type(3) {
+                        background: url(../img/telegramBG.svg) center no-repeat;
+                        margin-right: 30px;
+                    }
+                }
+
+                input[type="checkbox"]:checked:not(input[type="checkbox"]:last-of-type) + label {
+                    border: 2px solid #6F73EE;
+                }
+
+                input[type="tel"] {
+                    padding: 15px 52px 15px 25px;
+                    border: 1px solid #EAEBED;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0.155em;
+                    color: #5D6C7B;
+                    vertical-align: 22px;
+                }
+
+                button {
+                    background: #6F73EE;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    padding: 15px 91px;
+                    color: #FFFFFF;
+                    margin-right: 30px;
+                    vertical-align: 10px;
+                    cursor: pointer;
+                }
+
+                input:last-of-type + label {
+                    background: url(../img/blueCheckFall.svg) left top no-repeat;
+                    padding-left: 28px;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #282739;
+                    margin-top: 25px;
+
+                    a {
+                        color: #6F73EE;
+                        position: static;
+                    }
+                }
+
+                input:last-of-type:checked + label {
+                    background: url(../img/blueChecked.svg) left top no-repeat;
+                }
+            }
+        }
+
+        .modalBlockService {
+            background: url(../img/drilleBG.png) right bottom no-repeat, url(../img/EllipseBlueBG.png) right bottom no-repeat, #FFF;
+            padding-right: 435px;
+        }
+    }
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -55,6 +201,32 @@ ul {
             line-height: 17px;
             color: #5D6C7B;
             margin: 11px 30px 11px 0;
+
+            &:last-of-type > div {
+                @include modal;
+
+                .bgModal {
+
+                    .modalBlock {
+                        padding-right: 341px;
+                        background: url(../img/callBG.png) right bottom no-repeat, url(../img/EllipseBlueBG.png) right bottom no-repeat, #FFF;
+
+                        form {
+
+                            button {
+                                border: none;
+                                padding: 15px 77px;
+                                margin-top: 20px;
+                            }
+
+                            input[type="tel"] {
+                                padding-right: 43px;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &:nth-child(2) li {
@@ -114,6 +286,7 @@ ul {
             width: 230px;
             display: none;
             top: 25px;
+            z-index: 25;
 
             ul {
                 display: block;
@@ -207,6 +380,7 @@ ul {
             width: 660px;
             height: 0;
             transition: 0.3s;
+            z-index: 99;
 
             & > ul {
                 display: block;
@@ -294,6 +468,44 @@ ul {
 
         li:not(li:first-child) {
             margin-left: 26px;
+            position: relative;
+
+            & > div {
+                display: none;
+                padding: 30px;
+                font-size: 18px;
+                line-height: 20px;
+                color: #5D6C7B;
+                position: absolute;
+                background: #FFF;
+                border-radius: 10px;
+                box-shadow: 0 0 5px black;
+            }
+
+            &:hover > div {
+                display: block;
+            }
+        }
+
+        li:first-child {
+            position: relative;
+
+            & > div {
+                display: none;
+                padding: 30px;
+                font-size: 18px;
+                line-height: 20px;
+                color: #5D6C7B;
+                position: absolute;
+                background: #FFF;
+                border-radius: 10px;
+                box-shadow: 0 0 5px black;
+                width: auto;
+            }
+
+            &:hover > div {
+                display: block;
+            }
         }
 
         li:last-child {
@@ -302,6 +514,23 @@ ul {
             font-size: 14px;
             line-height: 20px;
             color: #282739;
+            position: relative;
+
+            & > div {
+                display: none;
+                padding: 30px;
+                font-size: 18px;
+                line-height: 20px;
+                color: #5D6C7B;
+                position: absolute;
+                background: #FFF;
+                border-radius: 10px;
+                box-shadow: 0 0 5px black;
+            }
+
+            &:hover > div {
+                display: block;
+            }
         }
     }
 
@@ -401,13 +630,14 @@ ul {
         li {
             font-size: 12px;
             line-height: 17px;
-            &:first-child {
-                color: #5D6C7B;
+            
+            &:first-of-type:before {
+                content: url(../img/Home.svg);
+                margin-right: 6px;
+            }
 
-                &::before {
-                    content: url(../img/Home.svg);
-                    margin-right: 6px;
-                }
+            & > a {
+                color: #5D6C7B;
 
                 &::after {
                     content: "/";
@@ -475,8 +705,10 @@ ul {
             margin-left: 257px;
             padding-top: 92px;
 
-            img {
-                margin-left: 23px;
+            a {
+                img {
+                    margin-left: 23px;
+                }
             }
 
             p {
@@ -797,6 +1029,7 @@ ul {
     margin-top: 100px;
     margin-bottom: 43px;
     justify-content: space-between;
+    align-items: center;
 
     h2 {
         width: 515px;
@@ -807,11 +1040,22 @@ ul {
         color: #282739;
     }
 
-    ul {
-        display: flex;
-        align-items: center;
+    .galeriesInputs {
 
-        li {
+        input {
+            display: none;
+        }
+
+        input:checked + label {
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            color: #6F73EE;
+            background: transparent;
+            border: 1.3px solid #6F73EE;
+        }
+
+        label {
             background: #F4F7FB;
             border-radius: 5px;
             border: none;
@@ -821,15 +1065,6 @@ ul {
             color: #5D6C7B;
             padding: 15px 25px;
             margin-left: 20px;
-
-            &:first-child {
-                font-size: 16px;
-                line-height: 23px;
-                text-align: center;
-                color: #6F73EE;
-                background: transparent;
-                border: 1.3px solid #6F73EE;
-            }
         }
     }
 }
@@ -1191,6 +1426,7 @@ ul {
             position: relative;
             transition: 0.5s;
             flex: 0 0;
+            display: block;
 
             img {
                 margin: -20px -20px 20px -20px;
@@ -1478,6 +1714,33 @@ ul {
                 position: absolute;
                 right: 0;
                 top: 5px;
+                cursor: pointer;
+
+                & + div {
+                    @include modal;
+    
+                    .bgModal {
+    
+                        .modalBlock {
+                            padding-right: 341px;
+                            background: url(../img/callBG.png) right bottom no-repeat, url(../img/EllipseBlueBG.png) right bottom no-repeat, #FFF;
+    
+                            form {
+    
+                                button {
+                                    border: none;
+                                    padding: 15px 77px;
+                                    margin-top: 20px;
+                                }
+    
+                                input[type="tel"] {
+                                    padding-right: 43px;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             ul {

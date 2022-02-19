@@ -36,7 +36,7 @@
                 margin-bottom: 25px;
             }
 
-            button {
+            a {
                 padding: 15px 25px;
                 border: none;
                 background: #FFFFFF;
@@ -152,28 +152,31 @@
         color: #282739;
     }
 
-    & > ul {
-        display: flex;
+    .catalogInputs{
 
-        li {
+        input {
+            display: none;
+        }
+
+        input:checked + label {
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #6F73EE;
+            border: 1.3px solid #6F73EE;
+            border-radius: 5px;
+            background: transparent;
+        }
+
+        label {
             background: #F4F7FB;
             border-radius: 5px;
             font-size: 12px;
             line-height: 17px;
             text-align: center;
             color: #5D6C7B;
-            padding: 15px 20px 10px 20px;
+            padding: 15px 20px;
             margin-left: 10px;
-
-            &:first-of-type {
-                font-size: 12px;
-                line-height: 17px;
-                text-align: center;
-                color: #6F73EE;
-                border: 1.3px solid #6F73EE;
-                border-radius: 5px;
-                background: transparent;
-            }
         }
     }
 }
@@ -496,8 +499,11 @@
     .category {
         padding: 176px 15px 10px 15px;
         border-radius: 10px;
+        display: block;
+        cursor: pointer;
 
         & > div {
+            display: block;
             padding: 10px 16px;
             width: 100%;
             background: rgba(0, 0, 0, 0.2);

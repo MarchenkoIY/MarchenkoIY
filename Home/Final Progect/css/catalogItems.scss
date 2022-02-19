@@ -1,0 +1,404 @@
+@import 'catalogStyle';
+
+.banner {
+    background: linear-gradient(88.23deg, #6F73EE 50.95%, rgba(111, 115, 238, 0) 59.45%), url(../img/someScooterBG.jpg) right no-repeat;
+}
+
+.deliver {
+    margin-top: 30px;
+}
+.catalogForSale {
+
+    .catalogForSaleHeader {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: #282739;
+        }
+
+        .selectors {
+
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #282739;
+            }
+
+            select {
+                margin-left: 20px;
+                border: 1.3px solid #6F73EE;
+                border-radius: 5px;
+                font-size: 12px;
+                line-height: 17px;
+                color: #6F73EE;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .catalogForSaleItems {
+        display: flex;
+        margin-top: 32px;
+
+        .formForCatalog {
+
+            & > a {
+                display: block;
+                background: url(../img/smallCallBG.png) left no-repeat, radial-gradient(71.16% 199.4% at 82.43% 76.38%, #8FE865 0%, #49AC1B 100%);
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                color: #FFFFFF;
+                padding: 27px 20px 27px 118px;
+                margin-top: 20px;
+            }
+
+            form {
+                background: #F4F7FB;
+                border-radius: 10px;
+                padding: 20px;
+                overflow-y: hidden;
+
+                h3 {
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+
+                label {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #282739;
+                }
+
+                input[type="range"] {
+                    width: 100%;
+                    border: 1.5px solid #6F73EE;
+                }
+
+                input[type='number'] {
+                    height: 35px;
+                    width: 80px;
+                    border: 1px solid #EAEBED;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #282739;
+                }
+
+                input[type="checkbox"]:not(:last-of-type) {
+                    margin-right: 10px;
+                }
+
+                & > input[type="checkbox"]:last-of-type {
+                    display: none;
+                }
+
+                & > input[type="checkbox"]:last-of-type + label, input[type="checkbox"]:last-of-type + label + label {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #6F73EE;
+                    margin-top: 28px;
+                    display: block;
+                    cursor: pointer;
+                }
+
+                & > input[type="checkbox"]:last-of-type + label::after {
+                    content: url(../img/violArrow.svg);
+                    margin-left: 6px;
+                }
+
+                & > input[type="checkbox"]:last-of-type:checked + label {
+                    display: none;
+                }
+
+                & > input[type="checkbox"]:last-of-type + label + label {
+                    display: none;
+                }
+
+                & > input[type="checkbox"]:last-of-type:checked + label + label {
+                    display: block;
+
+                    &::after {
+                        content: url(../img/violArrowUp.svg);
+                        margin-left: 6px;
+                        display: inline-block;
+                        transform: rotate(180deg);
+                        vertical-align: -3px;
+                    }
+                }
+
+                & > input[type="checkbox"]:last-of-type:checked ~ .moreFilters {
+                    height: 663px;
+                }
+
+                .moreFilters {
+                    margin-top: 20px;
+                    height: 0;
+                    transition: 0.3s;
+                    overflow-y: hidden;
+
+                    input:last-of-type {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .topItem {
+                background: radial-gradient(102.16% 238.93% at -2.16% 100%, #FFCF71 0%, #F3A712 100%);
+                border-radius: 10px;
+                margin-top: 20px;
+                padding: 15px;
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    padding-bottom: 14px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    &::before {
+                        content: url(../img/fire.svg);
+                        margin-right: 9px;
+                        margin-left: 15px;
+                    }
+                }
+
+                img {
+                    float: left;
+                    border-radius: 5px;
+                    margin-top: 17px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    margin-left: 81px;
+                    margin-bottom: 3px;
+                    margin-top: 24px;
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    margin-left: 20px;
+                }
+            }
+        } 
+
+        .catalogForSaleItemsBlocks {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+            margin-left: auto;
+
+            .catalogItem {
+                padding: 20px 24px;
+                position: relative;
+                border: 1.5px solid #EAEBED;
+                border-radius: 12px;
+                background: url(../img/cat1.jpg) no-repeat;
+                background-size: contain;
+                display: block;
+        
+                .markerHit, .markerNew {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    padding: 4px 9px;
+                    border-radius: 5px;
+                }
+        
+                .markerHit {
+                    background-color: #EE685F;
+                }
+        
+                .markerNew {
+                    background: #75D14A;
+                }
+        
+                .compare {
+                    height: 35px;
+                    width: 35px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background: url(../img/weidth.svg) center no-repeat, rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    transform: matrix(-1, 0, 0, 1, 0, 0);
+                    border-radius: 50%;
+                }
+        
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #282739;
+                    margin-bottom: 22px;
+                    margin-top: 251px;
+                }
+        
+                & > ul {
+                    display: flex;
+        
+                    &:not(&:last-of-type) {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #5D6C7B;
+        
+                        &:first-of-type {
+                            margin-bottom: 18px;
+        
+                            li {
+        
+                                &:first-of-type {
+                                    margin-right: 27px;
+        
+                                    &:before {
+                                        content: url(../img/battary.svg);
+                                        margin-right: 10px;
+                                    }
+                                }
+        
+                                &:last-of-type::before {
+                                    content: url(../img/darkLight.svg);
+                                    margin-right: 10px;
+                                    vertical-align: -4px;
+                                }
+                            }
+                        }
+        
+                        &:nth-of-type(2) {
+                            margin-bottom: 28px;
+        
+                            li {
+        
+                                &:first-of-type {
+                                    margin-right: 39px;
+        
+                                    &:before {
+                                        content: url(../img/speed.svg);
+                                        margin-right: 10px;
+                                    }
+                                }
+        
+                                &:last-of-type::before {
+                                    content: url(../img/timer.svg);
+                                    margin-right: 10px;
+                                    vertical-align: -4px;
+                                }
+                            }
+                        }
+                    }
+        
+                    &:last-of-type {
+        
+                        li {
+        
+                            &:first-of-type {
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 29px;
+                                color: #282739;
+                                margin-right: auto;
+        
+                                & > span {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    text-decoration: line-through;
+                                    color: #5D6C7B;
+                                }
+                            }
+        
+                            &:not(&:first-of-type) {
+                                height: 40px;
+                                width: 40px;
+                                border: 1.3px solid #EAEBED;
+                                border-radius: 50%;
+                                margin-left: 10px;
+                                margin-top: 10px;
+                            }
+        
+                            &:last-of-type {
+                                background: url(../img/violetHeart.svg) center no-repeat;
+                            }
+        
+                            &:nth-of-type(2) {
+                                background: url(../img/fallBascket.svg) center no-repeat;
+                            }
+                        }
+                    }
+                }
+        
+                & > button {
+                    width: 100%;
+                    margin-top: 16px;
+                    padding: 10px;
+                    background: #6F73EE;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 12px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+
+            .catalogItemSelect {
+                padding: 30px;
+                background: url(../img/scooterBG.png) left 51px top 196px no-repeat, url(../img/sitScooterBG.png) right 26px top 350px no-repeat, url(../img/selectSomeBG.png)center bottom no-repeat, #F4F7FB;
+                border-radius: 10px;
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #282739;
+                }
+
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #282739;
+                }
+
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #6F73EE;
+
+                    &::after {
+                        content: url(../img/Arrow.svg);
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
