@@ -1,0 +1,46 @@
+@import 'blogItemStyle';
+
+.banner {
+    background: url(../img/fallBascketGB.svg) center top 47px no-repeat, #F4F7FB;
+    border-radius: 10px;
+    padding-top: 155px;
+    padding-bottom: 45px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #282739;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #282739;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    a {
+        display: inline-block;
+        background: #6F73EE;
+        border: 1.3px solid #6F73EE;
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding: 10px 20px;
+    }
+}
+
+.bread-crumbs + h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #282739;
+}

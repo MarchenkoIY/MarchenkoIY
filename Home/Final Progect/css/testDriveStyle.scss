@@ -1,0 +1,209 @@
+@import 'bascket';
+
+.bannerDrive {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 56px 0;
+    background: linear-gradient(73.21deg, #6F73EE 50.37%, rgba(111, 115, 238, 0) 80.02%), url(../img/womanBanner.jpg) right no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+
+    & > .container {
+        text-align: left;
+
+        & > p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #FFFFFF;
+
+            span {
+                font-size: 12px;
+                line-height: 17px;
+                color: #FFFFFF;
+                opacity: 0.7;
+            }
+
+            &::before {
+                content: url(../img/local.svg);
+                margin-right: 10px;
+                vertical-align: -4px;
+            }
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 51px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+
+        h4 {
+            font-size: 20px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        & > ul {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+            display: flex;
+
+            li {
+                margin-right: 35px;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                    border-radius: 5px;
+                }
+
+                &:first-of-type::before {
+                    background: url(../img/scooterBefore.svg) center no-repeat, rgba(255,255,255,0.2);
+                }
+
+                &:last-of-type::before {
+                    background: url(../img/lightBefore.svg) center no-repeat, rgba(255,255,255,0.2);
+                }
+            }
+        }
+
+        & > button {
+            background: #FFFFFF;
+            border: 1.3px solid #FFFFFF;
+            border-radius: 5px;
+            margin-top: 40px;
+            padding: 15px 40px;
+            font-size: 16px;
+            line-height: 23px;
+            color: #6F73EE;
+
+            & + div {
+                @include modal;
+
+                .bgModal {
+
+                    .modalBlock {
+                        background: url(../img/bgModalTest.jpg) top 50% right 50px no-repeat, #FFF;
+                        padding-right: 464px;
+
+                        .lastPlace {
+                            padding: 15px;
+                            position: absolute;
+                            top: 100px;
+                            right: 20px;
+                            border-radius: 10px;
+                            background: #FFF;
+                            box-shadow: 0 0 5px black;
+                            
+                            & > p {
+                                font-size: 12px;
+                                line-height: 17px;
+                                color: #282739;
+
+                                span {
+                                    color: red;
+                                }
+                            }
+                        }
+
+                        p {
+                            padding: 0;
+                        }
+
+                        form {
+
+                            input[type='tel'] {
+                                padding-right: 42px;
+                            }
+
+                            & > button {
+                                padding: 15px 53px;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.whatIsTest {
+    margin-top: 72px;
+
+    .model,
+    .learn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .text {
+
+            h2 {
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 51px;
+                text-transform: uppercase;
+                color: #282739;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #282739;
+                margin-top: 30px;
+                margin-bottom: 18px;
+            }
+
+            ul {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #282739;
+
+                li {
+                    background: url(../img/CheckCircle.svg) left no-repeat;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    
+    .learn {
+        margin-top: 100px;
+
+        img {
+            margin-right: 95px;
+        }
+    }
+}
+
+.whatIsTest + h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #282739;
+    margin-top: 100px;
+}
+
+.yourQuestions {
+    margin-top: 100px;
+}
