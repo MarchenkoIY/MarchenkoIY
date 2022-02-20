@@ -948,7 +948,8 @@ ul {
       position: absolute;
       right: 30px;
       bottom: calc(50% - 9px);
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 50; }
 
 .news {
   margin-top: 150px; }
@@ -1777,7 +1778,8 @@ ul {
         color: #FFFFFF;
         margin-top: 5px;
         margin-bottom: 15px; }
-      .oficialDealer .testDriveButton .dscTestDrive button {
+      .oficialDealer .testDriveButton .dscTestDrive a {
+        display: inline-block;
         background: #6F73EE;
         backdrop-filter: blur(10px);
         border-radius: 10px;
@@ -1791,7 +1793,7 @@ ul {
         padding: 11px 22px;
         display: flex;
         justify-content: space-between; }
-        .oficialDealer .testDriveButton .dscTestDrive button:after {
+        .oficialDealer .testDriveButton .dscTestDrive a:after {
           content: url(../img/ArrowWhite.svg);
           margin-left: auto; }
   .oficialDealer .dscOficialDealer {

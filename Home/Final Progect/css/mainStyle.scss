@@ -604,7 +604,8 @@
                 margin-bottom: 15px;
             }
 
-            button {
+            a {
+                display: inline-block;
                 background: #6F73EE;
                 backdrop-filter: blur(10px);
                 border-radius: 10px;
