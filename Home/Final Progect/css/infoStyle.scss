@@ -1360,9 +1360,11 @@ ul {
         position: relative;
         display: flex;
         flex-wrap: nowrap;
-        margin-top: 60px;
-        padding-top: 50px;
-        padding-left: 86px;
+        margin-top: 20px;
+        padding-top: 80px;
+        padding-left: 92px;
+        overflow-x: hidden;
+        padding-bottom: 100px;
 
         div {
             width: 350px;
@@ -1397,7 +1399,7 @@ ul {
                 right: 30px;
                 bottom: calc(50% - 9px);
                 cursor: pointer;
-                z-index: 50;
+                z-index: 100;
             }           
     }
 }
@@ -1418,6 +1420,7 @@ ul {
     .newsItems {
         display: flex;
         position: relative;
+        overflow-x: hidden;
 
         .newsItem {
             margin-right: 30px;

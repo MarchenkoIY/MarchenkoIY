@@ -7,9 +7,27 @@
     .banner {
         background-size: cover;
     }
+
+    .galleryService {
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+
+        & > iframe {
+            grid-column: 1/3;
+            height: 567px;
+        }
+    }
+
+    .bannerDrive {
+        background-size: cover;
+    }
 }
 
 @media all and (max-width: 1190px) {
+    
+    body {
+        overflow-x: hidden;
+    }
 
     .container {
         width: 960px;
@@ -78,9 +96,77 @@
     .oficialDealer .testDriveButton {
         padding-top: 526px;
     }
+
+    .catalogForSale .catalogForSaleItems .formForCatalog {
+        margin-right: 10px;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
+        gap: 10px;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
+        background: url(../img/scooterBG.png) left 51px top 206px no-repeat,url(../img/sitScooterBG.png) right 26px top 410px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+    }
+
+    .marketing > .container {
+        flex-wrap: wrap;
+
+        & > ul {
+            margin-bottom: 20px;
+        }
+    }
+
+    .yourQuestions .innerQuestions img {
+        right: 10%;
+    }
+
+    .banner .container .absoluteDiv {
+        left: 650px;
+    }
+    .changeModel > div  {
+        padding-right: 162px;
+    }
+
+    .galleryService {
+        width: auto;
+    }
+
+    .productDesription .description .fullCost>button:last-of-type {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .productDesription .description .gifs {
+        margin-bottom: 15px;
+    }
+
+    .howMatchList .howMatchItem .howMatchScoter > div:last-child > div, .howMatchList .howMatchItem .howMatchBike > div:last-child > div, .howMatchList .howMatchItem .howMatchVacuumCleaner > div:last-child > div, .howMatchList .howMatchItem .howMatchScales > div:last-child > div {
+        flex: 0 0 610px;
+    }
+
+    .howMatchList .howMatchItem > div {
+        flex: 0 0 960px;
+    }
+
+    .serviceBanner {
+        background: url(../img/DronLightBlueBG.png) right bottom -50px no-repeat, #F4F7FB;
+    }
+
+    .howMatchList {
+        display: none;
+    }
+
+    .howMatch {
+        display: none;
+    }
 }
 
 @media all and (max-width: 980px) {
+    
+    body {
+        overflow-x: hidden;
+    }
 
     .container {
         width: 720px;
@@ -162,9 +248,189 @@
     .topCategories {
         grid-template-columns: auto auto auto;
     }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
+        grid-template-columns: auto auto;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
+        margin-top: 211px;
+    }
+
+    .adressesList .adressesBlocks .adresseAndPhones .adressesText > ul > li {
+        font-size: 15px;
+    }
+
+    .adressesList .adressesBlocks .adresseAndPhones {
+        display: block;
+    }
+
+    .adressesList .adressesBlocks .adresseAndPhones iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .invites {
+        display: block;
+
+        .invitesText {
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .invitesLinks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+
+    .orders .testOrders {
+        background-size: 200px;
+    }
+
+    .yourQuestions .innerQuestions img {
+        display: none;
+    }
+
+    .regions .terms>div ul:last-of-type li:not(:nth-of-type(2))>p {
+        margin-top: 62px;
+    }
+
+    .regions input+label {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .regions .terms>div > ul:last-of-type {
+        flex-wrap: wrap;
+    }
+
+    .regions .terms>div ul:last-of-type li:not(:nth-of-type(2))>p {
+        margin-top: 82px;
+    }
+
+    .catalogHeader .catalogInputs {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .changeModel {
+        flex-direction: column;
+        align-items: center;
+
+        & > div:first-of-type {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        & > div:last-of-type {
+            padding-right: 197px;
+        }
+    }
+
+    .whyAreWe ul li {
+        margin-right: 25px;
+    }
+
+    .banner .container .absoluteDiv {
+        left: 440px;
+    }
+
+    .banner .container .video {
+        margin-left: 57px;
+    }
+
+    .aboutUs .certificate {
+        display: none;
+    }
+
+    .galeriesHeader .galeriesInputs {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+
+    .test-drive img {
+        display: none;
+    }
+
+    .galleryService {
+        grid-template-columns: auto;
+        
+        & > img {
+            margin-right: auto;
+            margin-left: auto; 
+        }
+
+        & > iframe {
+            grid-column: 1/2;
+            height: 267px;
+        }
+    }
+
+    .test-drive img {
+        display: none;
+    }
+
+    .productDesription {
+        display: block;
+    }
+
+    .productDesription .productPhotos {
+        height: auto;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .productDesription .productPhotos .largePhoto {
+        width: 640px;
+        height: 506px;
+    }
+
+    .whatDoesService .hidroizol, .whatDoesService .setting {
+        flex: 0 0 50%;
+    }
+
+    .whatDoesService .setting img {
+        width: 350px;
+    }
+
+    .serviceBanner {
+        background: #F4F7FB;
+    }
+
+    .zoomDiagnostic > .container .imgZoom > img {
+        display: none;
+    }
+
+    .banner {
+        background: radial-gradient(74.38% 244.23% at 75.04% 76.25%, #FFC960 0%, #F3A712 100%);
+        padding: 30px;
+    }
+
+    .whatIsTest .model, .whatIsTest .learn {
+        display: block;
+    }
+
+    .whatIsTest .model img {
+        margin-top: 50px;
+    }
+
+    .whatIsTest .learn img {
+        margin-bottom: 50px;
+    }
 }
 
 @media all and (max-width: 750px) {
+    
+    body {
+        overflow-x: hidden;
+    }
 
     .container {
         width: 540px;
@@ -254,11 +520,149 @@
     .topCategories {
         grid-template-columns: auto auto;
     }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
+        grid-template-columns: auto;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
+        margin-top: 211px;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
+        padding-bottom: 320px;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
+        background: url(../img/scooterBG.png) left 51px top 166px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+    }
+
+    .catalogForSale .catalogForSaleHeader {
+        display: block;
+
+        & > h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .galleryService iframe {
+        height: 267px;
+    }
+
+    .ourPluses .moreInform .market, .ourPluses .moreInform .service {
+        grid-template-columns: auto auto;
+    }
+
+    .ourPluses .moreInform .market div:last-child a, .ourPluses .moreInform .service div:last-child a {
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .whyAreWe {
+        display: none;
+    }
+
+    .faq .questions {
+        width: auto;
+    }
+
+    .catalogHeader {
+        flex-wrap: wrap;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .banner .container .absoluteDiv {
+        left: 240px;
+    }
+
+    .banner .container .text-banner h2 {
+        font-size: 25px;
+    }
+
+    .faq .questions .question:nth-child(1) > input:checked ~ .answer {
+        height: 120px;
+    }
+
+    .faq .questions .question:nth-child(2) > input:checked ~ .answer {
+        height: 310px;
+    }
+
+    .faq .questions .question:nth-child(3) > input:checked ~ .answer {
+        height: 330px;
+    }
+
+    .faq .questions .question:nth-child(4)>input:checked ~ .answer {
+        height: 190px;
+    }
+
+    .feedback .feedbackItems {
+        grid-template-columns: auto auto;
+    }
+
+    .oficialDealer .testDriveButton {
+        display: none;
+    }
+
+    .deliver {
+        margin: 30px 0;
+    }
+
+    .humanResources .hrs {
+        grid-template-columns: auto auto;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .whatDoesService .setting img {
+        display: none;
+    }
+
+    .whatDoesService .hidroizol {
+        display: block;
+    }
+
+    .whatDoesService .hidroizol .hidroizolVideo {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .whatDoesService .setting {
+        display: block;
+        padding-left: 66px;
+    }
+
+    .adressesService .adresses > .container {
+        display: block;
+        text-align: center;
+    }
+
+    .adressesService .adresses > .container > ul > li:first-of-type {
+        margin-top: 50px;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(3) {
+        background: url(../img/phoneV.svg) left 150px top 5px no-repeat;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(2) {
+        background: url(../img/localV.svg) left 150px top 3px no-repeat;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(4) {
+        background: url(../img/warningV.svg) left 150px top 8px no-repeat;
+    }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 560px) {
+
     body {
         padding: 15px;
+        overflow-x: hidden;
     }
 
     .container {
@@ -343,5 +747,129 @@
         .testDriveButton {
             display: none;
         }
+    }
+
+    .videoContent .iframes div iframe {
+        width: 271px;
+        height: 160px;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
+        background: url(../img/scooterBG.png) left 51px top 196px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+    }
+
+    .catalogForSale .catalogForSaleItems .formForCatalog {
+        display: none;
+    }
+
+    .catalogForSale .catalogForSaleItems {
+        display: block;
+    }
+
+    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
+        margin-top: 451px;
+    }
+
+    .yourQuestions .innerQuestions {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .orders .testOrders {
+        background: none;
+    }
+
+    .topCategories {
+        grid-template-columns: auto;
+    }
+
+    .deliver {
+        display: none;
+    }
+
+    .changeModel {
+        margin-bottom: 50px;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .ourPluses .moreInform .market, .ourPluses .moreInform .service {
+        grid-template-columns: auto;
+    }
+
+    .galleryService iframe {
+        height: 287px;
+    }
+
+    .galeriesHeader {
+        display: block;
+    }
+
+    .humanResources h2 {
+        width: auto;
+    }
+
+    .ourPluses h2 {
+        padding: 0;
+    }
+
+    .test-drive {
+        display: block;
+    }
+
+    .test-drive .formData h2 {
+        font-size: 25px;
+        width: auto;
+    }
+
+    .test-drive .formData form button {
+        padding: 15px 20px;
+    }
+
+    .test-drive .formData form input {
+        margin-right: 0;
+    }
+
+    .costHidroizolAndSetting input + label {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .zoomDiagnostic > .container .zoomText h2 {
+        font-size: 25px;
+    }
+
+    .diagnostic {
+        display: block;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(3) {
+        background: url(../img/phoneV.svg) left top 5px no-repeat;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(2) {
+        background: url(../img/localV.svg) left top 3px no-repeat;
+    }
+
+    .adressesService .adresses > .container > ul > li:nth-of-type(4) {
+        background: url(../img/warningV.svg) left top 8px no-repeat;
+    }
+
+    .diagnostic .diagnosticBorder {
+        margin-left: 0;
+    }
+
+    .faq .questions .question:nth-child(2)>input:checked ~ .answer {
+        height: 350px;
+    }
+
+    .faq .questions .question:nth-child(3)>input:checked ~ .answer {
+        height: 350px;
+    }
+
+    .faq .questions .question:nth-child(4)>input:checked ~ .answer {
+        height: 230px;
     }
 }
