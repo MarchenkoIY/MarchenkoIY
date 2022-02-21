@@ -1,0 +1,15 @@
+@media all and (max-width: 750px) {
+
+    .banner {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+
+        & > .container {
+            
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+}

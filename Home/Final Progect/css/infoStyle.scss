@@ -470,22 +470,6 @@ ul {
         li:not(li:first-child) {
             margin-left: 26px;
             position: relative;
-
-            & > div {
-                display: none;
-                padding: 30px;
-                font-size: 18px;
-                line-height: 20px;
-                color: #5D6C7B;
-                position: absolute;
-                background: #FFF;
-                border-radius: 10px;
-                box-shadow: 0 0 5px black;
-            }
-
-            &:hover > div {
-                display: block;
-            }
         }
 
         li:first-child {
@@ -502,6 +486,27 @@ ul {
                 border-radius: 10px;
                 box-shadow: 0 0 5px black;
                 width: auto;
+                left: 0;
+            }
+
+            &:hover > div {
+                display: block;
+            }
+        }
+
+        li:nth-of-type(2) {
+            
+            & > div {
+                display: none;
+                padding: 30px;
+                font-size: 18px;
+                line-height: 20px;
+                color: #5D6C7B;
+                position: absolute;
+                background: #FFF;
+                border-radius: 10px;
+                box-shadow: 0 0 5px black;
+                right: -150px;
             }
 
             &:hover > div {
@@ -527,6 +532,7 @@ ul {
                 background: #FFF;
                 border-radius: 10px;
                 box-shadow: 0 0 5px black;
+                right: 0px;
             }
 
             &:hover > div {

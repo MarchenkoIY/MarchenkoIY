@@ -1,3 +1,3 @@
-.banner{background-size:auto}@media all and (max-width: 560px){.banner{display:block;background:#F4F7FB}}
+.banner{background-size:auto}@media all and (max-width: 980px){.banner{background:url(../img/fallBascketGB.svg) center top 47px no-repeat,#F4F7FB;padding-top:150px}}@media all and (max-width: 750px){.banner{display:block}}
 
 /*# sourceMappingURL=mediaBascket.css.map */

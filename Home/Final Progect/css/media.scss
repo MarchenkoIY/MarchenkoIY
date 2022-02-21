@@ -21,8 +21,20 @@
     .bannerDrive {
         background-size: cover;
     }
-    .blogContent img {
-        width: 900px;
+
+    .blogContent {
+        
+        & > img {
+            width: 900px;
+        }
+    }
+}
+
+@media all and (max-width: 1500px) {
+
+    .test-drive {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -36,128 +48,193 @@
         width: 960px;
     }
 
-    .actionsList .actionsItem {
-        padding-left: 195px;
+    .banner {
+        
+        & > .container {
+            
+            .absoluteDiv {
+                left: 650px;
+            }
+        }
     }
 
-    .actionsList .actionsItem:nth-of-type(1), .actionsList .actionsItem:nth-of-type(4) {
-        background: url(../img/fourGift.png) bottom 20px left 20px no-repeat, url(../img/gymGirl.jpg) left -44px top no-repeat, #F4F7FB;
-        background-size: auto, 230px;
-    }
+    .actionsList {
+        
+        .actionsItem {
+            padding-left: 195px;
 
-    .actionsList .actionsItem:nth-of-type(2), .actionsList .actionsItem:nth-of-type(3) {
-        background: url(../img/cheholBG.jpg) left -20px top no-repeat, #F4F7FB;
-        background-size: 210px;
-    }
+            &:nth-of-type(1), &:nth-of-type(4) {
+                background: url(../img/fourGift.png) bottom 20px left 20px no-repeat, url(../img/gymGirl.jpg) left -44px top no-repeat, #F4F7FB;
+                background-size: auto, 230px;
+            }
 
-    .footer .footerTop form input {
-        flex: 0 0 40%;
-    }
-
-    .footerBottom .ourContacts .contacts ul:first-child {
-        margin-right: 35px;
-    }
-
-    .footerBottom .ourContacts .addresses {
-        margin-left: 50px;
-    }
-
-    .footerBottom .social ul:last-child {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-
-    .footerBottom .social {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+            &:nth-of-type(2), &:nth-of-type(3) {
+                background: url(../img/cheholBG.jpg) left -20px top no-repeat, #F4F7FB;
+                background-size: 210px;
+            }
+        }
     }
 
     .catalogItems {
         grid-template-columns: auto auto auto;
     }
 
-    .blog .newsItems {
-        grid-template-columns: repeat(2, auto);
+    .catalogForSale {
+        
+        .catalogForSaleItems {
+            
+            .formForCatalog {
+                margin-right: 10px;
+            }
 
-        .newsItem {
+            .catalogForSaleItemsBlocks {
+                gap: 10px;
 
-            img {
-                width: calc(100% + 40px);
+                .catalogItemSelect {
+                    background: url(../img/scooterBG.png) left 51px top 206px no-repeat,url(../img/sitScooterBG.png) right 26px top 410px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+                }
             }
         }
     }
 
-    .visited .visitedItems {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    .blog {
+        
+        .newsItems {
+            grid-template-columns: repeat(2, auto);
 
-        .catalogItem {
-            margin-top: 30px;
+            .newsItem {
+
+                img {
+                    width: calc(100% + 40px);
+                }
+            }
         }
     }
 
-    .oficialDealer .testDriveButton {
-        padding-top: 526px;
-    }
-
-    .catalogForSale .catalogForSaleItems .formForCatalog {
-        margin-right: 10px;
-    }
-
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
-        gap: 10px;
-    }
-
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
-        background: url(../img/scooterBG.png) left 51px top 206px no-repeat,url(../img/sitScooterBG.png) right 26px top 410px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
-    }
-
-    .marketing > .container {
-        flex-wrap: wrap;
-
-        & > ul {
-            margin-bottom: 20px;
+    .oficialDealer {
+        
+        .testDriveButton {
+            padding-top: 526px;
         }
     }
 
-    .yourQuestions .innerQuestions img {
-        right: 10%;
+    .marketing {
+        
+        & > .container {
+            flex-wrap: wrap;
+
+            & > ul {
+                margin-bottom: 20px;
+            }
+        }
     }
 
-    .banner .container .absoluteDiv {
-        left: 650px;
+    .visited {
+        
+        .visitedItems {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .catalogItem {
+                margin-top: 30px;
+            }
+        }
     }
-    .changeModel > div  {
-        padding-right: 162px;
+
+    .footer {
+        
+        .footerTop {
+            
+            form {
+                
+                input {
+                    flex: 0 0 40%;
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        
+        .ourContacts {
+            
+            .contacts {
+                
+                & > ul:first-child {
+                    margin-right: 35px;
+                }
+            }
+
+            .addresses {
+                margin-left: 50px;
+            }
+        }
+
+        .social {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            & > ul:last-child {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .yourQuestions {
+        
+        .innerQuestions {
+            
+            img {
+                right: 10%;
+            }
+        }
+    }
+
+    .changeModel {
+        
+        & > div  {
+            padding-right: 162px;
+        }
+    }
+
+    .galeriesHeader {
+        
+        .galeriesInputs {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+        }
     }
 
     .galleryService {
         width: auto;
     }
 
-    .productDesription .description .fullCost>button:last-of-type {
-        margin-left: 0;
-        margin-top: 15px;
-    }
+    .productDesription {
+        
+        .description {
+            
+            .gifs {
+                margin-bottom: 15px;
+            }
 
-    .productDesription .description .gifs {
-        margin-bottom: 15px;
-    }
-
-    .howMatchList .howMatchItem .howMatchScoter > div:last-child > div, .howMatchList .howMatchItem .howMatchBike > div:last-child > div, .howMatchList .howMatchItem .howMatchVacuumCleaner > div:last-child > div, .howMatchList .howMatchItem .howMatchScales > div:last-child > div {
-        flex: 0 0 610px;
-    }
-
-    .howMatchList .howMatchItem > div {
-        flex: 0 0 960px;
-    }
-
-    .serviceBanner {
-        background: url(../img/DronLightBlueBG.png) right bottom -50px no-repeat, #F4F7FB;
+            .fullCost{
+                
+                & > button:last-of-type {
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
     }
 
     .howMatchList {
         display: none;
+    }
+
+    .serviceBanner {
+        background: url(../img/DronLightBlueBG.png) right bottom -50px no-repeat, #F4F7FB;
     }
 
     .howMatch {
@@ -199,78 +276,123 @@
         }
     }
 
-    .actionsList .actionsItem:nth-of-type(1), .actionsList .actionsItem:nth-of-type(4) {
-        background: url(../img/fourGift.png) bottom 278px right 20px no-repeat, url(../img/gymGirl.jpg) left top no-repeat, #F4F7FB;
-        background-size: auto, contain;
-        padding: 454px 30px 21px 30px;
+    .actionsList {
+        
+        .actionsItem{
+            
+            &:nth-of-type(1), &:nth-of-type(4) {
+                background: url(../img/fourGift.png) bottom 278px right 20px no-repeat, url(../img/gymGirl.jpg) left top no-repeat, #F4F7FB;
+                background-size: auto, contain;
+                padding: 454px 30px 21px 30px;
 
-        & > a {
-            margin-top: 58px;
+                & > a {
+                    margin-top: 58px;
+                }
+            }
+
+            &:nth-of-type(2), &:nth-of-type(3) {
+                background: url(../img/cheholBG.jpg) left top 0px no-repeat,#F4F7FB;
+                background-size: contain;
+                padding: 454px 30px 21px 30px;
+        
+                & > a {
+                    margin-top: 10px;
+                }
+            }
         }
     }
 
-    .actionsList .actionsItem:nth-of-type(2), .actionsList .actionsItem:nth-of-type(3) {
-        background: url(../img/cheholBG.jpg) left top 0px no-repeat,#F4F7FB;
-        background-size: contain;
-        padding: 454px 30px 21px 30px;
-
-        & > a {
-            margin-top: 10px;
+    .footer {
+        
+        .footerTop {
+            align-items: center;
         }
     }
 
-    .footer .footerTop {
-        align-items: center;
-    }
+    .footerBottom {
+        
+        .ourContacts {
+            display: block;
 
-    .footerBottom .ourContacts {
-        display: block;
-
-        .contacts {
-            justify-content: space-around;
+            .contacts {
+                justify-content: space-around;
+            }
         }
-    }
 
-    .footerBottom .payment p a {
-        margin-right: 15px;
+        .payment {
+            
+            & > p {
+                
+                a {
+                    margin-right: 15px;
+                }
+            }
+        }
     }
 
     .catalogItems {
         grid-template-columns: auto auto;
 
-        .catalogItem h4 {
-            margin-top: 311px;
+        .catalogItem {
+            
+            h4 {
+                margin-top: 311px;
+            }
         }
     }
 
-    .oficialDealer .testDriveButton {
-        padding: 0;
-        padding-top: 433px;
+    .oficialDealer {
+        
+        .testDriveButton {
+            padding: 0;
+            padding-top: 433px;
+        }
     }
 
     .topCategories {
         grid-template-columns: auto auto auto;
     }
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
-        grid-template-columns: auto auto;
+    .catalogForSale {
+
+        .catalogForSaleItems {
+
+            .catalogForSaleItemsBlocks {
+                grid-template-columns: auto auto;
+
+                .catalogItem {
+                    
+                    h4 {
+                        margin-top: 211px;
+                    }
+                }
+            }
+        }
     }
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
-        margin-top: 211px;
-    }
+    .adressesList {
 
-    .adressesList .adressesBlocks .adresseAndPhones .adressesText > ul > li {
-        font-size: 15px;
-    }
+        .adressesBlocks {
 
-    .adressesList .adressesBlocks .adresseAndPhones {
-        display: block;
-    }
+            .adresseAndPhones {
+                display: block;
 
-    .adressesList .adressesBlocks .adresseAndPhones iframe {
-        width: 100%;
-        height: 500px;
+                iframe {
+                    width: 100%;
+                    height: 500px;
+                }
+
+                .adressesText {
+                    
+                    & > ul {
+
+                        & > li {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .invites {
@@ -291,35 +413,48 @@
         }
     }
 
-    .orders .testOrders {
-        background-size: 200px;
+    .yourQuestions {
+
+        .innerQuestions {
+            
+            img {
+                display: none;
+            }
+        }
     }
 
-    .yourQuestions .innerQuestions img {
-        display: none;
+    .regions {
+
+        input + label {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .terms{
+
+            & > div {
+                
+                ul:last-of-type {
+                    flex-wrap: wrap;
+
+                    li:not(:nth-of-type(2)){
+
+                        & > p {
+                            margin-top: 82px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .regions .terms>div ul:last-of-type li:not(:nth-of-type(2))>p {
-        margin-top: 62px;
-    }
+    .catalogHeader {
 
-    .regions input+label {
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    .regions .terms>div > ul:last-of-type {
-        flex-wrap: wrap;
-    }
-
-    .regions .terms>div ul:last-of-type li:not(:nth-of-type(2))>p {
-        margin-top: 82px;
-    }
-
-    .catalogHeader .catalogInputs {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 10px;
+        .catalogInputs {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
     }
 
     .changeModel {
@@ -336,30 +471,65 @@
         }
     }
 
-    .whyAreWe ul li {
-        margin-right: 25px;
+    .whyAreWe {
+        
+        ul {
+            
+            li {
+                margin-right: 25px;
+            }
+        }
     }
 
-    .banner .container .absoluteDiv {
-        left: 440px;
+    .banner {
+        background: linear-gradient(88.23deg, #6F73EE 24.95%, rgba(111, 115, 238, 0) 200%);
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        & > .container {
+
+            & > ul {
+                flex-direction: column;
+        
+                & > li {
+                    margin-bottom: 15px;
+                    margin-right: 0;
+                }
+            }
+
+            .video {
+                margin-left: 57px;
+            }
+           
+
+            .absoluteDiv {
+                left: 440px;
+            }
+        }
     }
 
-    .banner .container .video {
-        margin-left: 57px;
+    .aboutUs {
+        
+        .certificate {
+            display: none;
+        }
     }
 
-    .aboutUs .certificate {
-        display: none;
+    .galeriesHeader {
+        
+        .galeriesInputs {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+        }
     }
 
-    .galeriesHeader .galeriesInputs {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 15px;
-    }
-
-    .test-drive img {
-        display: none;
+    .test-drive {
+        
+        img {
+            display: none;
+        }
     }
 
     .galleryService {
@@ -376,73 +546,133 @@
         }
     }
 
-    .test-drive img {
-        display: none;
-    }
-
     .productDesription {
         display: block;
+
+        .productPhotos {
+            height: auto;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 50px;
+
+            .largePhoto {
+                width: 640px;
+                height: 506px;
+            }
+        }
     }
 
-    .productDesription .productPhotos {
-        height: auto;
-        justify-content: center;
-        margin: 0;
-        margin-bottom: 50px;
-    }
-    .productDesription .productPhotos .largePhoto {
-        width: 640px;
-        height: 506px;
-    }
+    .whatDoesService {
 
-    .whatDoesService .hidroizol, .whatDoesService .setting {
-        flex: 0 0 50%;
-    }
+        .hidroizol, .setting {
+            flex: 0 0 50%;
+        }
 
-    .whatDoesService .setting img {
-        width: 350px;
+        .setting {
+            
+            img {
+                width: 350px;
+            }
+        }
     }
 
     .serviceBanner {
         background: #F4F7FB;
     }
 
-    .zoomDiagnostic > .container .imgZoom > img {
-        display: none;
+    .zoomDiagnostic {
+        
+        & > .container {
+            
+            .imgZoom {
+                
+                & > img {
+                    display: none;
+                }
+            }
+        }
     }
 
-    .banner {
-        background: radial-gradient(74.38% 244.23% at 75.04% 76.25%, #FFC960 0%, #F3A712 100%);
-        padding: 30px;
+    .orders {
+        
+        .testOrders {
+            background: url(../img/phoneBG.png) right 90px bottom -80px no-repeat;
+            background-size: 200px;
+            padding-left: 15px;
+        }
     }
 
-    .whatIsTest .model, .whatIsTest .learn {
-        display: block;
+    .bannerDrive{
+        
+        & >.container {
+            padding-left: 15px;
+
+            & > button{
+                
+                & + div {
+                    
+                    .bgModal {
+                        
+                        .modalBlock {
+                            padding: 40px;
+                            background: #FFF;
+
+                            .lastPlace {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .whatIsTest .model img {
-        margin-top: 50px;
-    }
+    .whatIsTest {
+        
+        .model, .learn {
+            display: block;
+        }
 
-    .whatIsTest .learn img {
-        margin-bottom: 50px;
+        .model {
+            
+            img {
+                margin-top: 50px;
+            }
+        }
+
+        .learn {
+            
+            img {
+                margin-bottom: 50px;
+            }
+        }
     }
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
         padding-right: 241px;
     }
 
-    .bannerDrive>.container>button+div .bgModal .modalBlock {
-        padding: 40px;
-        background: #FFF;
+    .blogContent {
+        
+        img {
+            width: 700px;
+        }
     }
 
-    .bannerDrive>.container>button+div .bgModal .modalBlock .lastPlace {
-        display: none;
+    .diagnostic {
+        display: block;
+        
+        .diagnosticBorder {
+            margin-right: auto;
+            margin-left: auto;
+        }    
     }
 
-    .blogContent img {
-        width: 700px;
+    .zoomDiagnostic {
+
+        & > .container {
+            padding-right: 15px;
+        }
     }
 }
 
@@ -464,29 +694,41 @@
         }
     }
 
-    .menu .menu-list > ul {
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .menu {
         
-        & > li {
-            margin-right: 50px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+        .menu-list {
+            
+            & > ul {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                & > li {
+                    margin-right: 50px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 
-    .banner > .container h2 {
-        font-size: 32px;
+    .banner {
+        display: none;
     }
 
-    .actionsList .actionsItem:nth-of-type(1), .actionsList .actionsItem:nth-of-type(4) {
-        background: url(../img/fourGift.png) bottom 268px right 20px no-repeat,url(../img/gymGirl.jpg) left top no-repeat,#F4F7FB;
-        background-size: auto, contain;
-        padding: 334px 30px 21px 30px;
-    }
+    .actionsList {
+        
+        .actionsItem {
+            
+            &:nth-of-type(1), &:nth-of-type(4) {
+                background: url(../img/fourGift.png) bottom 268px right 20px no-repeat,url(../img/gymGirl.jpg) left top no-repeat,#F4F7FB;
+                background-size: auto, contain;
+                padding: 334px 30px 21px 30px;
+            }
 
-    .actionsList .actionsItem:nth-of-type(2), .actionsList .actionsItem:nth-of-type(3) {
-        padding: 334px 30px 21px 30px;
+            &:nth-of-type(2), &:nth-of-type(3) {
+                padding: 334px 30px 21px 30px;
+            }
+        }
     }
 
     .footer {
@@ -517,8 +759,14 @@
         }
     }
 
-    .catalogItems .catalogItem h4 {
-        margin-top: 221px;
+    .catalogItems {
+        
+        .catalogItem {
+            
+            h4 {
+                margin-top: 221px;
+            }
+        }
     }
 
     .blog {
@@ -541,49 +789,86 @@
         grid-template-columns: auto auto;
     }
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks {
-        grid-template-columns: auto;
-    }
+    .catalogForSale {
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
-        margin-top: 211px;
-    }
+        .catalogForSaleHeader {
+            display: block;
+    
+            & > h2 {
+                margin-bottom: 20px;
+            }
+        }
+        
+        .catalogForSaleItems {
+            
+            .catalogForSaleItemsBlocks {
+                grid-template-columns: auto;
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
-        padding-bottom: 320px;
-    }
+                .catalogItemSelect {
+                    padding-bottom: 320px;
+                    background: url(../img/scooterBG.png) left 51px top 166px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+                }
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
-        background: url(../img/scooterBG.png) left 51px top 166px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
-    }
-
-    .catalogForSale .catalogForSaleHeader {
-        display: block;
-
-        & > h2 {
-            margin-bottom: 20px;
+                .catalogItem {
+                    
+                    h4 {
+                        margin-top: 211px;
+                    }
+                }
+            }
         }
     }
 
-    .galleryService iframe {
-        height: 267px;
+    .galleryService {
+        
+        iframe {
+            height: 267px;
+        }
     }
 
-    .ourPluses .moreInform .market, .ourPluses .moreInform .service {
-        grid-template-columns: auto auto;
-    }
+    .ourPluses {
+        
+        .moreInform {
+            
+            .market, .service {
+                grid-template-columns: auto auto;
 
-    .ourPluses .moreInform .market div:last-child a, .ourPluses .moreInform .service div:last-child a {
-        display: inline-block;
-        margin-top: 40px;
+                div:last-child {
+                    
+                    & > a {
+                        display: inline-block;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
     }
 
     .whyAreWe {
         display: none;
     }
 
-    .faq .questions {
-        width: auto;
+    .faq {
+        
+        .questions {
+            width: auto;
+            
+            &:nth-child(1) > input:checked ~ .answer {
+                height: 120px;
+            }
+
+            &:nth-child(2) > input:checked ~ .answer {
+                height: 310px;
+            }
+
+            &:nth-child(3) > input:checked ~ .answer {
+                height: 330px;
+            }
+
+            &:nth-child(4)>input:checked ~ .answer {
+                height: 190px;
+            }
+        }
     }
 
     .catalogHeader {
@@ -594,87 +879,84 @@
         }
     }
 
-    .banner .container .absoluteDiv {
-        left: 240px;
+    .feedback {
+        
+        .feedbackItems {
+            grid-template-columns: auto auto;
+        }
     }
 
-    .banner .container .text-banner h2 {
-        font-size: 25px;
-    }
-
-    .faq .questions .question:nth-child(1) > input:checked ~ .answer {
-        height: 120px;
-    }
-
-    .faq .questions .question:nth-child(2) > input:checked ~ .answer {
-        height: 310px;
-    }
-
-    .faq .questions .question:nth-child(3) > input:checked ~ .answer {
-        height: 330px;
-    }
-
-    .faq .questions .question:nth-child(4)>input:checked ~ .answer {
-        height: 190px;
-    }
-
-    .feedback .feedbackItems {
-        grid-template-columns: auto auto;
-    }
-
-    .oficialDealer .testDriveButton {
-        display: none;
+    .oficialDealer {
+        
+        .testDriveButton {
+            display: none;
+        }
     }
 
     .deliver {
         margin: 30px 0;
     }
 
-    .humanResources .hrs {
-        grid-template-columns: auto auto;
+    .humanResources {
+
+        h2 {
+            width: auto;
+        }
+    
+        .hrs {
+            grid-template-columns: auto auto;
+        }
     }
 
-    .banner {
-        display: none;
+    .whatDoesService {
+        
+        .setting {
+            display: block;
+            padding-left: 66px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .hidroizol {
+            display: block;
+
+            .hidroizolVideo {
+                height: 300px;
+                margin-bottom: 50px;
+            }
+        }
     }
 
-    .whatDoesService .setting img {
-        display: none;
-    }
+    .adressesService {
+        
+        .adresses {
+        
+            & > .container {
+                display: block;
+                text-align: center;
 
-    .whatDoesService .hidroizol {
-        display: block;
-    }
+                & > ul {
+                    
+                    & > li:first-of-type {
+                        margin-top: 50px;
+                    }
 
-    .whatDoesService .hidroizol .hidroizolVideo {
-        height: 300px;
-        margin-bottom: 50px;
-    }
+                    & > li:nth-of-type(2) {
+                        background: url(../img/localV.svg) left 150px top 3px no-repeat;
+                    }                
 
-    .whatDoesService .setting {
-        display: block;
-        padding-left: 66px;
-    }
+                    & > li:nth-of-type(3) {
+                        background: url(../img/phoneV.svg) left 150px top 5px no-repeat;
+                    }
 
-    .adressesService .adresses > .container {
-        display: block;
-        text-align: center;
-    }
-
-    .adressesService .adresses > .container > ul > li:first-of-type {
-        margin-top: 50px;
-    }
-
-    .adressesService .adresses > .container > ul > li:nth-of-type(3) {
-        background: url(../img/phoneV.svg) left 150px top 5px no-repeat;
-    }
-
-    .adressesService .adresses > .container > ul > li:nth-of-type(2) {
-        background: url(../img/localV.svg) left 150px top 3px no-repeat;
-    }
-
-    .adressesService .adresses > .container > ul > li:nth-of-type(4) {
-        background: url(../img/warningV.svg) left 150px top 8px no-repeat;
+                    & > li:nth-of-type(4) {
+                        background: url(../img/warningV.svg) left 150px top 8px no-repeat;
+                    }
+                }
+            }
+        }
     }
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
@@ -682,13 +964,117 @@
         background: url(../img/EllipseBlueBG.png) right bottom no-repeat,#FFF;
     }
 
-    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form {
-        display: flex;
+    .zoomDiagnostic {
+        margin-left: 0;
+        margin-right: 0;
+        
+        & > .container {
+            
+            .zoomText {
+                
+                button {
+                    
+                    & + div {
+                        
+                        .bgModal {
+                            
+                            .modalBlock, .modalBlockService {
+                                
+                                form {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blogContent {
+        
+        img {
+            width: 500px;
+        }
+    }
+
+    .costHidroizolAndSetting {
+        
+        label {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+
+    .serviceBanner {
+        
+        & > .container {
+            
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .galeriesHeader {
         flex-direction: column;
     }
 
-    .blogContent img {
-        width: 500px;
+    .test-drive {
+        text-align: center;
+
+        .formData {
+            
+            form {
+                
+                input {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .orders {
+        
+        .testOrders {
+            background: transparent;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .yourQuestions {
+        
+        .innerQuestions {
+            
+            & > .container {
+                
+                form {
+                    
+                    input[type="tel"] {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bannerDrive {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .whatIsTest {
+        
+        .learn {
+            
+            img {
+                margin-right: 0;
+            }
+        }
     }
 }
 
@@ -703,76 +1089,125 @@
         width: auto;
     }
 
-    .header-top > ul:first-child li {
-        margin-right: 10px;
-    }
+    .header-top {
 
-    .banner>.container h2 {
-        font-size: 20px;
+        & > ul {
+            display: block;
+            margin-right: 30px;
+
+            &:first-child {
+            
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 
     .actionsList {
         grid-template-columns: auto;
-    }
 
-    .actionsList .actionsItem:nth-of-type(2), .actionsList .actionsItem:nth-of-type(3) {
-        background: url(../img/cheholBGsmall.jpg) left top -164px no-repeat,#F4F7FB;
-        background-size: contain;
-        padding: 284px 30px 21px 30px;
+        .actionsItem {
 
-        & > a {
-            margin-top: 30px;
+            &:nth-of-type(2), &:nth-of-type(3) {
+                background: url(../img/cheholBGsmall.jpg) left top -164px no-repeat,#F4F7FB;
+                background-size: contain;
+                padding: 284px 30px 21px 30px;
+        
+                & > a {
+                    margin-top: 30px;
+                }
+            }
+
+            &:nth-of-type(1), &:nth-of-type(4) {
+                background: url(../img/fourGift.png) bottom 268px right 20px no-repeat,url(../img/gymGirl.jpg) center top no-repeat,#F4F7FB;
+                background-size: auto, 250px;
+                padding: 334px 30px 21px 30px;
+            }
         }
     }
 
-    .actionsList .actionsItem:nth-of-type(1), .actionsList .actionsItem:nth-of-type(4) {
-        background: url(../img/fourGift.png) bottom 268px right 20px no-repeat,url(../img/gymGirl.jpg) center top no-repeat,#F4F7FB;
-        background-size: auto, 250px;
-        padding: 334px 30px 21px 30px;
-    }
+    .footerBottom {
+        
+        .ourContacts {
+            
+            .addresses {
+                margin-left: 0;
 
-    .footerBottom .ourContacts .addresses {
-        margin-left: 0;
-    }
+                ul:last-of-type {
+                    
+                    & > li:not(li:last-of-type) {
+                        margin-right: 30px;
+                    }
+                }
+            }
 
-    .footerBottom .ourContacts .addresses ul:last-of-type > li:not(li:last-of-type) {
-        margin-right: 30px;
-    }
+            .contacts {
+                display: block;
+                text-align: center;
 
-    .footerBottom .social ul:last-child {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+                & > ul:first-child {
+                    margin-right: 0;
+                }
 
-    .footerBottom .social h2 {
-        margin-right: 0;
+                & > ul:nth-of-type(2) {
+                    margin-top: 30px;
+                }
+
+                & > ul:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .payment {
+                
+            p {
+                margin-left: 50px;
+            }
+        }
+
+        .social {
+
+            h2 {
+                margin-right: 0;
+            }
+            
+            & > ul:last-child {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
     }
 
     .catalogItems {
         grid-template-columns: auto;
 
-        .catalogItem h4 {
-            margin-top: 441px;
+        .catalogItem {
+            
+            h4 {
+                margin-top: 441px;
+            }
         }
     }
 
-    .blog .newsItems {
-        grid-template-columns: auto;
-    }
-
     .blog {
-
+        
         .blogHeader {
 
             .blogInputs {
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto;
                 gap: 5px;
 
                 & > a {
                     margin: 0;
                 }
             }
+        }
+
+        .newsItems {
+            grid-template-columns: auto;
         }
     }
 
@@ -783,34 +1218,98 @@
         }
     }
 
-    .videoContent .iframes div iframe {
-        width: 271px;
-        height: 160px;
+    .videoContent {
+
+        .videoHeader {
+            flex-direction: column;
+            
+            h2 {
+                font-size: 25px;
+                width: auto;
+                text-align: center;
+            }
+        }
+        
+        .iframes {
+            
+            & > div {
+                
+                iframe {
+                    width: 271px;
+                    height: 160px;
+                }
+            }
+        }
     }
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItemSelect {
-        background: url(../img/scooterBG.png) left 51px top 196px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+    .catalogForSale {
+
+        .catalogForSaleHeader {
+            
+            .selectors select:nth-of-type(2) {
+                margin-left: 110px;
+                margin-top: 15px;
+            }
+        }
+        
+        .catalogForSaleItems {
+            display: block;
+
+            .catalogForSaleItemsBlocks {
+                
+                .catalogItem {
+                    
+                    h4 {
+                        margin-top: 451px;
+                    }
+                }
+
+                .catalogItemSelect {
+                    background: url(../img/scooterBG.png) left 51px top 196px no-repeat,url(../img/sitScooterBG.png) right 26px top 300px no-repeat,url(../img/selectSomeBG.png) center bottom no-repeat,#F4F7FB;
+                }
+            }
+
+            .formForCatalog {
+                text-align: center;
+            }
+        }
     }
 
-    .catalogForSale .catalogForSaleItems .formForCatalog {
-        text-align: center;
+    .yourQuestions {
+        
+        .innerQuestions {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+
+            & > .container {
+                
+                form {
+                    
+                    input[type="tel"] {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
     }
 
-    .catalogForSale .catalogForSaleItems {
-        display: block;
-    }
+    .orders {
+        
+        .testOrders {
+            background: none;
 
-    .catalogForSale .catalogForSaleItems .catalogForSaleItemsBlocks .catalogItem h4 {
-        margin-top: 451px;
-    }
+            h2 {
+                font-size: 25px;
+                width: auto;
+                text-align: center;
+            }
 
-    .yourQuestions .innerQuestions {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .orders .testOrders {
-        background: none;
+            & > ul:last-of-type {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     .topCategories {
@@ -823,92 +1322,199 @@
 
     .changeModel {
         margin-bottom: 50px;
+
+        & > div {
+
+            &:first-of-type{
+                padding-right: 67px;
+            } 
+            
+            &:last-of-type {
+                padding-right: 107px;
+            }
+        }
     }
 
     .banner {
         display: none;
     }
 
-    .ourPluses .moreInform .market, .ourPluses .moreInform .service {
-        grid-template-columns: auto;
+    .ourPluses {
+
+        h2 {
+            padding: 0;
+            font-size: 25px;
+            width: auto;
+            text-align: center;
+        }
+
+        input + label {
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .moreInform {
+            
+            .market, .service {
+                grid-template-columns: auto;
+            }
+        }
     }
 
-    .galleryService iframe {
-        height: 287px;
-    }
+    .galleryService {
 
-    .galleryService > img {
-        width: 300px;
+        & > img {
+            width: 300px;
+        }
+        
+        iframe {
+            height: 287px;
+        }
     }
 
     .galeriesHeader {
         display: block;
+        
+        h2 {
+            font-size: 25px;
+            width: auto;
+            text-align: center;
+        }
     }
 
-    .humanResources h2 {
-        width: auto;
-    }
+    .humanResources {
+        
+        h2 {
+            width: auto;
+            font-size: 25px;
+            text-align: center;
+        }
 
-    .ourPluses h2 {
-        padding: 0;
+        .hrs {
+            grid-template-columns: auto;
+        }
     }
 
     .test-drive {
         display: block;
-    }
-
-    .test-drive .formData h2 {
-        font-size: 25px;
-        width: auto;
-    }
-
-    .test-drive .formData form button {
-        padding: 15px 20px;
-    }
-
-    .test-drive .formData form input {
+        text-align: center;
         margin-right: 0;
+        margin-left: 0;
+
+        .formData {
+            
+            h2 {
+                font-size: 25px;
+                width: auto;
+            }
+
+            form {
+
+                input {
+                    margin-right: 0;
+                    padding-right: 15px;
+                }
+                
+                button {
+                    padding: 15px 20px;
+                }
+            }
+        }
     }
 
-    .costHidroizolAndSetting input + label {
-        display: inline-block;
-        margin-bottom: 10px;
+    .costHidroizolAndSetting {
+
+        & > .container {
+            
+            & > div {
+                display: block;
+            }
+        }
+        
+        input + label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
     }
 
-    .zoomDiagnostic > .container .zoomText h2 {
-        font-size: 25px;
+    .zoomDiagnostic {
+        margin-left: 0;
+        margin-right: 0;
+        
+        & > .container {
+            display: block;
+            text-align: center;
+
+            .zoomText {
+                
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
     }
 
     .diagnostic {
         display: block;
+
+        .diagnosticBorder {
+            margin-left: 0;
+            width: auto;
+            height: auto;
+
+            .diagnosticBackground {
+                width: 300px;
+                height: 300px;
+            }
+        }
     }
 
-    .adressesService .adresses > .container > ul > li:nth-of-type(3) {
-        background: url(../img/phoneV.svg) left top 5px no-repeat;
+    .adressesService {
+        
+        .adresses {
+            
+            & > .container {
+                
+                & > ul {
+
+                    & > li:nth-of-type(2) {
+                        background: url(../img/localV.svg) left top 3px no-repeat;
+                    }
+                    
+                    & > li:nth-of-type(3) {
+                        background: url(../img/phoneV.svg) left top 5px no-repeat;
+                    }
+
+                    & > li:nth-of-type(4) {
+                        background: url(../img/warningV.svg) left top 8px no-repeat;
+                    }
+                }
+            }
+        }
     }
 
-    .adressesService .adresses > .container > ul > li:nth-of-type(2) {
-        background: url(../img/localV.svg) left top 3px no-repeat;
-    }
+    .faq {
 
-    .adressesService .adresses > .container > ul > li:nth-of-type(4) {
-        background: url(../img/warningV.svg) left top 8px no-repeat;
-    }
+        h2 {
+            font-size: 25px;
+            width: auto;
+            text-align: center;
+        }
+        
+        .questions {
+            
+            .question:nth-child(2)>input:checked ~ .answer {
+                height: 350px;
+            }
 
-    .diagnostic .diagnosticBorder {
-        margin-left: 0;
-    }
+            .question:nth-child(3)>input:checked ~ .answer {
+                height: 350px;
+            }
 
-    .faq .questions .question:nth-child(2)>input:checked ~ .answer {
-        height: 350px;
-    }
-
-    .faq .questions .question:nth-child(3)>input:checked ~ .answer {
-        height: 350px;
-    }
-
-    .faq .questions .question:nth-child(4)>input:checked ~ .answer {
-        height: 230px;
+            .question:nth-child(4)>input:checked ~ .answer {
+                height: 230px;
+            }
+        }
     }
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock h2, .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService h2, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock h2, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlockService h2 {
@@ -930,41 +1536,19 @@
         padding-right: 0;
     }
 
-    .ourPluses input+label {
-        display: inline-block;
-        margin-top: 15px;
-    }
+    .footer {
+        
+        .footerTop {
+            
+            form {
+                display: block;
 
-    .catalogForSale .catalogForSaleHeader .selectors select:nth-of-type(2) {
-        margin-left: 110px;
-        margin-top: 15px;
-    }
-
-    .footerBottom .ourContacts .contacts {
-        display: block;
-
-        & > ul:nth-of-type(2) {
-            margin-top: 30px;
+                button {
+                    margin-left: 0;
+                    margin-top: 15px;
+                }
+            }
         }
-    }
-
-    .footerBottom .ourContacts .contacts ul:last-child {
-        margin: 0;
-    }
-
-    .footer .footerTop form {
-        display: block;
-    }
-
-    .footer .footerTop form button {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-
-    .header-top>ul {
-        display: block;
-
-        margin-right: 30px;
     }
 
     .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService, .serviceBanner > .container button + div .bgModal .modalBlock, .serviceBanner > .container button + div .bgModal .modalBlockService {
@@ -986,12 +1570,37 @@
         margin-right: 0;
     }
 
-    .whatIsTest .model img, .whatIsTest .learn img {
-        width: 250px;
+    .whatIsTest {
+
+        & + h2 {
+            font-size: 25px;
+        }
+        
+        .model, .learn {
+            
+            img {
+                width: 250px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .text {
+
+                h2 {
+                    font-size: 25px;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+        }
     }
 
-    .blogContent img {
-        width: 300px;
+    .blogContent {
+        
+        img {
+            width: 300px;
+        }
     }
 
     .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3), .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3) {
@@ -1005,69 +1614,48 @@
         margin-bottom: 10px;
     }
 
-    .bannerDrive>.container h2 {
-        font-size: 25px;
+    .bannerDrive{
+        padding: 15px;
+        
+        & >.container {
+            
+            h2 {
+                font-size: 25px;
+            }
+        }
     }
 
-    .footerBottom .ourContacts .contacts {
-        text-align: center;
-    }
-
-    .footerBottom .ourContacts .contacts ul:first-child {
-        margin-right: 0;
-    }
-
-    .yourQuestions .innerQuestions {
-        text-align: center;
-    }
-
-    .yourQuestions .innerQuestions>.container form input[type="tel"] {
-        margin-right: 0;
-    }
-
-    .whatIsTest+h2 {
-        font-size: 25px;
-    }
-
-    .whatIsTest .model .text h2, .whatIsTest .learn .text h2,
     .aboutUs .aboutUsText h2, 
-    .ourPluses h2,
-    .humanResources h2,
-    .galeriesHeader h2,
-    .videoContent .videoHeader h2,
     .feedback h2,
     .news h2,
-    .faq h2,
     .regions h2,
-    .orders .testOrders h2,
     .invites .invitesText h2,
     .topCategoriesHeader h2,
     .oficialDealer .dscOficialDealer h2 {
         font-size: 25px;
-    }
-
-    .bannerDrive {
-        padding: 15px;
-    }
-
-    .whatIsTest .model img, .whatIsTest .learn img {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .footerBottom .payment p {
-        margin-left: 50px;
-    }
-
-    .productDesription .description>ul:first-of-type,
-    .productDesription .description>ul:nth-of-type(3) {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .productDesription .description {
+        width: auto;
         text-align: center;
+    }
+
+    .marketing {
+        
+        & > .container {
+            padding-left: 15px;
+        }
+    }
+
+    .productDesription {
+        
+        .description {
+            text-align: center;
+
+            & > ul:first-of-type,
+            & > ul:nth-of-type(3) {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
     }
 
     .deliver + h2 + input + label, .catalogForSaleHeader > h2 + input + label + input + label {
@@ -1092,5 +1680,15 @@
 
     .deliver + h2 + input:checked + label ~ .catalogForSale > .catalogForSaleItems > .formForCatalog {
         display: block;
+    }
+
+    .serviceBanner {
+        text-align: center;
+
+        & > .container h2 {
+            font-size: 25px;
+            width: auto;
+            text-align: center;
+        }
     }
 }

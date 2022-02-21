@@ -322,18 +322,6 @@ ul {
     .header-search > ul li:not(li:first-child) {
       margin-left: 26px;
       position: relative; }
-      .header-search > ul li:not(li:first-child) > div {
-        display: none;
-        padding: 30px;
-        font-size: 18px;
-        line-height: 20px;
-        color: #5D6C7B;
-        position: absolute;
-        background: #FFF;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black; }
-      .header-search > ul li:not(li:first-child):hover > div {
-        display: block; }
     .header-search > ul li:first-child {
       position: relative; }
       .header-search > ul li:first-child > div {
@@ -346,9 +334,23 @@ ul {
         background: #FFF;
         border-radius: 10px;
         box-shadow: 0 0 5px black;
-        width: auto; }
+        width: auto;
+        left: 0; }
       .header-search > ul li:first-child:hover > div {
         display: block; }
+    .header-search > ul li:nth-of-type(2) > div {
+      display: none;
+      padding: 30px;
+      font-size: 18px;
+      line-height: 20px;
+      color: #5D6C7B;
+      position: absolute;
+      background: #FFF;
+      border-radius: 10px;
+      box-shadow: 0 0 5px black;
+      right: -150px; }
+    .header-search > ul li:nth-of-type(2):hover > div {
+      display: block; }
     .header-search > ul li:last-child {
       vertical-align: 3px;
       font-weight: 500;
@@ -365,7 +367,8 @@ ul {
         position: absolute;
         background: #FFF;
         border-radius: 10px;
-        box-shadow: 0 0 5px black; }
+        box-shadow: 0 0 5px black;
+        right: 0px; }
       .header-search > ul li:last-child:hover > div {
         display: block; }
   .header-search .search {
@@ -1678,18 +1681,6 @@ ul {
     .header-search > ul li:not(li:first-child) {
       margin-left: 26px;
       position: relative; }
-      .header-search > ul li:not(li:first-child) > div {
-        display: none;
-        padding: 30px;
-        font-size: 18px;
-        line-height: 20px;
-        color: #5D6C7B;
-        position: absolute;
-        background: #FFF;
-        border-radius: 10px;
-        box-shadow: 0 0 5px black; }
-      .header-search > ul li:not(li:first-child):hover > div {
-        display: block; }
     .header-search > ul li:first-child {
       position: relative; }
       .header-search > ul li:first-child > div {
@@ -1702,9 +1693,23 @@ ul {
         background: #FFF;
         border-radius: 10px;
         box-shadow: 0 0 5px black;
-        width: auto; }
+        width: auto;
+        left: 0; }
       .header-search > ul li:first-child:hover > div {
         display: block; }
+    .header-search > ul li:nth-of-type(2) > div {
+      display: none;
+      padding: 30px;
+      font-size: 18px;
+      line-height: 20px;
+      color: #5D6C7B;
+      position: absolute;
+      background: #FFF;
+      border-radius: 10px;
+      box-shadow: 0 0 5px black;
+      right: -150px; }
+    .header-search > ul li:nth-of-type(2):hover > div {
+      display: block; }
     .header-search > ul li:last-child {
       vertical-align: 3px;
       font-weight: 500;
@@ -1721,7 +1726,8 @@ ul {
         position: absolute;
         background: #FFF;
         border-radius: 10px;
-        box-shadow: 0 0 5px black; }
+        box-shadow: 0 0 5px black;
+        right: 0px; }
       .header-search > ul li:last-child:hover > div {
         display: block; }
   .header-search .search {
