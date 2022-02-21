@@ -21,6 +21,9 @@
     .bannerDrive {
         background-size: cover;
     }
+    .blogContent img {
+        width: 900px;
+    }
 }
 
 @media all and (max-width: 1190px) {
@@ -424,6 +427,23 @@
     .whatIsTest .learn img {
         margin-bottom: 50px;
     }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
+        padding-right: 241px;
+    }
+
+    .bannerDrive>.container>button+div .bgModal .modalBlock {
+        padding: 40px;
+        background: #FFF;
+    }
+
+    .bannerDrive>.container>button+div .bgModal .modalBlock .lastPlace {
+        display: none;
+    }
+
+    .blogContent img {
+        width: 700px;
+    }
 }
 
 @media all and (max-width: 750px) {
@@ -656,6 +676,20 @@
     .adressesService .adresses > .container > ul > li:nth-of-type(4) {
         background: url(../img/warningV.svg) left 150px top 8px no-repeat;
     }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
+        padding: 40px;
+        background: url(../img/EllipseBlueBG.png) right bottom no-repeat,#FFF;
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogContent img {
+        width: 500px;
+    }
 }
 
 @media all and (max-width: 560px) {
@@ -871,5 +905,87 @@
 
     .faq .questions .question:nth-child(4)>input:checked ~ .answer {
         height: 230px;
+    }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock h2, .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService h2, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock h2, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlockService h2 {
+        font-size: 18px;
+    }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
+        width: 300px;
+    }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock form button, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock form button, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlockService form button{
+        padding: 15px 37px;
+    }
+
+    .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock form input[type="tel"], .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService form input[type="tel"],
+    .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock form input[type="tel"], .footerBottom .ourContacts .addresses a+div .bgModal .modalBlockService form input[type="tel"] {
+        padding-right: 0;
+    }
+
+    .ourPluses input+label {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .catalogForSale .catalogForSaleHeader .selectors select:nth-of-type(2) {
+        margin-left: 110px;
+        margin-top: 15px;
+    }
+
+    .footerBottom .ourContacts .contacts {
+        display: block;
+
+        & > ul:nth-of-type(2) {
+            margin-top: 30px;
+        }
+    }
+
+    .footerBottom .ourContacts .contacts ul:last-child {
+        margin: 0;
+    }
+
+    .footer .footerTop form {
+        display: block;
+    }
+
+    .footer .footerTop form button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .catalogForSale .catalogForSaleHeader>h2 {
+        display: none;
+    }
+
+    .header-top>ul {
+        display: block;
+
+        margin-right: 30px;
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService, .serviceBanner > .container button + div .bgModal .modalBlock, .serviceBanner > .container button + div .bgModal .modalBlockService {
+        width: 300px;
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock h2, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService h2, .serviceBanner > .container button + div .bgModal .modalBlock h2, .serviceBanner > .container button + div .bgModal .modalBlockService h2 {
+        font-size: 18px;
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form button, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form button, .serviceBanner > .container button + div .bgModal .modalBlock form button, .serviceBanner > .container button + div .bgModal .modalBlockService form button {
+        padding: 15px 51px;
+    }
+
+    .serviceBanner > .container button + div .bgModal .modalBlock form input[type="tel"], .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="tel"] {
+        padding-right: 0;
+    }
+
+    .whatIsTest .model img, .whatIsTest .learn img {
+        width: 250px;
+    }
+
+    .blogContent img {
+        width: 300px;
     }
 }
