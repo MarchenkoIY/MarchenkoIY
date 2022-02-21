@@ -6,22 +6,36 @@
 
 .deliver {
     margin-top: 30px;
+
+    & + h2 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #282739;
+
+        & + input, & + input + label + input {
+            display: none;
+        }
+
+        & + input + label, & + input + label + input + label {
+            font-size: 20px;
+            line-height: 17px;
+            color: #6F73EE;
+            display: none;
+            margin-bottom: 20px;
+        } 
+    }
 }
+
 .catalogForSale {
 
     .catalogForSaleHeader {
         display: flex;
         justify-content: space-between;
 
-        h2 {
-            font-weight: 600;
-            font-size: 25px;
-            line-height: 36px;
-            text-transform: uppercase;
-            color: #282739;
-        }
-
         .selectors {
+            margin-top: 20px;
 
             span {
                 font-weight: 500;

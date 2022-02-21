@@ -793,7 +793,7 @@
     }
 
     .catalogForSale .catalogForSaleItems .formForCatalog {
-        display: none;
+        text-align: center;
     }
 
     .catalogForSale .catalogForSaleItems {
@@ -835,6 +835,10 @@
 
     .galleryService iframe {
         height: 287px;
+    }
+
+    .galleryService > img {
+        width: 300px;
     }
 
     .galeriesHeader {
@@ -913,10 +917,12 @@
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock, .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock {
         width: 300px;
+        text-align: center;
     }
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock form button, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlock form button, .footerBottom .ourContacts .addresses a+div .bgModal .modalBlockService form button{
         padding: 15px 37px;
+        margin-right: 0;
     }
 
     .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlock form input[type="tel"], .header-top>ul:first-child li:last-of-type>div .bgModal .modalBlockService form input[type="tel"],
@@ -955,10 +961,6 @@
         margin-top: 15px;
     }
 
-    .catalogForSale .catalogForSaleHeader>h2 {
-        display: none;
-    }
-
     .header-top>ul {
         display: block;
 
@@ -967,6 +969,7 @@
 
     .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService, .serviceBanner > .container button + div .bgModal .modalBlock, .serviceBanner > .container button + div .bgModal .modalBlockService {
         width: 300px;
+        text-align: center;
     }
 
     .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock h2, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService h2, .serviceBanner > .container button + div .bgModal .modalBlock h2, .serviceBanner > .container button + div .bgModal .modalBlockService h2 {
@@ -975,10 +978,12 @@
 
     .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form button, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form button, .serviceBanner > .container button + div .bgModal .modalBlock form button, .serviceBanner > .container button + div .bgModal .modalBlockService form button {
         padding: 15px 51px;
+        margin-right: 0;
     }
 
     .serviceBanner > .container button + div .bgModal .modalBlock form input[type="tel"], .serviceBanner > .container button + div .bgModal .modalBlockService form input[type="tel"] {
         padding-right: 0;
+        margin-right: 0;
     }
 
     .whatIsTest .model img, .whatIsTest .learn img {
@@ -987,5 +992,105 @@
 
     .blogContent img {
         width: 300px;
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3), .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label:nth-of-type(3) {
+       margin-right: auto; 
+    }
+
+    .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlock form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label, .zoomDiagnostic > .container .zoomText button + div .bgModal .modalBlockService form input[type="checkbox"]:not(input[type="checkbox"]:last-of-type) + label {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    .bannerDrive>.container h2 {
+        font-size: 25px;
+    }
+
+    .footerBottom .ourContacts .contacts {
+        text-align: center;
+    }
+
+    .footerBottom .ourContacts .contacts ul:first-child {
+        margin-right: 0;
+    }
+
+    .yourQuestions .innerQuestions {
+        text-align: center;
+    }
+
+    .yourQuestions .innerQuestions>.container form input[type="tel"] {
+        margin-right: 0;
+    }
+
+    .whatIsTest+h2 {
+        font-size: 25px;
+    }
+
+    .whatIsTest .model .text h2, .whatIsTest .learn .text h2,
+    .aboutUs .aboutUsText h2, 
+    .ourPluses h2,
+    .humanResources h2,
+    .galeriesHeader h2,
+    .videoContent .videoHeader h2,
+    .feedback h2,
+    .news h2,
+    .faq h2,
+    .regions h2,
+    .orders .testOrders h2,
+    .invites .invitesText h2,
+    .topCategoriesHeader h2,
+    .oficialDealer .dscOficialDealer h2 {
+        font-size: 25px;
+    }
+
+    .bannerDrive {
+        padding: 15px;
+    }
+
+    .whatIsTest .model img, .whatIsTest .learn img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footerBottom .payment p {
+        margin-left: 50px;
+    }
+
+    .productDesription .description>ul:first-of-type,
+    .productDesription .description>ul:nth-of-type(3) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .productDesription .description {
+        text-align: center;
+    }
+
+    .deliver + h2 + input + label, .catalogForSaleHeader > h2 + input + label + input + label {
+        display: inline-block;
+    }
+
+    .deliver + h2 + input + label + input:checked + label {
+        display: none;
+    }
+
+    .deliver + h2 + input:checked + label {
+        display: none;
+    }
+
+    .deliver + h2 + input:checked + label + input + label {
+        display: inline-block;
+    }
+
+    .deliver + h2 + input + label + input:checked + label ~ .catalogForSale > .catalogForSaleItems > .formForCatalog {
+        display: none;
+    }
+
+    .deliver + h2 + input:checked + label ~ .catalogForSale > .catalogForSaleItems > .formForCatalog {
+        display: block;
     }
 }

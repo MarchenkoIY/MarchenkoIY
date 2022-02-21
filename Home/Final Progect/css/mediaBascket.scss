@@ -1,3 +1,11 @@
 .banner {
     background-size: auto;
 }
+
+@media all and (max-width: 560px) {
+
+    .banner {
+        display: block;
+        background: #F4F7FB;
+    }
+}

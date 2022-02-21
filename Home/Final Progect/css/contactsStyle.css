@@ -198,6 +198,7 @@ ul {
       width: 230px;
       display: none;
       top: 25px;
+      right: 0;
       z-index: 25; }
       .header-top .telephone .moreTelefones ul {
         display: block; }
@@ -1553,6 +1554,7 @@ ul {
       width: 230px;
       display: none;
       top: 25px;
+      right: 0;
       z-index: 25; }
       .header-top .telephone .moreTelefones ul {
         display: block; }
@@ -4074,29 +4076,39 @@ ul {
 
 .deliver {
   margin-top: 30px; }
-
-.catalogForSale .catalogForSaleHeader {
-  display: flex;
-  justify-content: space-between; }
-  .catalogForSale .catalogForSaleHeader h2 {
+  .deliver + h2 {
     font-weight: 600;
     font-size: 25px;
     line-height: 36px;
     text-transform: uppercase;
     color: #282739; }
-  .catalogForSale .catalogForSaleHeader .selectors span {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #282739; }
-  .catalogForSale .catalogForSaleHeader .selectors select {
-    margin-left: 20px;
-    border: 1.3px solid #6F73EE;
-    border-radius: 5px;
-    font-size: 12px;
-    line-height: 17px;
-    color: #6F73EE;
-    padding: 10px 20px; }
+    .deliver + h2 + input, .deliver + h2 + input + label + input {
+      display: none; }
+    .deliver + h2 + input + label, .deliver + h2 + input + label + input + label {
+      font-size: 20px;
+      line-height: 17px;
+      color: #6F73EE;
+      display: none;
+      margin-bottom: 20px; }
+
+.catalogForSale .catalogForSaleHeader {
+  display: flex;
+  justify-content: space-between; }
+  .catalogForSale .catalogForSaleHeader .selectors {
+    margin-top: 20px; }
+    .catalogForSale .catalogForSaleHeader .selectors span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #282739; }
+    .catalogForSale .catalogForSaleHeader .selectors select {
+      margin-left: 20px;
+      border: 1.3px solid #6F73EE;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 17px;
+      color: #6F73EE;
+      padding: 10px 20px; }
 .catalogForSale .catalogForSaleItems {
   display: flex;
   margin-top: 32px; }
