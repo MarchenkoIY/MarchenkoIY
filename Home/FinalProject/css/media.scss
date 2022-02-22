@@ -1195,10 +1195,14 @@
             .addresses {
                 margin-left: 0;
 
-                ul:last-of-type {
-                    
-                    & > li:not(li:last-of-type) {
-                        margin-right: 30px;
+                ul {
+                    flex-direction: column;
+                    text-align: center;
+                    margin: 0;
+        
+                    & > li {
+                        margin-right: 0;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -1239,6 +1243,11 @@
                 justify-content: space-around;
             }
         }
+    }
+
+    
+    .footerBottom .ourContacts .addresses ul:first-of-type>li, .footerBottom .ourContacts .addresses ul:last-of-type>li:not(li:last-of-type) {
+        margin-right: 0;
     }
 
     .catalogItems {
