@@ -201,6 +201,7 @@ ul {
             line-height: 17px;
             color: #5D6C7B;
             margin: 11px 30px 11px 0;
+            cursor: pointer;
 
             &:last-of-type > div {
                 @include modal;
