@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+    <div id="button"></div>
     <div class="header container">
         <ul>
-            <li><a>process</a></li>
-            <li><a>projects</a></li>
-            <li><a>feedback</a></li>
-            <li><a>contact</a></li>
+            <li><a href="#process" class="navigation">process</a></li>
+            <li><a href="#projects" class="navigation">projects</a></li>
+            <li><a href="#feedback" class="navigation">feedback</a></li>
+            <li><a href="#contact" class="navigation">contact</a></li>
         </ul>
     </div>
     <div class="banner">
@@ -35,7 +36,7 @@
         </div>
         <img src="img/cross.svg">
     </div>
-    <div class="process container">
+    <div class="process container" id="process">
         <h2>How we make brands thrive</h2>
         <span></span>
         <div class="processItems">
@@ -53,17 +54,13 @@
             </div>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
         <h2>Recent projects</h2>
         <span></span>
         <div class="projectItems container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
     </div>
-    <div class="feedback container">
+    <div class="feedback container" id="feedback">
         <img src="img/quat.svg">
         <div class="feedbackItem">
             <div>
@@ -78,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contact">
         <h2>LET’s Get in touch</h2>
         <span></span>
         <div class="contactsItem container">
@@ -99,5 +96,8 @@
         </form>
         <h3>Saysha.Art</h3>
     </div>
+    <script src="scripts/buttonUp.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/modalImage.js"></script>
 </body>
 </html>

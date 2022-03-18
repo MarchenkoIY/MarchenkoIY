@@ -18,6 +18,71 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+
+    & > img {
+        display: block;
+        margin: auto;
+        animation: opened 0.150s;
+        width: auto;
+        height: 100vh;
+    }
+
+    & > button {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background: url('../img/crossClose.png') center no-repeat;
+        background-size: cover;
+        border: none;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    & > button:hover {
+        opacity: 1;
+    }
+
+    & > a {
+        display: block;
+        background: white;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: absolute;
+        bottom: 0;
+        color: black;
+        transition: 0.152s;
+        font-family: $Vollkorn;
+        font-size: $f17;
+        line-height: 22px;
+        text-align: center;
+        color: $fullBlack; 
+      }
+  }
+
+#button {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: 0.5s;
+    background: url(../img/arrow.png) center no-repeat, white;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white inset;
+    cursor: pointer;
 }
 
 .header {
@@ -216,30 +281,11 @@ a {
         grid-template-columns: auto auto auto;
         gap: 20px;
         justify-content: center;
+        align-items: center;
 
-        & > div {
-            height: 300px;
-            width: 300px;
-
-            &:first-of-type {
-                background: url(../img/miniIMG_3107.PNG) center top no-repeat, $white;
-                background-size: contain;
-            }
-
-            &:nth-of-type(2) {
-                background: url(../img/miniIMG_3108.PNG) center top no-repeat, $white;
-                background-size: contain;
-            }
-
-            &:nth-of-type(3) {
-                background: url(../img/miniIMG_3109.PNG) center top no-repeat, $white;
-                background-size: contain;
-            }
-
-            &:nth-of-type(4) {
-                background: url(../img/miniIMG_3110.PNG) center top no-repeat, $white;
-                background-size: contain;
-            }
+        & > img {
+            width: 100%;
+            cursor:pointer;
         }
     }
 }
@@ -482,3 +528,14 @@ a {
         margin-top: 37px;
     }
 }
+
+@keyframes opened {
+    from {
+      width: 0;
+      height: 0;
+    }
+    to {
+      width: auto;
+      height: 100vh;
+    }
+  }
