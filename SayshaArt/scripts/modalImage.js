@@ -43,7 +43,7 @@ for (let i = 0; i < imageButton.length; i++) {
   imageButton[i].addEventListener('click', function() {
     let modalWindow = document.createElement('div'); 
     modalWindow.className = 'modal';
-    modalWindow.innerHTML = `<img src=${images[`${imageButton.length - 1 - i}`]['medium']}><button class='closed'></button><a target="_black" href="${images[`${imageButton.length - 1 - i}`]['large']}">Открыть в полном размере</a>`;  
+    modalWindow.innerHTML = `<img src=${images[`${imageButton.length - 1 - i}`]['medium']}><button class='closed'></button><a target="_blank" href="${images[`${imageButton.length - 1 - i}`]['large']}">Открыть в полном размере</a>`;  
     document.body.prepend(modalWindow);
     
     const linkButton = document.querySelector('.modal>a');
