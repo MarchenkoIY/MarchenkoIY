@@ -2,24 +2,24 @@ const gallery = document.querySelector('#projects>.projectItems');
 
 let images = {
     '0': {
-        'mini': 'img/miniIMG_3107.png',
-        'medium': 'img/mediumIMG_3107.png',
-        'large': 'img/IMG_3107.png'
+        'mini': 'img/miniIMG_3107.PNG',
+        'medium': 'img/mediumIMG_3107.PNG',
+        'large': 'img/IMG_3107.PNG'
     },
     '1': {
-        'mini': 'img/miniIMG_3108.png',
-        'medium': 'img/mediumIMG_3108.png',
-        'large': 'img/IMG_3108.png'
+        'mini': 'img/miniIMG_3108.PNG',
+        'medium': 'img/mediumIMG_3108.PNG',
+        'large': 'img/IMG_3108.PNG'
     },  
     '2': {
-        'mini': 'img/miniIMG_3109.png',
-        'medium': 'img/mediumIMG_3109.png',
-        'large': 'img/IMG_3109.png'
+        'mini': 'img/miniIMG_3109.PNG',
+        'medium': 'img/mediumIMG_3109.PNG',
+        'large': 'img/IMG_3109.PNG'
     },
     '3': {
-        'mini': 'img/miniIMG_3110.png',
-        'medium': 'img/mediumIMG_3110.png',
-        'large': 'img/IMG_3110.png'
+        'mini': 'img/miniIMG_3110.PNG',
+        'medium': 'img/mediumIMG_3110.PNG',
+        'large': 'img/IMG_3110.PNG'
     },
     '4': {
         'mini': 'img/miniIMG_3111.jpg',
