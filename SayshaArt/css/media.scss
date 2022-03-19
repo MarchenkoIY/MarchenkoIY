@@ -1,2 +1,133 @@
 @import 'variable';
 
+@media all and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .process {
+        
+        .processItems {
+            grid-template-columns: auto;
+        }
+    }
+
+    .projects {
+        
+        .projectItems {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    .modal {
+        
+        & > button {
+            opacity: 1;
+        }
+    }
+
+    .feedback {
+        
+        .feedbackItem {
+            flex-direction: column;
+
+            & > div:first-of-type {
+                margin-right: 0;
+                padding-right: 0;
+                border-right: none;
+                border-bottom: 2px solid rgba(0,0,0,0.04);
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container {
+        width: auto;
+    }
+
+    #button {
+        height: 60px;
+        width: 60px;
+    }
+
+    .banner {
+
+        .textBanner {
+            
+            h2 {
+                font-size: $f23;
+            }
+        }
+    }
+
+    .invite {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form {
+        
+        form {
+            width: auto;
+        }
+    }
+
+    .header {
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        & > ul {
+            flex-direction: column;
+
+            & > li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #contact {
+
+        .contactsItem {
+
+            & > ul {
+                flex-direction: column;
+
+                & > li {
+                    margin-bottom: 30px;
+
+                    &:before {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal {
+
+        & > img {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            height: auto;
+            animation: none;
+        }
+    }
+}
