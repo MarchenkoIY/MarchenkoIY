@@ -26,7 +26,7 @@ a {
     height: 100%;
     position: fixed;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 99;
+    z-index: 90;
 
     & > .closed {
         width: 30px;
@@ -52,6 +52,7 @@ a {
         top: calc(50% - 114px);
         opacity: 0.3;
         cursor: pointer;
+        z-index: 99;
     }
 
     & > .leftButton:hover, & > .rightButton:hover {

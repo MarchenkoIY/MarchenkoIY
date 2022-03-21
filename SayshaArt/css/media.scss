@@ -132,5 +132,11 @@
                 animation: none;
             }
         }
+
+        & > .leftButton, & > .rightButton {
+            width: 40px;
+            height: 90px;
+            top: calc(50% - 45px);
+        }
     }
 }

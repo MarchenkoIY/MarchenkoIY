@@ -68,11 +68,11 @@ function onclickImg() {
         const modalImage = document.querySelector('.modal>.galleryImages>img');
         modalImage.style.animation = `${anim} 0.15s`;
         linkButton.style.opacity = 0;
-          setTimeout(() => {
+        modalImage.addEventListener('load', setTimeout(() => {
             linkButton.style.width = modalImage.offsetWidth + 'px';
             linkButton.style.right = (modalWindow.offsetWidth / 2 - modalImage.offsetWidth / 2) +'px';
             linkButton.style.opacity = 0.7;
-          }, 151); 
+          }, 151)); 
       }
       
       renderMedium();
