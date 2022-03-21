@@ -7,6 +7,11 @@ const rightButton = document.createElement('button');
   rightButton.className = 'rightButton';
 const galleryImages = document.createElement('div'); 
   galleryImages.className = 'galleryImages';
+  galleryImages.style.display = 'flex';
+  galleryImages.style.width = '100%';
+  galleryImages.style.height = '100%';
+  galleryImages.style.alignItems = 'center';
+  galleryImages.style.justifyContent = 'center';
 const closeButton = document.createElement('button');
   closeButton.className = 'closed';
 
@@ -69,15 +74,21 @@ function onclickImg() {
         const modalImage = document.querySelector('.modal>.galleryImages>img');
         modalImage.style.animation = `${anim} 0.15s`;
         linkButton.style.opacity = 0;
-        modalImage.addEventListener('load', () => setTimeout(function() {
+        modalImage.addEventListener('load', () => {
+          setTimeout(function() {
             linkButton.style.width = modalImage.offsetWidth + 'px';
             linkButton.style.right = (modalWindow.offsetWidth / 2 - modalImage.offsetWidth / 2) +'px';
             linkButton.style.opacity = 0.7;
-          }, 151)); 
+          }, 151)}); 
       }
       
       renderMedium();
-      linkStyle('opened');
+
+      if (document.documentElement.clientWidth > 590) {
+        linkStyle('opened');
+      } else {
+        linkStyle('none');
+      }
       
       function right() {
         const modalImageOut = document.querySelector('.modal>.galleryImages>img');

@@ -39,6 +39,7 @@ a {
         border: none;
         opacity: 0.5;
         cursor: pointer;
+        z-index: 99;
     }
 
     & > .closed:hover {
@@ -560,7 +561,7 @@ a {
     }
     to {
       width: auto;
-      height: 100vh;
+      height: 90vh;
     }
   }
   
