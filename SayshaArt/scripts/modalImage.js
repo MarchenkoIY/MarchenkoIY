@@ -56,6 +56,7 @@ function onclickImg() {
       modalWindow.prepend(rightButton);
       modalWindow.prepend(galleryImages);
       modalWindow.prepend(leftButton);
+      modalWindow.prepend(closeButton);
       
       document.body.prepend(modalWindow);
       
@@ -68,7 +69,7 @@ function onclickImg() {
         const modalImage = document.querySelector('.modal>.galleryImages>img');
         modalImage.style.animation = `${anim} 0.15s`;
         linkButton.style.opacity = 0;
-        modalImage.addEventListener('load', setTimeout(() => {
+        modalImage.addEventListener('load', () => setTimeout(function() {
             linkButton.style.width = modalImage.offsetWidth + 'px';
             linkButton.style.right = (modalWindow.offsetWidth / 2 - modalImage.offsetWidth / 2) +'px';
             linkButton.style.opacity = 0.7;
@@ -109,8 +110,6 @@ function onclickImg() {
       leftButton.addEventListener ('click', left)
       
       rightButton.addEventListener ('click', right)
-      
-      modalWindow.prepend(closeButton);
   
       closeButton.addEventListener('click', function() {
        modalWindow.remove();
