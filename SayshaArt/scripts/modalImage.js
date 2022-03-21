@@ -1,4 +1,14 @@
 const gallery = document.querySelector('#projects>.projectItems');
+const modalWindow = document.createElement('div'); 
+  modalWindow.className = 'modal';
+const leftButton = document.createElement('button'); 
+  leftButton.className = 'leftButton';
+const rightButton = document.createElement('button'); 
+  rightButton.className = 'rightButton';
+const galleryImages = document.createElement('div'); 
+  galleryImages.className = 'galleryImages';
+const closeButton = document.createElement('button');
+  closeButton.className = 'closed';
 
 let images = {
     '0': {
@@ -39,26 +49,77 @@ render();
 
 const imageButton = document.querySelectorAll('#projects>.projectItems>img');
 
-for (let i = 0; i < imageButton.length; i++) {
-  imageButton[i].addEventListener('click', function() {
-    let modalWindow = document.createElement('div'); 
-    modalWindow.className = 'modal';
-    modalWindow.innerHTML = `<img src=${images[`${imageButton.length - 1 - i}`]['medium']}><button id='closed'></button><a target="_blank" href="${images[`${imageButton.length - 1 - i}`]['large']}">Открыть в полном размере</a>`;  
-    document.body.prepend(modalWindow);
-    
-    const linkButton = document.querySelector('.modal>a');
-    const modalImage = document.querySelector('.modal>img');
-    const closeButton = document.getElementById('closed');
-
-    closeButton.addEventListener('click', function() {
-      modalWindow.remove();
-    });
-    
-    linkButton.style.opacity = 0;
-    modalImage.addEventListener('load', setTimeout(function() {
-      linkButton.style.width = modalImage.offsetWidth + 'px';
-      linkButton.style.right = (modalWindow.offsetWidth / 2 - modalImage.offsetWidth / 2) +'px';
-      linkButton.style.opacity = 0.7;
-    }, 151));
-  });
-}
+function onclickImg() {
+  for (let i = 0; i < imageButton.length; i++) {
+    imageButton[i].addEventListener('click', function renderModal() {
+      let index = i;
+      modalWindow.prepend(rightButton);
+      modalWindow.prepend(galleryImages);
+      modalWindow.prepend(leftButton);
+      
+      document.body.prepend(modalWindow);
+      
+      function renderMedium() {
+        galleryImages.innerHTML = `<img src=${images[`${imageButton.length - 1 - i}`]['medium']}><a target="_black" href="${images[`${imageButton.length - 1 - i}`]['large']}" id="linkLarge">Открыть в полном размере</a>`;
+      }
+      
+      function linkStyle(anim) {
+        const linkButton = document.getElementById('linkLarge');
+        const modalImage = document.querySelector('.modal>.galleryImages>img');
+        modalImage.style.animation = `${anim} 0.15s`;
+        linkButton.style.opacity = 0;
+          setTimeout(() => {
+            linkButton.style.width = modalImage.offsetWidth + 'px';
+            linkButton.style.right = (modalWindow.offsetWidth / 2 - modalImage.offsetWidth / 2) +'px';
+            linkButton.style.opacity = 0.7;
+          }, 151); 
+      }
+      
+      renderMedium();
+      linkStyle('opened');
+      
+      function right() {
+        const modalImageOut = document.querySelector('.modal>.galleryImages>img');
+        modalImageOut.style.animation = `rightout 0.15s`;
+        setTimeout(() => {
+        if (i < imageButton.length - 1) {
+        i++;
+        } else {
+          i = 0;
+        }
+        renderMedium();
+        linkStyle('next');
+        }, 120);
+      }
+      
+      function left() {
+      const modalImageOut = document.querySelector('.modal>.galleryImages>img');
+      modalImageOut.style.animation = `leftout 0.15s`;
+      setTimeout(() => {
+        if (i > 0) {
+        i--;
+        } else {
+          i = imageButton.length - 1;
+        }
+        renderMedium();
+        linkStyle('prev');
+      }, 120);
+      }
+      
+      leftButton.addEventListener ('click', left)
+      
+      rightButton.addEventListener ('click', right)
+      
+      modalWindow.prepend(closeButton);
+  
+      closeButton.addEventListener('click', function() {
+       modalWindow.remove();
+       rightButton.removeEventListener ('click', right);
+       leftButton.removeEventListener ('click', left);
+       return i = index;
+      });
+   });
+  }
+  }
+  
+  onclickImg();

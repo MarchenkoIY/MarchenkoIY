@@ -28,15 +28,7 @@ a {
     background: rgba(0, 0, 0, 0.7);
     z-index: 99;
 
-    & > img {
-        display: block;
-        margin: auto;
-        animation: opened 0.150s;
-        width: auto;
-        height: 100vh;
-    }
-
-    & > button {
+    & > .closed {
         width: 30px;
         height: 30px;
         position: absolute;
@@ -49,27 +41,66 @@ a {
         cursor: pointer;
     }
 
-    & > button:hover {
+    & > .closed:hover {
         opacity: 1;
     }
 
-    & > a {
-        display: block;
-        background: white;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    & > .leftButton, & > .rightButton {
         position: absolute;
-        bottom: 0;
-        color: black;
-        transition: 0.152s;
-        font-family: $Vollkorn;
-        font-size: $f17;
-        line-height: 22px;
-        text-align: center;
-        color: $fullBlack; 
-      }
-  }
+        width: 100px;
+        height: 228px;
+        top: calc(50% - 114px);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    & > .leftButton:hover, & > .rightButton:hover {
+        opacity: 0.7;
+    }
+
+    & > .rightButton {
+        background: url(../img/nextButton.png) center no-repeat;
+        background-size: contain;
+        border: none;
+        right: 30px;
+    }
+
+    & > .leftButton {
+        background: url(../img/nextButton.png) center no-repeat;
+        background-size: contain;
+        transform: rotate(180deg);
+        border: none;
+        left: 30px;
+    }
+
+    .galleryImages {
+
+        & > img {
+            display: block;
+            margin: auto;
+            animation: opened 0.150s;
+            width: auto;
+            height: 100vh;
+        }
+
+        & > a {
+            display: block;
+            background: white;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: absolute;
+            bottom: 0;
+            color: black;
+            transition: 0.152s;
+            font-family: $Vollkorn;
+            font-size: $f17;
+            line-height: 22px;
+            text-align: center;
+            color: $fullBlack; 
+        }
+    }
+}
 
 #button {
     width: 80px;
@@ -529,5 +560,131 @@ a {
     to {
       width: auto;
       height: 100vh;
+    }
+  }
+  
+  @keyframes prev {
+    from {
+      margin-right: 100%;
+      opacity: 0;
+    }
+    
+    20% {
+      margin-right: 90%;
+      opacity: 0.1;
+    }
+    
+    40% {
+      margin-right: 80%;
+      opacity: 0.2;
+    }
+    
+    60% {
+      margin-right: 70%;
+      opacity: 0.4;
+    }
+    
+    80% {
+      margin-right: 60%;
+      opacity: 0.7;
+    }
+    to {
+      margin-right: auto;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes next {
+    from {
+      margin-left: 100%;
+      opacity: 0;
+    }
+    
+    20% {
+      margin-left: 90%;
+      opacity: 0.1;
+    }
+    
+    40% {
+      margin-left: 80%;
+      opacity: 0.2;
+    }
+    
+    60% {
+      margin-left: 70%;
+      opacity: 0.4;
+    }
+    
+    80% {
+      margin-left: 60%;
+      opacity: 0.7;
+    }
+    to {
+      margin-left: auto;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes leftout {
+    from {
+      margin-left: auto;
+      opacity: 1;
+    }
+    
+    20% {
+      margin-left: 60%;
+      opacity: 0.7;
+    }
+    
+    40% {
+      margin-left: 70%;
+      opacity: 0.4;
+    }
+    
+    60% {
+      margin-left: 80%;
+      opacity: 0.2;
+    }
+    
+    80% {
+      margin-left: 90%;
+      opacity: 0.1;
+    }
+    
+    to {
+      margin-left: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes rightout {
+    from {
+      margin-right: auto;
+      opacity: 1;
+    }
+    
+    20% {
+      margin-right: 60%;
+      opacity: 0.7;
+    }
+    
+    40% {
+      margin-right: 70%;
+      opacity: 0.4;
+    }
+    
+    60% {
+      margin-right: 80%;
+      opacity: 0.2;
+    }
+    
+    80% {
+      margin-right: 90%;
+      opacity: 0.1;
+    }
+    
+    to {
+      margin-right: 100%;
+      opacity: 0;
     }
   }

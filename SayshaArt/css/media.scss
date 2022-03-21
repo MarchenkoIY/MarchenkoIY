@@ -122,12 +122,15 @@
 
     .modal {
 
-        & > img {
-            width: 100%;
-            position: absolute;
-            bottom: 50px;
-            height: auto;
-            animation: none;
+        .galleryImages {
+
+            & > img {
+                width: 100%;
+                position: absolute;
+                bottom: 50px;
+                height: auto;
+                animation: none;
+            }
         }
     }
 }
