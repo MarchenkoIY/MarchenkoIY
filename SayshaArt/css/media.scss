@@ -138,5 +138,13 @@
             height: 90px;
             top: calc(50% - 45px);
         }
+
+        & > .rightButton {
+            right: 0;
+        }
+
+        & > .leftButton {
+            left: 0;
+        }
     }
 }
