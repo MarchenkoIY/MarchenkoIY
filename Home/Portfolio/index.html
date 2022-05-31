@@ -18,19 +18,19 @@
       <img src="assets/Logo.png" alt="Logo">
       <ul>
         <li>
-          <a href="#">ГЛАВНАЯ</a>
+          <a href="#" class="navigation">ГЛАВНАЯ</a>
         </li>
         <li>
-          <a href="#aboutMe">ОБ АВТОРЕ</a>
+          <a href="#aboutMe" class="navigation">ОБ АВТОРЕ</a>
         </li>
         <li>
-          <a href="#process">ПРОЦЕСС</a>
+          <a href="#process" class="navigation">ПРОЦЕСС</a>
         </li>
         <li>
-          <a href="#works">РАБОТЫ</a>
+          <a href="#works" class="navigation">РАБОТЫ</a>
         </li>
         <li>
-          <a href="#contacts">КОНТАКТЫ</a>
+          <a href="#contacts" class="navigation">КОНТАКТЫ</a>
         </li>
       </ul>
     </div>
@@ -39,7 +39,7 @@
       <div class="header-text">
         <h2>Верстка и Front-end разработка</h2>
         <p>Создаю сайты на основе Ваших шаблонов. Ставлю своей целью максимально облегчить для клиента процесс получения сайта и обеспечить клиенту максимальную поддержку.</p>
-        <button onclick="window.location.href='mailto:khr3b96@gmail.com';">НАПИСАТЬ МНЕ</button>
+        <button onclick="window.location.href='mailto:marchanka.ihar@gmail.com';">НАПИСАТЬ МНЕ</button>
       </div>
     </div>
   </div>
@@ -50,10 +50,10 @@
   <div class="sertificates">
     <div class="myAchives container">
       <ul>
-        <li>Сертификат<br>freeCodeCamp (HTML, CSS)</li>
-        <li id="show-modal">Сертификат<br>IT-Academy (HTML, CSS)</li>
-        <li id="show-modal">Сертификат<br>Stepik (JS)</li>
-        <li id="show-modal">Сертификат<br>Intuit (JS)</li>
+        <li class="showModal freeCodeCampHTML">Сертификат<br>freeCodeCamp (HTML, CSS)</li>
+        <li class="showModal ITAcademyHTML">Сертификат<br>IT-Academy (HTML, CSS)</li>
+        <li class="showModal StepikJS">Сертификат<br>Stepik (JS)</li>
+        <li class="showModal IntuitJS">Сертификат<br>Intuit (JS)</li>
       </ul>
     </div>
   </div>
@@ -122,29 +122,8 @@
         </ul>
     </div>
   </div>
-<script>
-    const topButton = document.getElementById('button');
-      
-    topButton.addEventListener('click', function smoothScroll() {
-        setTimeout(function() {
-          if (window.pageYOffset > 0) {
-            window.scrollBy(0, -100);
-            smoothScroll();
-          }
-        }, 2);
-    })
-      
-  function goToUpButton() {
-    if (window.pageYOffset < 500) {
-      topButton.style.transform = "translateX(-1000%) rotate(0)";
-    } else {
-      topButton.style.transform = "translateX(0) rotate(450deg)";
-      topButton.style.opacity = "1";
-    }
-  }
-      
-  setInterval(goToUpButton, 100);
-      
-</script>
+<script src="scripts/buttonUp.js"></script>
+<script src="scripts/links.js"></script>
+<script src="scripts/sertificates.js"></script>
 </body>
 </html>

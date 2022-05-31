@@ -99,7 +99,7 @@ a {
 /*about me*/
 .aboutMe {
   width: 540px;
-  margin-top: 119px;
+  padding-top: 119px;
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -132,6 +132,7 @@ a {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .myAchives ul li:before {
   content: url('../assets/Group.png');  
@@ -169,19 +170,19 @@ a {
 }
 .skills .meter:nth-child(4) p {
   height: 100%;
-  width: 75%;
+  width: 85%;
   background: #34547A;
   border-radius: 2px;
 }
 .skills .meter:nth-child(2) p {
   height: 100%;
-  width: 85%;
+  width: 95%;
   background: #34547A;
   border-radius: 2px;
 }
 .skills .meter:last-child p {
   height: 100%;
-  width: 50%;
+  width: 60%;
   background: #34547A;
   border-radius: 2px;
 }
@@ -344,6 +345,38 @@ a {
   font-size: 44px;
   color: white;
   margin-bottom: 64px;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal > iframe {
+  width: 70%;
+  height: 70%;
+}
+#closeModal {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 75px;
+  height: 75px;
+  background: url(../assets/close.png) center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.2;
+  cursor: pointer;
+}
+#closeModal:hover {
+  opacity: 0.8;
 }
 
 /*media*/
